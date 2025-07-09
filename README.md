@@ -62,19 +62,7 @@ python src/main.py
 alzheimer-memory-assistant/
 ├── README.md
 ├── LICENSE
-├── .gitignore
-├── CONTRIBUTING.md
-├── CODE_OF_CONDUCT.md
-├── CHANGELOG.md
-│
-├── docs/
-│   ├── installation.md
-│   ├── user-guide.md
-│   ├── caregiver-guide.md
-│   ├── medical-considerations.md
-│   ├── privacy-policy.md
-│   └── technical-architecture.md
-│
+|
 ├── src/
 │   ├── main.py
 │   ├── config/
