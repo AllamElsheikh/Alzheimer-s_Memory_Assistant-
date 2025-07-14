@@ -1,0 +1,40 @@
+# UI Framework
+customtkinter
+
+# AI & Machine Learning  
+transformers>=4.35.0
+torch>=2.0.0
+sentencepiece
+accelerate
+
+# Google Gemma 3n specific
+google-generativeai
+
+# Speech-to-Text (ASR)
+openai-whisper
+
+# Text-to-Speech (TTS) & Audio
+pyttsx3
+playsound==1.2.2
+Pillow==10.3.0
+
+# Image Recognition
+face_recognition
+opencv-python
+
+# Audio Processing & Testing
+soundfile
+numpy
+librosa
+
+# Real-time audio recording
+pyaudio
+SpeechRecognition
+
+# Arabic text processing
+arabic-reshaper
+python-bidi
+
+# Data handling
+python-dateutil
+pathlib
