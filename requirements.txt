@@ -2,13 +2,16 @@
 customtkinter
 
 # AI & Machine Learning  
-transformers>=4.35.0
+transformers>=4.53.0
 torch>=2.0.0
 sentencepiece
 accelerate
 
-# Google Gemma 3n specific
+# MULTIMODAL PROCESSING - Gemma 3n
 google-generativeai
+datasets
+evaluate
+bitsandbytes
 
 # Speech-to-Text (ASR)
 openai-whisper

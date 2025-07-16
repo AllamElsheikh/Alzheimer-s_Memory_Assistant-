@@ -7,7 +7,7 @@ class ContextManager:
     """Manage AI conversation context and interaction history"""
     
     def __init__(self, context_file='data/conversation_context.json'):
-        """Initialize context manager"""
+        """Initialize context manager with multimodal support"""
         self.context_file = context_file
         self.current_session = {
             'session_id': datetime.now().strftime('%Y%m%d_%H%M%S'),
@@ -15,9 +15,25 @@ class ContextManager:
             'interactions': [],
             'mood_indicators': [],
             'memory_performance': {},
-            'topics_discussed': []
+            'topics_discussed': [],
+            # 🏆 MULTIMODAL ENHANCEMENTS
+            'multimodal_interactions': [],
+            'image_analyses': [],
+            'audio_analyses': [],
+            'cognitive_assessments': [],
+            'context_continuity': []
         }
         self.conversation_history = self._load_conversation_history()
+        
+        # Context tracking
+        self.working_memory = {}
+        self.long_term_patterns = {}
+        self.session_metrics = {
+            'response_times': [],
+            'engagement_scores': [],
+            'memory_recall_success': [],
+            'multimodal_usage': 0
+        }
     
     def _load_conversation_history(self) -> List[Dict]:
         """Load conversation history from file"""
@@ -241,3 +257,31 @@ class ContextManager:
             recommendations.append("Try using more visual or audio prompts")
         
         return recommendations
+
+    def add_multimodal_interaction(self, interaction_type: str, content: Dict[str, Any]):
+        """
+        Track multimodal interactions for better context understanding
+        """
+        multimodal_entry = {
+            'timestamp': self._get_timestamp(),
+            'type': interaction_type,
+            'content': content,
+            'session_id': self.current_session['session_id']
+        }
+        
+        self.current_session['multimodal_interactions'].append(multimodal_entry)
+        self.session_metrics['multimodal_usage'] += 1
+
+    def get_multimodal_context(self, lookback_minutes: int = 10) -> Dict[str, Any]:
+        """
+        Get recent multimodal context for AI responses
+        """
+        recent_context = {
+            'recent_images': [],
+            'recent_audio': [],
+            'conversation_themes': [],
+            'memory_performance': self.current_session.get('memory_performance', {}),
+            'working_memory': getattr(self, 'working_memory', {})
+        }
+        
+        return recent_context
