@@ -111,14 +111,42 @@ src/
 │   ├── memory_engine.py        # Person cards & prompts
 │   ├── reminder_system.py      # Medication reminders
 │   ├── cognitive_assessment.py # Cognitive evaluation
+│   ├── intelligent_memory.py   # Associative memory system
+│   ├── arabic_dataset_loader.py # Arabic cultural datasets
 │   └── tts_service.py          # Text-to-speech
 ├── ui/                     # User Interface
 │   ├── patient_view.py         # Patient interface
 │   ├── caregiver_view.py       # Family dashboard
 │   └── main_window.py          # Application core
+├── data/                   # Data Resources
+│   ├── arabic_datasets/        # Arabic cultural datasets
+│   │   ├── cultural_entities/  # Cultural entities (foods, songs, proverbs)
+│   │   └── memory_prompts/     # Memory prompts (family, places, religion)
+│   └── ...                     # Other data resources
 └── config/                 # Configuration
     └── settings.py             # App settings
 ```
+
+### 🇪🇬 **Arabic Datasets**
+
+Our system includes comprehensive Arabic cultural datasets specifically designed for memory stimulation:
+
+1. **Cultural Entities**
+   - Traditional foods (كنافة، مجدرة، ملوخية)
+   - Traditional songs (أم كلثوم، فيروز)
+   - Arabic proverbs (الصديق وقت الضيق)
+   - Common Arabic names
+
+2. **Memory Prompts**
+   - Family-related questions
+   - Places and locations
+   - Religious practices (Islamic and Christian)
+   - Historical events
+
+3. **Memory Integration**
+   - Culturally appropriate conversation starters
+   - Personalized memory exercises
+   - Cognitive assessment through cultural knowledge
 
 ---
 
@@ -279,6 +307,14 @@ python src/main.py
 - **Arabic Accuracy:** 95%+ for Egyptian dialect
 - **Memory Usage:** ~2GB during operation
 - **API Efficiency:** Optimized prompts for cost-effective usage
+
+### 🇪🇬 **Arabic Dataset Specifications**
+
+- **Cultural Entities:** 50+ traditional foods, songs, proverbs, and names
+- **Memory Prompts:** 40+ culturally appropriate questions across categories
+- **Bilingual Support:** All content in both Arabic and English
+- **Regional Coverage:** Content from Egypt, Levant, Gulf, and North Africa
+- **Religious Inclusivity:** Both Islamic and Christian traditions included
 
 ---
 
