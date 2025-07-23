@@ -6,6 +6,8 @@ from typing import Dict, List, Optional, Any, Tuple
 from dataclasses import dataclass
 from pathlib import Path
 
+from arabic_dataset_loader import ArabicDatasetLoader
+
 @dataclass
 class MemoryItem:
     """Data class to represent a memory item"""
@@ -34,6 +36,9 @@ class IntelligentMemoryRetrieval:
         self.working_memory = []  # Recently accessed memories
         self.working_memory_size = 10
         self._build_memory_graph()
+        
+        # Initialize Arabic dataset loader
+        self.arabic_dataset_loader = ArabicDatasetLoader()
         
     def _load_memories(self) -> List[MemoryItem]:
         """Load memories from JSON file"""
@@ -326,18 +331,31 @@ class IntelligentMemoryRetrieval:
         
         return associated_memories
     
-    def generate_memory_prompt(self, context: str = "", person_name: str = "") -> Tuple[str, MemoryItem]:
+    def generate_memory_prompt(self, context: str = "", person_name: str = "", 
+                              use_cultural_prompts: bool = True) -> Tuple[str, Optional[MemoryItem]]:
         """
         Generate a memory prompt for stimulating recall
         
         Args:
             context: Current conversation context
             person_name: Name of person to focus on (optional)
+            use_cultural_prompts: Whether to use cultural prompts from datasets
             
         Returns:
             prompt: The generated prompt
-            memory: The memory item being prompted
+            memory: The memory item being prompted (None if using cultural prompts)
         """
+        # Strategy 0: Use cultural prompts from Arabic datasets
+        if use_cultural_prompts and random.random() < 0.6:  # 60% chance to use cultural prompts
+            prompt_type = random.choice([
+                'family_prompts', 'places_prompts', 'religious_prompts', 'historical_events'
+            ])
+            
+            # Get a random prompt from the selected dataset
+            prompt_data = self.arabic_dataset_loader.get_random_prompt(prompt_type)
+            if prompt_data and prompt_data.get('prompt'):
+                return prompt_data.get('prompt'), None
+        
         # Strategy 1: Use working memory (recently accessed)
         if self.working_memory and random.random() < 0.3:
             memory = random.choice(self.working_memory)
@@ -362,7 +380,18 @@ class IntelligentMemoryRetrieval:
             prompt = f"أريد أن أسألك عن ذكرى مهمة: {memory.content}"
             return prompt, memory
         
-        # Fallback
+        # Fallback to cultural prompts if no memories available
+        if use_cultural_prompts:
+            prompt_type = random.choice([
+                'family_prompts', 'places_prompts', 'religious_prompts', 'historical_events'
+            ])
+            
+            # Get a random prompt from the selected dataset
+            prompt_data = self.arabic_dataset_loader.get_random_prompt(prompt_type)
+            if prompt_data and prompt_data.get('prompt'):
+                return prompt_data.get('prompt'), None
+        
+        # Final fallback
         if self.memories:
             memory = random.choice(self.memories)
             prompt = f"هل يمكنك أن تخبرني عن {memory.content}؟"
@@ -370,6 +399,47 @@ class IntelligentMemoryRetrieval:
         
         # No memories available
         return "هل يمكنك أن تخبرني عن ذكرياتك القديمة؟", None
+    
+    def get_cultural_entity_prompt(self, entity_type: str = None) -> str:
+        """
+        Generate a prompt about a cultural entity from our datasets
+        
+        Args:
+            entity_type: Type of entity to prompt about (food, music, proverb, etc.)
+            
+        Returns:
+            A prompt about the cultural entity
+        """
+        # If no entity type specified, choose randomly
+        if not entity_type:
+            entity_type = random.choice(['food', 'music', 'proverb'])
+        
+        # Map entity types to dataset names
+        dataset_mapping = {
+            'food': 'traditional_foods',
+            'music': 'traditional_songs',
+            'proverb': 'arabic_proverbs',
+            'name': 'arabic_names'
+        }
+        
+        dataset_name = dataset_mapping.get(entity_type, 'arab_entities')
+        
+        # Get a random entity
+        entity = self.arabic_dataset_loader.get_random_entity(dataset_name=dataset_name)
+        
+        if not entity:
+            return "هل تتذكر أي من الأطعمة التقليدية التي كنت تحبها؟"
+        
+        # Generate prompt based on entity type
+        if entity_type == 'food':
+            return f"هل تتذكر {entity.get('name_ar')}؟ {entity.get('memory_prompt_ar', '')}"
+        elif entity_type == 'music':
+            return f"هل تعرف أغنية {entity.get('title_ar')} لـ {entity.get('artist')}؟ {entity.get('memory_prompt_ar', '')}"
+        elif entity_type == 'proverb':
+            return f"هل تعرف هذا المثل: {entity.get('proverb_ar')}؟ {entity.get('memory_prompt_ar', '')}"
+        else:
+            # Generic prompt
+            return entity.get('memory_prompt_ar', f"هل يمكنك أن تخبرني عن {entity.get('name_ar', '')}؟")
     
     def analyze_memory_response(self, memory_id: str, response: str) -> Dict[str, Any]:
         """
@@ -445,6 +515,73 @@ class IntelligentMemoryRetrieval:
             "confusion_signs": "unknown"
         }
     
+    def analyze_cultural_response(self, prompt: str, response: str) -> Dict[str, Any]:
+        """
+        Analyze patient's response to a cultural prompt
+        
+        Args:
+            prompt: The cultural prompt given
+            response: Patient's response
+            
+        Returns:
+            Analysis results
+        """
+        # If Gemma integration is available, use it for analysis
+        if self.gemma_integration:
+            try:
+                # Create a prompt for Gemma to analyze the response
+                analysis_prompt = f"""
+                تحليل استجابة المريض للسؤال الثقافي:
+                
+                السؤال: {prompt}
+                استجابة المريض: "{response}"
+                
+                قم بتحليل الاستجابة وتقييم:
+                1. هل أظهر المريض معرفة بالموضوع الثقافي؟ (نعم/جزئيًا/لا)
+                2. مستوى التفاصيل في الاستجابة (منخفض/متوسط/عالي)
+                3. الحالة العاطفية للمريض (إيجابية/محايدة/سلبية)
+                4. أي علامات على الارتباك أو القلق
+                
+                قدم تقييمك بتنسيق JSON.
+                """
+                
+                # Get response from Gemma
+                analysis_response = self.gemma_integration.generate_response(analysis_prompt)
+                
+                # Try to extract JSON
+                try:
+                    import re
+                    # Find JSON pattern in response
+                    json_match = re.search(r'\{.*\}', analysis_response, re.DOTALL)
+                    if json_match:
+                        json_str = json_match.group(0)
+                        analysis = json.loads(json_str)
+                        return analysis
+                except Exception as e:
+                    print(f"Error parsing analysis response: {e}")
+                    # Fall back to simple analysis
+            except Exception as e:
+                print(f"Error using Gemma for response analysis: {e}")
+                # Fall back to simple analysis
+        
+        # Fallback: Simple analysis
+        detail_level = "low"
+        if len(response.split()) > 20:
+            detail_level = "medium"
+        if len(response.split()) > 50:
+            detail_level = "high"
+        
+        # Simple keyword check for cultural knowledge
+        cultural_keywords = ["أتذكر", "نعم", "بالطبع", "كنت", "أعرف", "أحب"]
+        has_knowledge = any(keyword in response.lower() for keyword in cultural_keywords)
+        
+        return {
+            "cultural_knowledge": "yes" if has_knowledge else "no",
+            "detail_level": detail_level,
+            "emotional_state": "neutral",
+            "confusion_signs": "unknown"
+        }
+    
     def reinforce_memory(self, memory_id: str, success: bool):
         """
         Reinforce memory based on recall success
@@ -502,6 +639,24 @@ class IntelligentMemoryRetrieval:
             "memory_sources": source_counts
         }
     
+    def get_dataset_statistics(self) -> Dict[str, Any]:
+        """Get statistics about the available Arabic datasets"""
+        available_datasets = self.arabic_dataset_loader.get_available_datasets()
+        categories = self.arabic_dataset_loader.get_available_categories()
+        
+        return {
+            "cultural_entities": {
+                "datasets": len(available_datasets['cultural_entities']),
+                "categories": len(categories['cultural_entities']),
+                "available_categories": categories['cultural_entities']
+            },
+            "memory_prompts": {
+                "datasets": len(available_datasets['memory_prompts']),
+                "categories": len(categories['memory_prompts']),
+                "available_categories": categories['memory_prompts']
+            }
+        }
+    
     def clear_all_memories(self):
         """Clear all memories (use with caution)"""
         self.memories = []
@@ -535,3 +690,7 @@ if __name__ == "__main__":
     # Generate prompt
     prompt, memory = memory_system.generate_memory_prompt(person_name="Ahmed")
     print(f"Memory prompt: {prompt}")
+    
+    # Generate cultural prompt
+    cultural_prompt = memory_system.get_cultural_entity_prompt(entity_type="food")
+    print(f"Cultural prompt: {cultural_prompt}")
