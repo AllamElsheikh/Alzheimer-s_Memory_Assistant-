@@ -1,0 +1,98 @@
+{
+  "version": "1.0.0",
+  "last_updated": "2025-07-23",
+  "datasets": {
+    "cultural_entities": [
+      {
+        "name": "arab_entities",
+        "file": "cultural_entities/arab_entities.json",
+        "description": "General Arab cultural entities",
+        "count": 15,
+        "categories": ["food", "celebration", "tradition", "landmark", "music"]
+      },
+      {
+        "name": "arabic_names",
+        "file": "cultural_entities/arabic_names.json",
+        "description": "Common Arabic names",
+        "count": 20,
+        "categories": ["male", "female"]
+      },
+      {
+        "name": "arabic_proverbs",
+        "file": "cultural_entities/arabic_proverbs.json",
+        "description": "Traditional Arabic proverbs",
+        "count": 10,
+        "categories": ["proverb"]
+      },
+      {
+        "name": "traditional_foods",
+        "file": "cultural_entities/traditional_foods.json",
+        "description": "Traditional Arabic foods",
+        "count": 15,
+        "categories": ["food"]
+      },
+      {
+        "name": "traditional_songs",
+        "file": "cultural_entities/traditional_songs.json",
+        "description": "Traditional Arabic songs and music",
+        "count": 10,
+        "categories": ["music"]
+      }
+    ],
+    "memory_prompts": [
+      {
+        "name": "family_prompts",
+        "file": "memory_prompts/family_prompts.json",
+        "description": "Prompts related to family",
+        "count": 10,
+        "categories": ["family_general", "family_specific", "family_location", "family_memory", "family_tradition"]
+      },
+      {
+        "name": "historical_events",
+        "file": "memory_prompts/historical_events.json",
+        "description": "Prompts related to historical events",
+        "count": 10,
+        "categories": ["history"]
+      },
+      {
+        "name": "places_prompts",
+        "file": "memory_prompts/places_prompts.json",
+        "description": "Prompts related to places",
+        "count": 10,
+        "categories": ["personal_location", "home", "education_location", "favorite_location", "daily_location", "travel", "religious_location", "leisure_location"]
+      },
+      {
+        "name": "religious_prompts",
+        "file": "memory_prompts/religious_prompts.json",
+        "description": "Prompts related to religious practices",
+        "count": 15,
+        "categories": ["islam", "christianity"]
+      }
+    ]
+  },
+  "usage": {
+    "memory_assistance": {
+      "description": "Use these datasets to generate memory prompts based on the patient's background",
+      "recommended_datasets": ["family_prompts", "places_prompts", "historical_events"]
+    },
+    "conversation_starters": {
+      "description": "Use these datasets to start culturally appropriate conversations",
+      "recommended_datasets": ["arabic_proverbs", "traditional_foods", "traditional_songs"]
+    },
+    "entity_recognition": {
+      "description": "Use these datasets to recognize cultural entities mentioned by the patient",
+      "recommended_datasets": ["arab_entities", "arabic_names", "traditional_foods"]
+    },
+    "cognitive_assessment": {
+      "description": "Use these datasets for cognitive assessment exercises",
+      "recommended_datasets": ["arabic_proverbs", "historical_events", "religious_prompts"]
+    }
+  },
+  "metadata": {
+    "created_for": "فاكر؟ (Faker?) Alzheimer's Memory Assistant",
+    "language": "Arabic",
+    "contributors": ["AI Assistant", "Project Team"],
+    "license": "Same as main project",
+    "contact": "project@example.com"
+  }
+} 

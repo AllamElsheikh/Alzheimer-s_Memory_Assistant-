@@ -1,0 +1,94 @@
+{
+  "arabic_proverbs": [
+    {
+      "id": "prov_001",
+      "proverb_ar": "العقل السليم في الجسم السليم",
+      "proverb_en": "A sound mind in a sound body",
+      "explanation_ar": "يشير إلى أهمية الصحة الجسدية والعقلية معاً",
+      "explanation_en": "Refers to the importance of both physical and mental health",
+      "memory_prompt_ar": "هل تتذكر هذا المثل: العقل السليم في الجسم السليم؟ ماذا يعني لك؟",
+      "memory_prompt_en": "Do you remember this proverb: A sound mind in a sound body? What does it mean to you?"
+    },
+    {
+      "id": "prov_002",
+      "proverb_ar": "الصديق وقت الضيق",
+      "proverb_en": "A friend in need is a friend indeed",
+      "explanation_ar": "الصديق الحقيقي هو من يساعدك في أوقات الشدة",
+      "explanation_en": "A true friend is one who helps you in times of hardship",
+      "memory_prompt_ar": "هل تعرف مثل: الصديق وقت الضيق؟ هل يمكنك أن تخبرني عن صديق ساعدك في وقت صعب؟",
+      "memory_prompt_en": "Do you know the proverb: A friend in need is a friend indeed? Can you tell me about a friend who helped you in a difficult time?"
+    },
+    {
+      "id": "prov_003",
+      "proverb_ar": "اطلب العلم من المهد إلى اللحد",
+      "proverb_en": "Seek knowledge from the cradle to the grave",
+      "explanation_ar": "التعلم مستمر طوال الحياة",
+      "explanation_en": "Learning continues throughout life",
+      "memory_prompt_ar": "هل سمعت بالمثل القائل: اطلب العلم من المهد إلى اللحد؟ هل تعلمت شيئاً جديداً مؤخراً؟",
+      "memory_prompt_en": "Have you heard the saying: Seek knowledge from the cradle to the grave? Have you learned something new recently?"
+    },
+    {
+      "id": "prov_004",
+      "proverb_ar": "القناعة كنز لا يفنى",
+      "proverb_en": "Contentment is a treasure that never perishes",
+      "explanation_ar": "الرضا بما لديك هو ثروة حقيقية",
+      "explanation_en": "Being satisfied with what you have is a true wealth",
+      "memory_prompt_ar": "هل تعرف مثل: القناعة كنز لا يفنى؟ كيف تطبق هذا المثل في حياتك؟",
+      "memory_prompt_en": "Do you know the proverb: Contentment is a treasure that never perishes? How do you apply this proverb in your life?"
+    },
+    {
+      "id": "prov_005",
+      "proverb_ar": "من جد وجد ومن زرع حصد",
+      "proverb_en": "Who strives shall succeed, and who sows shall reap",
+      "explanation_ar": "من يعمل بجد سيحقق النجاح، ومن يزرع سيحصد ثمار عمله",
+      "explanation_en": "Those who work hard will achieve success, and those who sow will reap the fruits of their labor",
+      "memory_prompt_ar": "هل تتذكر المثل: من جد وجد ومن زرع حصد؟ هل يمكنك أن تخبرني عن وقت عملت فيه بجد وحققت نجاحاً؟",
+      "memory_prompt_en": "Do you remember the proverb: Who strives shall succeed, and who sows shall reap? Can you tell me about a time when you worked hard and achieved success?"
+    },
+    {
+      "id": "prov_006",
+      "proverb_ar": "الكلام من فضة والسكوت من ذهب",
+      "proverb_en": "Speech is silver, silence is golden",
+      "explanation_ar": "أحياناً يكون الصمت أفضل من الكلام",
+      "explanation_en": "Sometimes silence is better than speech",
+      "memory_prompt_ar": "هل تعرف المثل: الكلام من فضة والسكوت من ذهب؟ متى تفضل الصمت على الكلام؟",
+      "memory_prompt_en": "Do you know the proverb: Speech is silver, silence is golden? When do you prefer silence over speech?"
+    },
+    {
+      "id": "prov_007",
+      "proverb_ar": "يد واحدة لا تصفق",
+      "proverb_en": "One hand cannot clap",
+      "explanation_ar": "التعاون ضروري لإنجاز الأعمال",
+      "explanation_en": "Cooperation is necessary to accomplish tasks",
+      "memory_prompt_ar": "هل سمعت بالمثل: يد واحدة لا تصفق؟ هل يمكنك أن تخبرني عن وقت تعاونت فيه مع الآخرين لإنجاز شيء ما؟",
+      "memory_prompt_en": "Have you heard the saying: One hand cannot clap? Can you tell me about a time when you cooperated with others to accomplish something?"
+    },
+    {
+      "id": "prov_008",
+      "proverb_ar": "العين بصيرة واليد قصيرة",
+      "proverb_en": "The eye sees but the hand cannot reach",
+      "explanation_ar": "قد نرى ما نريد لكن لا نستطيع الوصول إليه",
+      "explanation_en": "We may see what we want but cannot reach it",
+      "memory_prompt_ar": "هل تعرف المثل: العين بصيرة واليد قصيرة؟ هل مررت بموقف ينطبق عليه هذا المثل؟",
+      "memory_prompt_en": "Do you know the proverb: The eye sees but the hand cannot reach? Have you experienced a situation where this proverb applies?"
+    },
+    {
+      "id": "prov_009",
+      "proverb_ar": "الجار قبل الدار",
+      "proverb_en": "The neighbor before the house",
+      "explanation_ar": "اختيار الجار الجيد أهم من اختيار المنزل الجيد",
+      "explanation_en": "Choosing a good neighbor is more important than choosing a good house",
+      "memory_prompt_ar": "هل سمعت بالمثل: الجار قبل الدار؟ هل كان لديك جيران طيبون في الماضي؟",
+      "memory_prompt_en": "Have you heard the saying: The neighbor before the house? Did you have good neighbors in the past?"
+    },
+    {
+      "id": "prov_010",
+      "proverb_ar": "رب صدفة خير من ألف ميعاد",
+      "proverb_en": "Sometimes a chance meeting is better than a thousand appointments",
+      "explanation_ar": "أحياناً تكون اللقاءات العفوية أفضل من اللقاءات المخطط لها",
+      "explanation_en": "Sometimes spontaneous meetings are better than planned ones",
+      "memory_prompt_ar": "هل تعرف المثل: رب صدفة خير من ألف ميعاد؟ هل حدثت لك صدفة جميلة في حياتك؟",
+      "memory_prompt_en": "Do you know the proverb: Sometimes a chance meeting is better than a thousand appointments? Has a beautiful coincidence happened in your life?"
+    }
+  ]
+} 

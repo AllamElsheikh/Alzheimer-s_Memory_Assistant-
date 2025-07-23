@@ -1,0 +1,124 @@
+{
+  "religious_prompts": [
+    {
+      "id": "rel_001",
+      "prompt_ar": "هل تتذكر أول مرة صمت فيها شهر رمضان؟",
+      "prompt_en": "Do you remember the first time you fasted during Ramadan?",
+      "category": "ramadan",
+      "difficulty": "medium",
+      "religion": "islam"
+    },
+    {
+      "id": "rel_002",
+      "prompt_ar": "هل يمكنك أن تخبرني عن ذكرياتك من الحج؟",
+      "prompt_en": "Can you tell me about your memories of Hajj?",
+      "category": "hajj",
+      "difficulty": "medium",
+      "religion": "islam"
+    },
+    {
+      "id": "rel_003",
+      "prompt_ar": "ما هي السورة المفضلة لديك من القرآن الكريم؟",
+      "prompt_en": "What is your favorite Surah from the Holy Quran?",
+      "category": "quran",
+      "difficulty": "easy",
+      "religion": "islam"
+    },
+    {
+      "id": "rel_004",
+      "prompt_ar": "هل تتذكر كيف كنت تحتفل بعيد الفطر في طفولتك؟",
+      "prompt_en": "Do you remember how you celebrated Eid al-Fitr in your childhood?",
+      "category": "eid",
+      "difficulty": "medium",
+      "religion": "islam"
+    },
+    {
+      "id": "rel_005",
+      "prompt_ar": "هل كنت تذهب إلى المسجد بانتظام؟ أي مسجد كنت ترتاده؟",
+      "prompt_en": "Did you go to the mosque regularly? Which mosque did you attend?",
+      "category": "mosque",
+      "difficulty": "easy",
+      "religion": "islam"
+    },
+    {
+      "id": "rel_006",
+      "prompt_ar": "هل تتذكر أول مرة قرأت فيها القرآن الكريم؟",
+      "prompt_en": "Do you remember the first time you read the Holy Quran?",
+      "category": "quran",
+      "difficulty": "hard",
+      "religion": "islam"
+    },
+    {
+      "id": "rel_007",
+      "prompt_ar": "هل تتذكر كيف كنتم تحتفلون بليلة القدر؟",
+      "prompt_en": "Do you remember how you celebrated Laylat al-Qadr?",
+      "category": "ramadan",
+      "difficulty": "medium",
+      "religion": "islam"
+    },
+    {
+      "id": "rel_008",
+      "prompt_ar": "هل يمكنك أن تخبرني عن أي دعاء تحفظه وتحب أن تردده؟",
+      "prompt_en": "Can you tell me about any dua (prayer) you memorize and like to recite?",
+      "category": "prayer",
+      "difficulty": "easy",
+      "religion": "islam"
+    },
+    {
+      "id": "rel_009",
+      "prompt_ar": "هل كنت تحضر دروس دينية في المسجد؟ ماذا تتذكر منها؟",
+      "prompt_en": "Did you attend religious lessons at the mosque? What do you remember from them?",
+      "category": "education",
+      "difficulty": "medium",
+      "religion": "islam"
+    },
+    {
+      "id": "rel_010",
+      "prompt_ar": "هل تتذكر كيف كنتم تحتفلون بعيد الأضحى في عائلتك؟",
+      "prompt_en": "Do you remember how your family celebrated Eid al-Adha?",
+      "category": "eid",
+      "difficulty": "medium",
+      "religion": "islam"
+    },
+    {
+      "id": "rel_011",
+      "prompt_ar": "هل تتذكر أول مرة صليت فيها في الكنيسة؟",
+      "prompt_en": "Do you remember the first time you prayed in church?",
+      "category": "church",
+      "difficulty": "medium",
+      "religion": "christianity"
+    },
+    {
+      "id": "rel_012",
+      "prompt_ar": "كيف كنت تحتفل بعيد الميلاد في طفولتك؟",
+      "prompt_en": "How did you celebrate Christmas in your childhood?",
+      "category": "christmas",
+      "difficulty": "medium",
+      "religion": "christianity"
+    },
+    {
+      "id": "rel_013",
+      "prompt_ar": "هل تتذكر أي ترانيم كنت تحب أن تنشدها في الكنيسة؟",
+      "prompt_en": "Do you remember any hymns you liked to sing in church?",
+      "category": "hymns",
+      "difficulty": "medium",
+      "religion": "christianity"
+    },
+    {
+      "id": "rel_014",
+      "prompt_ar": "هل لديك ذكريات عن احتفالات عيد الفصح؟",
+      "prompt_en": "Do you have memories about Easter celebrations?",
+      "category": "easter",
+      "difficulty": "medium",
+      "religion": "christianity"
+    },
+    {
+      "id": "rel_015",
+      "prompt_ar": "هل تتذكر أي قصص من الكتاب المقدس كنت تحبها بشكل خاص؟",
+      "prompt_en": "Do you remember any Bible stories that you particularly liked?",
+      "category": "bible",
+      "difficulty": "medium",
+      "religion": "christianity"
+    }
+  ]
+} 

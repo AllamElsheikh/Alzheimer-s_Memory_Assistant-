@@ -1,0 +1,74 @@
+{
+  "family_prompts": [
+    {
+      "id": "family_001",
+      "prompt_ar": "هل يمكنك أن تخبرني عن عائلتك؟",
+      "prompt_en": "Can you tell me about your family?",
+      "category": "family_general",
+      "difficulty": "easy"
+    },
+    {
+      "id": "family_002",
+      "prompt_ar": "ما هو اسم والدتك؟",
+      "prompt_en": "What is your mother's name?",
+      "category": "family_specific",
+      "difficulty": "easy"
+    },
+    {
+      "id": "family_003",
+      "prompt_ar": "كم عدد إخوتك وأخواتك؟",
+      "prompt_en": "How many brothers and sisters do you have?",
+      "category": "family_specific",
+      "difficulty": "easy"
+    },
+    {
+      "id": "family_004",
+      "prompt_ar": "أين نشأت مع عائلتك؟",
+      "prompt_en": "Where did you grow up with your family?",
+      "category": "family_location",
+      "difficulty": "medium"
+    },
+    {
+      "id": "family_005",
+      "prompt_ar": "هل تتذكر أي عيد ميلاد خاص قضيته مع العائلة؟",
+      "prompt_en": "Do you remember any special birthday you spent with family?",
+      "category": "family_memory",
+      "difficulty": "medium"
+    },
+    {
+      "id": "family_006",
+      "prompt_ar": "ما هي المناسبات العائلية المهمة التي كنتم تحتفلون بها؟",
+      "prompt_en": "What important family occasions did you celebrate?",
+      "category": "family_tradition",
+      "difficulty": "medium"
+    },
+    {
+      "id": "family_007",
+      "prompt_ar": "هل يمكنك وصف منزل العائلة الذي نشأت فيه؟",
+      "prompt_en": "Can you describe the family home where you grew up?",
+      "category": "family_location",
+      "difficulty": "hard"
+    },
+    {
+      "id": "family_008",
+      "prompt_ar": "ما هي أسماء أبنائك وبناتك؟",
+      "prompt_en": "What are the names of your sons and daughters?",
+      "category": "family_specific",
+      "difficulty": "medium"
+    },
+    {
+      "id": "family_009",
+      "prompt_ar": "هل تتذكر أي رحلة عائلية قمتم بها معاً؟",
+      "prompt_en": "Do you remember any family trip you took together?",
+      "category": "family_memory",
+      "difficulty": "hard"
+    },
+    {
+      "id": "family_010",
+      "prompt_ar": "ما هي الأطباق التقليدية التي كانت تُحضر في المناسبات العائلية؟",
+      "prompt_en": "What traditional dishes were prepared for family occasions?",
+      "category": "family_tradition",
+      "difficulty": "hard"
+    }
+  ]
+} 

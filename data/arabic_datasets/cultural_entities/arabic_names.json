@@ -1,0 +1,204 @@
+{
+  "arabic_names": [
+    {
+      "id": "male_001",
+      "name_ar": "محمد",
+      "name_en": "Mohammed",
+      "gender": "male",
+      "popularity": "very_high",
+      "origin": "arabic",
+      "meaning_ar": "المحمود، كثير الحمد",
+      "meaning_en": "Praised one"
+    },
+    {
+      "id": "male_002",
+      "name_ar": "أحمد",
+      "name_en": "Ahmed",
+      "gender": "male",
+      "popularity": "very_high",
+      "origin": "arabic",
+      "meaning_ar": "الأكثر حمداً",
+      "meaning_en": "Most praised"
+    },
+    {
+      "id": "male_003",
+      "name_ar": "علي",
+      "name_en": "Ali",
+      "gender": "male",
+      "popularity": "high",
+      "origin": "arabic",
+      "meaning_ar": "العالي، الرفيع",
+      "meaning_en": "High, elevated"
+    },
+    {
+      "id": "male_004",
+      "name_ar": "عمر",
+      "name_en": "Omar",
+      "gender": "male",
+      "popularity": "high",
+      "origin": "arabic",
+      "meaning_ar": "الحياة الطويلة",
+      "meaning_en": "Long-lived"
+    },
+    {
+      "id": "male_005",
+      "name_ar": "خالد",
+      "name_en": "Khaled",
+      "gender": "male",
+      "popularity": "high",
+      "origin": "arabic",
+      "meaning_ar": "الخالد، الدائم",
+      "meaning_en": "Eternal, immortal"
+    },
+    {
+      "id": "male_006",
+      "name_ar": "يوسف",
+      "name_en": "Yousef",
+      "gender": "male",
+      "popularity": "high",
+      "origin": "arabic",
+      "meaning_ar": "الله يزيد",
+      "meaning_en": "God increases"
+    },
+    {
+      "id": "male_007",
+      "name_ar": "حسن",
+      "name_en": "Hassan",
+      "gender": "male",
+      "popularity": "high",
+      "origin": "arabic",
+      "meaning_ar": "الجميل، الحسن",
+      "meaning_en": "Good, beautiful"
+    },
+    {
+      "id": "male_008",
+      "name_ar": "إبراهيم",
+      "name_en": "Ibrahim",
+      "gender": "male",
+      "popularity": "high",
+      "origin": "arabic",
+      "meaning_ar": "أب الأمم",
+      "meaning_en": "Father of nations"
+    },
+    {
+      "id": "male_009",
+      "name_ar": "مصطفى",
+      "name_en": "Mustafa",
+      "gender": "male",
+      "popularity": "high",
+      "origin": "arabic",
+      "meaning_ar": "المختار، المصطفى",
+      "meaning_en": "The chosen one"
+    },
+    {
+      "id": "male_010",
+      "name_ar": "عبد الله",
+      "name_en": "Abdullah",
+      "gender": "male",
+      "popularity": "very_high",
+      "origin": "arabic",
+      "meaning_ar": "عبد الله",
+      "meaning_en": "Servant of God"
+    },
+    {
+      "id": "female_001",
+      "name_ar": "فاطمة",
+      "name_en": "Fatima",
+      "gender": "female",
+      "popularity": "very_high",
+      "origin": "arabic",
+      "meaning_ar": "الفاطمة، المنقطعة عن الرضاعة",
+      "meaning_en": "One who abstains"
+    },
+    {
+      "id": "female_002",
+      "name_ar": "عائشة",
+      "name_en": "Aisha",
+      "gender": "female",
+      "popularity": "high",
+      "origin": "arabic",
+      "meaning_ar": "الحياة، العيش",
+      "meaning_en": "Living, life"
+    },
+    {
+      "id": "female_003",
+      "name_ar": "مريم",
+      "name_en": "Mariam",
+      "gender": "female",
+      "popularity": "high",
+      "origin": "arabic",
+      "meaning_ar": "المرتفعة، السيدة",
+      "meaning_en": "Elevated, lady"
+    },
+    {
+      "id": "female_004",
+      "name_ar": "نور",
+      "name_en": "Noor",
+      "gender": "female",
+      "popularity": "high",
+      "origin": "arabic",
+      "meaning_ar": "الضوء، النور",
+      "meaning_en": "Light"
+    },
+    {
+      "id": "female_005",
+      "name_ar": "سارة",
+      "name_en": "Sara",
+      "gender": "female",
+      "popularity": "high",
+      "origin": "arabic",
+      "meaning_ar": "الأميرة، السيدة النبيلة",
+      "meaning_en": "Princess, noble lady"
+    },
+    {
+      "id": "female_006",
+      "name_ar": "لينا",
+      "name_en": "Lina",
+      "gender": "female",
+      "popularity": "high",
+      "origin": "arabic",
+      "meaning_ar": "النخلة الصغيرة",
+      "meaning_en": "Small palm tree"
+    },
+    {
+      "id": "female_007",
+      "name_ar": "زينب",
+      "name_en": "Zainab",
+      "gender": "female",
+      "popularity": "high",
+      "origin": "arabic",
+      "meaning_ar": "الشجرة الحسنة المنظر",
+      "meaning_en": "Fragrant flower"
+    },
+    {
+      "id": "female_008",
+      "name_ar": "هدى",
+      "name_en": "Huda",
+      "gender": "female",
+      "popularity": "high",
+      "origin": "arabic",
+      "meaning_ar": "الهداية، الإرشاد",
+      "meaning_en": "Guidance"
+    },
+    {
+      "id": "female_009",
+      "name_ar": "أمل",
+      "name_en": "Amal",
+      "gender": "female",
+      "popularity": "high",
+      "origin": "arabic",
+      "meaning_ar": "الأمل، الرجاء",
+      "meaning_en": "Hope"
+    },
+    {
+      "id": "female_010",
+      "name_ar": "ليلى",
+      "name_en": "Layla",
+      "gender": "female",
+      "popularity": "high",
+      "origin": "arabic",
+      "meaning_ar": "الليل، السمراء",
+      "meaning_en": "Night, dark-haired"
+    }
+  ]
+} 

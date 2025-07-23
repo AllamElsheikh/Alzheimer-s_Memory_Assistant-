@@ -1,0 +1,94 @@
+{
+  "historical_events": [
+    {
+      "id": "hist_001",
+      "event_ar": "حرب أكتوبر 1973",
+      "event_en": "October War 1973",
+      "year": 1973,
+      "prompt_ar": "هل تتذكر أين كنت خلال حرب أكتوبر عام 1973؟",
+      "prompt_en": "Do you remember where you were during the October War of 1973?",
+      "region": ["egypt", "syria", "middle_east"]
+    },
+    {
+      "id": "hist_002",
+      "event_ar": "استقلال الجزائر",
+      "event_en": "Algerian Independence",
+      "year": 1962,
+      "prompt_ar": "ماذا تتذكر عن استقلال الجزائر عام 1962؟",
+      "prompt_en": "What do you remember about the Algerian independence in 1962?",
+      "region": ["algeria", "north_africa"]
+    },
+    {
+      "id": "hist_003",
+      "event_ar": "تأميم قناة السويس",
+      "event_en": "Suez Canal Nationalization",
+      "year": 1956,
+      "prompt_ar": "هل تتذكر عندما أمم جمال عبد الناصر قناة السويس؟",
+      "prompt_en": "Do you remember when Gamal Abdel Nasser nationalized the Suez Canal?",
+      "region": ["egypt", "middle_east"]
+    },
+    {
+      "id": "hist_004",
+      "event_ar": "النكبة",
+      "event_en": "Al-Nakba",
+      "year": 1948,
+      "prompt_ar": "هل لديك أي ذكريات عن النكبة عام 1948؟",
+      "prompt_en": "Do you have any memories of Al-Nakba in 1948?",
+      "region": ["palestine", "middle_east"]
+    },
+    {
+      "id": "hist_005",
+      "event_ar": "استقلال لبنان",
+      "event_en": "Lebanese Independence",
+      "year": 1943,
+      "prompt_ar": "ماذا تعرف عن استقلال لبنان عام 1943؟",
+      "prompt_en": "What do you know about Lebanon's independence in 1943?",
+      "region": ["lebanon", "middle_east"]
+    },
+    {
+      "id": "hist_006",
+      "event_ar": "الوحدة المصرية السورية",
+      "event_en": "United Arab Republic",
+      "year": 1958,
+      "prompt_ar": "هل تتذكر فترة الوحدة بين مصر وسوريا؟",
+      "prompt_en": "Do you remember the period of unity between Egypt and Syria?",
+      "region": ["egypt", "syria", "middle_east"]
+    },
+    {
+      "id": "hist_007",
+      "event_ar": "حرب الخليج",
+      "event_en": "Gulf War",
+      "year": 1991,
+      "prompt_ar": "ماذا تتذكر عن حرب الخليج عام 1991؟",
+      "prompt_en": "What do you remember about the Gulf War in 1991?",
+      "region": ["iraq", "kuwait", "saudi_arabia", "middle_east"]
+    },
+    {
+      "id": "hist_008",
+      "event_ar": "الثورة المصرية",
+      "event_en": "Egyptian Revolution",
+      "year": 2011,
+      "prompt_ar": "ماذا تتذكر عن ثورة 25 يناير في مصر؟",
+      "prompt_en": "What do you remember about the January 25 Revolution in Egypt?",
+      "region": ["egypt", "middle_east"]
+    },
+    {
+      "id": "hist_009",
+      "event_ar": "استقلال المغرب",
+      "event_en": "Moroccan Independence",
+      "year": 1956,
+      "prompt_ar": "هل لديك ذكريات عن استقلال المغرب؟",
+      "prompt_en": "Do you have memories about Morocco's independence?",
+      "region": ["morocco", "north_africa"]
+    },
+    {
+      "id": "hist_010",
+      "event_ar": "الحرب الأهلية اللبنانية",
+      "event_en": "Lebanese Civil War",
+      "year": 1975,
+      "prompt_ar": "هل عشت خلال الحرب الأهلية اللبنانية؟ ماذا تتذكر عنها؟",
+      "prompt_en": "Did you live during the Lebanese Civil War? What do you remember about it?",
+      "region": ["lebanon", "middle_east"]
+    }
+  ]
+} 

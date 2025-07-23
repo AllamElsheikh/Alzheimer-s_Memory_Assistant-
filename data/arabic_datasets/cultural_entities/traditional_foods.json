@@ -1,0 +1,154 @@
+{
+  "traditional_foods": [
+    {
+      "id": "food_001",
+      "name_ar": "مجدرة",
+      "name_en": "Mujadara",
+      "region": ["levant", "middle_east"],
+      "description_ar": "طبق من العدس والأرز مع البصل المقلي",
+      "description_en": "A dish of lentils and rice with fried onions",
+      "memory_prompt_ar": "هل تتذكر طبق المجدرة؟ هل كانت والدتك تطبخه؟",
+      "memory_prompt_en": "Do you remember Mujadara? Did your mother cook it?"
+    },
+    {
+      "id": "food_002",
+      "name_ar": "ملوخية",
+      "name_en": "Molokhia",
+      "region": ["egypt", "levant", "north_africa"],
+      "description_ar": "حساء أخضر مصنوع من أوراق الملوخية مع الدجاج أو اللحم",
+      "description_en": "Green soup made from jute leaves with chicken or meat",
+      "memory_prompt_ar": "هل كنت تحب الملوخية؟ كيف كانت تُطبخ في منزلكم؟",
+      "memory_prompt_en": "Did you like Molokhia? How was it cooked in your home?"
+    },
+    {
+      "id": "food_003",
+      "name_ar": "كبة",
+      "name_en": "Kibbeh",
+      "region": ["levant", "iraq"],
+      "description_ar": "كرات من البرغل واللحم المفروم محشوة باللحم والبصل والصنوبر",
+      "description_en": "Balls of bulgur and minced meat stuffed with meat, onions, and pine nuts",
+      "memory_prompt_ar": "هل تتذكر الكبة؟ هل كانت عائلتك تصنعها في المناسبات الخاصة؟",
+      "memory_prompt_en": "Do you remember Kibbeh? Did your family make it for special occasions?"
+    },
+    {
+      "id": "food_004",
+      "name_ar": "كسكس",
+      "name_en": "Couscous",
+      "region": ["morocco", "algeria", "tunisia", "north_africa"],
+      "description_ar": "طبق من حبوب الكسكس مع الخضروات واللحم أو الدجاج",
+      "description_en": "A dish of couscous grains with vegetables and meat or chicken",
+      "memory_prompt_ar": "هل أكلت الكسكس في طفولتك؟ كيف كان يُحضر؟",
+      "memory_prompt_en": "Did you eat Couscous in your childhood? How was it prepared?"
+    },
+    {
+      "id": "food_005",
+      "name_ar": "منسف",
+      "name_en": "Mansaf",
+      "region": ["jordan", "palestine", "levant"],
+      "description_ar": "طبق أردني تقليدي من الأرز واللحم مع اللبن المجفف (جميد)",
+      "description_en": "Traditional Jordanian dish of rice and meat with dried yogurt (jameed)",
+      "memory_prompt_ar": "هل تتذكر المنسف؟ في أي مناسبات كنتم تأكلونه؟",
+      "memory_prompt_en": "Do you remember Mansaf? On what occasions did you eat it?"
+    },
+    {
+      "id": "food_006",
+      "name_ar": "فلافل",
+      "name_en": "Falafel",
+      "region": ["egypt", "levant", "middle_east"],
+      "description_ar": "كرات مقلية من الحمص أو الفول المهروس مع البهارات",
+      "description_en": "Fried balls of ground chickpeas or fava beans with spices",
+      "memory_prompt_ar": "هل كنت تحب الفلافل؟ من أين كنت تشتريها؟",
+      "memory_prompt_en": "Did you like Falafel? Where did you buy it from?"
+    },
+    {
+      "id": "food_007",
+      "name_ar": "مقلوبة",
+      "name_en": "Maqluba",
+      "region": ["palestine", "jordan", "levant"],
+      "description_ar": "طبق من الأرز والخضروات واللحم يُقلب رأساً على عقب عند التقديم",
+      "description_en": "A dish of rice, vegetables, and meat that is flipped upside down when served",
+      "memory_prompt_ar": "هل تتذكر المقلوبة؟ من كان يطبخها في عائلتك؟",
+      "memory_prompt_en": "Do you remember Maqluba? Who used to cook it in your family?"
+    },
+    {
+      "id": "food_008",
+      "name_ar": "بابا غنوج",
+      "name_en": "Baba Ghanoush",
+      "region": ["levant", "middle_east"],
+      "description_ar": "سلطة من الباذنجان المشوي مع الطحينة والثوم",
+      "description_en": "A salad of roasted eggplant with tahini and garlic",
+      "memory_prompt_ar": "هل كنت تحب بابا غنوج؟ هل كانت والدتك تصنعه في المنزل؟",
+      "memory_prompt_en": "Did you like Baba Ghanoush? Did your mother make it at home?"
+    },
+    {
+      "id": "food_009",
+      "name_ar": "كبسة",
+      "name_en": "Kabsa",
+      "region": ["saudi_arabia", "gulf"],
+      "description_ar": "طبق سعودي تقليدي من الأرز واللحم أو الدجاج مع البهارات",
+      "description_en": "Traditional Saudi dish of rice and meat or chicken with spices",
+      "memory_prompt_ar": "هل تتذكر الكبسة؟ كيف كانت تُطبخ في منطقتك؟",
+      "memory_prompt_en": "Do you remember Kabsa? How was it cooked in your region?"
+    },
+    {
+      "id": "food_010",
+      "name_ar": "بقلاوة",
+      "name_en": "Baklava",
+      "region": ["levant", "turkey", "middle_east"],
+      "description_ar": "حلوى مصنوعة من العجين الرقيق والمكسرات والقطر",
+      "description_en": "A sweet pastry made of thin dough, nuts, and syrup",
+      "memory_prompt_ar": "هل كنت تحب البقلاوة؟ في أي مناسبات كنتم تأكلونها؟",
+      "memory_prompt_en": "Did you like Baklava? On what occasions did you eat it?"
+    },
+    {
+      "id": "food_011",
+      "name_ar": "حمص",
+      "name_en": "Hummus",
+      "region": ["levant", "middle_east"],
+      "description_ar": "طبق من الحمص المهروس مع الطحينة والليمون والثوم",
+      "description_en": "A dish of mashed chickpeas with tahini, lemon, and garlic",
+      "memory_prompt_ar": "هل كنت تأكل الحمص في طفولتك؟ كيف كان يُقدم؟",
+      "memory_prompt_en": "Did you eat Hummus in your childhood? How was it served?"
+    },
+    {
+      "id": "food_012",
+      "name_ar": "تبولة",
+      "name_en": "Tabbouleh",
+      "region": ["levant", "middle_east"],
+      "description_ar": "سلطة من البقدونس والبرغل والطماطم والبصل والنعناع",
+      "description_en": "A salad of parsley, bulgur, tomatoes, onions, and mint",
+      "memory_prompt_ar": "هل كنت تحب التبولة؟ من كان يصنعها في عائلتك؟",
+      "memory_prompt_en": "Did you like Tabbouleh? Who used to make it in your family?"
+    },
+    {
+      "id": "food_013",
+      "name_ar": "شاورما",
+      "name_en": "Shawarma",
+      "region": ["levant", "middle_east"],
+      "description_ar": "لحم مشوي على سيخ دوار يُقدم مع الخبز والطحينة والخضروات",
+      "description_en": "Meat grilled on a rotating spit, served with bread, tahini, and vegetables",
+      "memory_prompt_ar": "هل كنت تحب الشاورما؟ من أين كنت تشتريها؟",
+      "memory_prompt_en": "Did you like Shawarma? Where did you buy it from?"
+    },
+    {
+      "id": "food_014",
+      "name_ar": "كنافة",
+      "name_en": "Kunafa",
+      "region": ["levant", "middle_east", "egypt"],
+      "description_ar": "حلوى مصنوعة من العجين الرفيع أو السميد مع الجبن والقطر",
+      "description_en": "A sweet made of thin noodle-like pastry or semolina with cheese and syrup",
+      "memory_prompt_ar": "هل تتذكر الكنافة؟ في أي مناسبات كنتم تأكلونها؟",
+      "memory_prompt_en": "Do you remember Kunafa? On what occasions did you eat it?"
+    },
+    {
+      "id": "food_015",
+      "name_ar": "فتة",
+      "name_en": "Fatteh",
+      "region": ["levant", "egypt"],
+      "description_ar": "طبق من الخبز المحمص واللبن والحمص أو اللحم",
+      "description_en": "A dish of toasted bread, yogurt, and chickpeas or meat",
+      "memory_prompt_ar": "هل كنت تحب الفتة؟ كيف كانت تُحضر في منزلكم؟",
+      "memory_prompt_en": "Did you like Fatteh? How was it prepared in your home?"
+    }
+  ]
+} 

@@ -1,0 +1,124 @@
+{
+  "cultural_entities": [
+    {
+      "id": "food_001",
+      "name_ar": "كنافة",
+      "name_en": "Kunafa",
+      "category": "food",
+      "description_ar": "حلوى عربية تقليدية مصنوعة من العجين الرفيع والجبن والقطر",
+      "description_en": "Traditional Arab dessert made of thin noodle-like pastry with cheese and syrup"
+    },
+    {
+      "id": "food_002",
+      "name_ar": "فتوش",
+      "name_en": "Fattoush",
+      "category": "food",
+      "description_ar": "سلطة عربية تقليدية تحتوي على الخبز المحمص والخضروات",
+      "description_en": "Traditional Arab salad with toasted bread and vegetables"
+    },
+    {
+      "id": "food_003",
+      "name_ar": "مجدرة",
+      "name_en": "Mujadara",
+      "category": "food",
+      "description_ar": "طبق عربي تقليدي من العدس والأرز والبصل المقلي",
+      "description_en": "Traditional Arab dish of lentils, rice and fried onions"
+    },
+    {
+      "id": "celebration_001",
+      "name_ar": "عيد الفطر",
+      "name_en": "Eid al-Fitr",
+      "category": "celebration",
+      "description_ar": "عيد إسلامي يحتفل به المسلمون بعد شهر رمضان",
+      "description_en": "Islamic holiday celebrated by Muslims after Ramadan"
+    },
+    {
+      "id": "celebration_002",
+      "name_ar": "عيد الأضحى",
+      "name_en": "Eid al-Adha",
+      "category": "celebration",
+      "description_ar": "عيد إسلامي يحتفل به المسلمون تذكيراً بتضحية إبراهيم",
+      "description_en": "Islamic holiday commemorating Ibrahim's sacrifice"
+    },
+    {
+      "id": "celebration_003",
+      "name_ar": "المولد النبوي",
+      "name_en": "Mawlid",
+      "category": "celebration",
+      "description_ar": "احتفال بذكرى مولد النبي محمد",
+      "description_en": "Celebration of the birth of Prophet Muhammad"
+    },
+    {
+      "id": "tradition_001",
+      "name_ar": "القهوة العربية",
+      "name_en": "Arabic coffee",
+      "category": "tradition",
+      "description_ar": "تقليد عربي لتقديم القهوة كرمز للضيافة",
+      "description_en": "Arab tradition of serving coffee as a symbol of hospitality"
+    },
+    {
+      "id": "tradition_002",
+      "name_ar": "الحناء",
+      "name_en": "Henna",
+      "category": "tradition",
+      "description_ar": "فن الرسم التقليدي على الجسم باستخدام الحناء",
+      "description_en": "Traditional body art using henna dye"
+    },
+    {
+      "id": "tradition_003",
+      "name_ar": "المجلس",
+      "name_en": "Majlis",
+      "category": "tradition",
+      "description_ar": "غرفة تقليدية للاجتماعات والضيافة في المنازل العربية",
+      "description_en": "Traditional sitting room for gatherings and hospitality in Arab homes"
+    },
+    {
+      "id": "landmark_001",
+      "name_ar": "المسجد الأقصى",
+      "name_en": "Al-Aqsa Mosque",
+      "category": "landmark",
+      "description_ar": "ثالث أقدس موقع في الإسلام، يقع في القدس",
+      "description_en": "Third holiest site in Islam, located in Jerusalem"
+    },
+    {
+      "id": "landmark_002",
+      "name_ar": "برج خليفة",
+      "name_en": "Burj Khalifa",
+      "category": "landmark",
+      "description_ar": "أطول مبنى في العالم، يقع في دبي",
+      "description_en": "Tallest building in the world, located in Dubai"
+    },
+    {
+      "id": "landmark_003",
+      "name_ar": "الأهرامات",
+      "name_en": "The Pyramids",
+      "category": "landmark",
+      "description_ar": "أهرامات الجيزة في مصر، من عجائب الدنيا السبع",
+      "description_en": "The Pyramids of Giza in Egypt, one of the Seven Wonders of the World"
+    },
+    {
+      "id": "music_001",
+      "name_ar": "العود",
+      "name_en": "Oud",
+      "category": "music",
+      "description_ar": "آلة موسيقية وترية عربية تقليدية",
+      "description_en": "Traditional Arab stringed musical instrument"
+    },
+    {
+      "id": "music_002",
+      "name_ar": "الطبلة",
+      "name_en": "Tabla",
+      "category": "music",
+      "description_ar": "آلة إيقاعية عربية تقليدية",
+      "description_en": "Traditional Arab percussion instrument"
+    },
+    {
+      "id": "music_003",
+      "name_ar": "الدبكة",
+      "name_en": "Dabke",
+      "category": "music",
+      "description_ar": "رقصة شعبية عربية تقليدية",
+      "description_en": "Traditional Arab folk dance"
+    }
+  ]
+} 
