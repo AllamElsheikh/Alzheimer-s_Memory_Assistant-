@@ -84,6 +84,14 @@ A privacy-first Arabic voice companion powered by **Google Gemma 3n API** that p
 - **Large UI elements** and simple navigation
 - **Secure API integration** for data protection
 
+### 🏆 **6. Hackathon Winning Features**
+
+- **Interactive Demo Mode** - Guided demonstration of all system capabilities
+- **Visualization Dashboard** - Memory improvement metrics and cognitive assessment results
+- **One-Click Deployment** - Simple setup for judges to quickly evaluate the application
+- **Arabic Cultural Datasets** - Comprehensive collection of culturally appropriate content
+- **Memory Improvement Analytics** - Track and visualize patient progress over time
+
 ---
 
 ## 🛠️ **Technical Architecture**
@@ -165,29 +173,21 @@ Our system includes comprehensive Arabic cultural datasets specifically designed
 git clone https://github.com/2survivors/Alzheimer-s_Memory_Assistant.git
 cd Alzheimer-s_Memory_Assistant
 
-# 2. Create virtual environment
-python -m venv .venv
-source .venv/bin/activate  # On Windows: .venv\Scripts\activate
+# 2. Run the one-click deployment script
+python quick_start.py
 
-# 3. Install dependencies
-pip install -r requirements.txt
+# 3. For demo mode (recommended for judges)
+python quick_start.py --demo
 
-# 4. Set up Hugging Face token for Gemma 3n access
-# You need to have access to the Gemma 3n model on Hugging Face
-# 1. Create an account on huggingface.co
-# 2. Visit https://huggingface.co/google/gemma-3n-E4B-it and request access
-# 3. Generate a token at https://huggingface.co/settings/tokens
-# 4. Set your token as an environment variable:
-export HF_TOKEN="your_huggingface_token_here"
-
-# Note: If you don't have a valid token, the app will fall back to mock mode
-
-# 5. Test the Gemma 3n model loading (optional)
-python test_gemma.py
-
-# 6. Run the application
-python src/main.py
+# 4. For visualization dashboard
+python quick_start.py --dashboard
 ```
+
+The one-click script will:
+- Set up a virtual environment
+- Install all dependencies
+- Check for Hugging Face token
+- Launch the selected mode
 
 ### 🎬 **First Launch**
 
