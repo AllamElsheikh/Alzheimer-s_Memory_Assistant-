@@ -100,16 +100,9 @@ models/*.json
 models/*.txt
 !models/.gitkeep
 
-# Data files
-data/conversations/
-data/logs/
-data/temp/
-!data/person_cards/
-!data/.gitkeep
 
-# Sample photos (exclude from git, keep folder)
-data/sample_photos/*
-!data/sample_photos/.gitkeep
+
+
 
 # Config files with sensitive data
 config/secrets.yaml
@@ -139,3 +132,6 @@ test_*.py
 *.json
 *.pickle
 *.pkl
+
+# Exceptions - Allow specific data files
+!data/**/*.json
