@@ -8,10 +8,17 @@ sentencepiece
 accelerate
 
 # MULTIMODAL PROCESSING - Gemma 3n
-google-generativeai
-datasets
-evaluate
-bitsandbytes
+transformers>=4.36.0  # For Hugging Face models
+accelerate>=0.25.0  # For efficient model loading
+bitsandbytes>=0.41.0  # For quantization
+huggingface_hub>=0.19.0  # For model downloading
+datasets>=2.14.0  # For data handling
+evaluate>=0.4.0  # For model evaluation
+einops>=0.7.0  # Required by some Gemma models
+sentencepiece>=0.1.99  # For tokenization
+protobuf>=4.23.0  # For model serialization
+requests>=2.31.0  # For API calls
+google-generativeai>=0.5.0  # For Gemini API (backup)
 
 # Speech-to-Text (ASR)
 openai-whisper
@@ -41,3 +48,7 @@ python-bidi
 # Data handling
 python-dateutil
 pathlib
+dataclasses  # For cognitive assessment
+
+# Threading and concurrency
+threading

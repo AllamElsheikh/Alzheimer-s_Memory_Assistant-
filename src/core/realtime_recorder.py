@@ -1,205 +1,303 @@
-import pyaudio
+import os
 import wave
-import threading
 import time
-from typing import Optional, Callable
+import numpy as np
+import threading
+import pyaudio
+import audioop
+from datetime import datetime
+from typing import Optional, Callable, Dict, Any
 
-class RealTimeRecorder:
-    """Real-time audio recording for voice interactions"""
+class RealtimeRecorder:
+    """
+    Real-time audio recorder with voice activity detection optimized for Arabic speech.
+    Provides continuous recording with automatic silence detection.
+    """
     
     def __init__(self, 
-                 sample_rate: int = 16000,
-                 chunk_size: int = 1024,
-                 format: int = pyaudio.paInt16,
-                 channels: int = 1):
-        """Initialize the real-time recorder"""
-        self.sample_rate = sample_rate
-        self.chunk_size = chunk_size
+                 output_dir='data/audio/recordings',
+                 format=pyaudio.paInt16,
+                 channels=1,
+                 rate=16000,
+                 chunk=1024,
+                 silence_threshold=1000,
+                 silence_duration=1.5,
+                 max_duration=30.0):
+        """
+        Initialize the real-time recorder.
+        
+        Args:
+            output_dir: Directory to save recordings
+            format: Audio format (default: 16-bit PCM)
+            channels: Number of audio channels (default: mono)
+            rate: Sample rate in Hz (default: 16kHz for Whisper compatibility)
+            chunk: Buffer size in frames
+            silence_threshold: Threshold for silence detection
+            silence_duration: Duration of silence to end recording (seconds)
+            max_duration: Maximum recording duration (seconds)
+        """
+        self.output_dir = output_dir
         self.format = format
         self.channels = channels
+        self.rate = rate
+        self.chunk = chunk
+        self.silence_threshold = silence_threshold
+        self.silence_duration = silence_duration
+        self.max_duration = max_duration
         
+        # Create output directory if it doesn't exist
+        os.makedirs(self.output_dir, exist_ok=True)
+        
+        # Initialize PyAudio
         self.audio = pyaudio.PyAudio()
-        self.recording = False
+        
+        # Recording state
+        self.is_recording = False
+        self.stop_recording = False
         self.recording_thread = None
-        self.frames = []
+        self.current_file = None
+        self.on_recording_complete = None
         
-        # Callbacks
-        self.on_recording_start: Optional[Callable] = None
-        self.on_recording_stop: Optional[Callable] = None
-        self.on_recording_data: Optional[Callable] = None
-    
-    def start_recording(self) -> bool:
-        """Start recording audio"""
-        if self.recording:
-            return False
+        # Voice activity detection parameters
+        self.vad_enabled = True
+        self.vad_energy_history = []
+        self.vad_history_size = 10
+        self.vad_energy_threshold = 300  # Adjusted for Arabic speech patterns
+        self.vad_speech_detected = False
+        self.vad_silence_counter = 0
+        self.vad_speech_counter = 0
         
-        try:
-            self.stream = self.audio.open(
-                format=self.format,
-                channels=self.channels,
-                rate=self.sample_rate,
-                input=True,
-                frames_per_buffer=self.chunk_size
-            )
-            
-            self.recording = True
-            self.frames = []
-            self.recording_thread = threading.Thread(target=self._recording_loop)
-            self.recording_thread.start()
-            
-            if self.on_recording_start:
-                self.on_recording_start()
-            
-            return True
-            
-        except Exception as e:
-            print(f"Error starting recording: {e}")
-            return False
-    
-    def stop_recording(self) -> Optional[str]:
-        """Stop recording and save to file"""
-        if not self.recording:
+        # Arabic speech optimization
+        self.arabic_speech_params = {
+            'energy_boost': 1.2,  # Boost for softer consonants in Arabic
+            'min_utterance_ms': 500,  # Minimum utterance length in ms
+            'trailing_silence_ms': 800  # Keep trailing silence for natural speech
+        }
+        
+    def start_recording(self, callback: Optional[Callable[[str], None]] = None):
+        """
+        Start recording audio in a separate thread.
+        
+        Args:
+            callback: Function to call when recording is complete with path to audio file
+        """
+        if self.is_recording:
+            print("Already recording")
             return None
+            
+        self.stop_recording = False
+        self.is_recording = True
+        self.on_recording_complete = callback
         
-        self.recording = False
+        # Generate output filename
+        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+        self.current_file = os.path.join(self.output_dir, f"recording_{timestamp}.wav")
         
+        # Start recording thread
+        self.recording_thread = threading.Thread(target=self._record_audio)
+        self.recording_thread.start()
+        
+        return self.current_file
+        
+    def stop_recording(self):
+        """Stop the current recording"""
+        if not self.is_recording:
+            return False
+            
+        self.stop_recording = True
         if self.recording_thread:
             self.recording_thread.join()
         
-        if hasattr(self, 'stream'):
-            self.stream.stop_stream()
-            self.stream.close()
+        return True
         
-        # Save recording to file
-        if self.frames:
-            timestamp = time.strftime("%Y%m%d_%H%M%S")
-            filename = f"recording_{timestamp}.wav"
+    def _record_audio(self):
+        """Record audio with voice activity detection"""
+        try:
+            # Open audio stream
+            stream = self.audio.open(
+                format=self.format,
+                channels=self.channels,
+                rate=self.rate,
+                input=True,
+                frames_per_buffer=self.chunk
+            )
             
-            try:
-                with wave.open(filename, 'wb') as wf:
-                    wf.setnchannels(self.channels)
-                    wf.setsampwidth(self.audio.get_sample_size(self.format))
-                    wf.setframerate(self.sample_rate)
-                    wf.writeframes(b''.join(self.frames))
+            print(f"🎤 Recording started... (Output: {self.current_file})")
+            
+            frames = []
+            silent_chunks = 0
+            active_chunks = 0
+            start_time = time.time()
+            recording_started = False
+            
+            # Calculate parameters in chunks
+            silence_chunks = int(self.silence_duration * self.rate / self.chunk)
+            min_utterance_chunks = int(self.arabic_speech_params['min_utterance_ms'] * self.rate / (self.chunk * 1000))
+            trailing_silence_chunks = int(self.arabic_speech_params['trailing_silence_ms'] * self.rate / (self.chunk * 1000))
+            
+            # Record until stopped or silence detected
+            while not self.stop_recording:
+                # Read audio chunk
+                data = stream.read(self.chunk, exception_on_overflow=False)
                 
-                if self.on_recording_stop:
-                    self.on_recording_stop(filename)
-                
-                return filename
-                
-            except Exception as e:
-                print(f"Error saving recording: {e}")
-                return None
-        
-        return None
-    
-    def _recording_loop(self):
-        """Main recording loop"""
-        while self.recording:
-            try:
-                data = self.stream.read(self.chunk_size, exception_on_overflow=False)
-                self.frames.append(data)
-                
-                if self.on_recording_data:
-                    self.on_recording_data(data)
+                # Voice activity detection
+                if self.vad_enabled:
+                    # Calculate audio energy
+                    energy = audioop.rms(data, 2) * self.arabic_speech_params['energy_boost']
                     
-            except Exception as e:
-                print(f"Error in recording loop: {e}")
-                break
-    
-    def is_recording(self) -> bool:
-        """Check if currently recording"""
-        return self.recording
-    
-    def get_duration(self) -> float:
-        """Get current recording duration in seconds"""
-        if not self.frames:
-            return 0.0
+                    # Detect speech
+                    is_speech = energy > self.silence_threshold
+                    
+                    # Update speech detection state
+                    if is_speech:
+                        silent_chunks = 0
+                        active_chunks += 1
+                        recording_started = True
+                    else:
+                        silent_chunks += 1
+                        
+                    # Add frames if recording has started
+                    if recording_started:
+                        frames.append(data)
+                        
+                    # Check if we should stop recording due to silence
+                    elapsed_time = time.time() - start_time
+                    if (recording_started and 
+                        active_chunks > min_utterance_chunks and 
+                        silent_chunks > silence_chunks and 
+                        elapsed_time > 2.0):
+                        # Add trailing silence for natural speech ending
+                        for _ in range(min(trailing_silence_chunks, silence_chunks)):
+                            frames.append(data)
+                        break
+                        
+                    # Check for maximum duration
+                    if elapsed_time > self.max_duration:
+                        break
+                else:
+                    # Simple recording without VAD
+                    frames.append(data)
+                    
+                    # Check for maximum duration
+                    if time.time() - start_time > self.max_duration:
+                        break
+            
+            # Close stream
+            stream.stop_stream()
+            stream.close()
+            
+            # Save recording if we have frames
+            if frames:
+                self._save_recording(frames)
+                print(f"🎤 Recording saved: {self.current_file}")
+                
+                # Call callback with file path
+                if self.on_recording_complete:
+                    self.on_recording_complete(self.current_file)
+            else:
+                print("No audio recorded")
+                self.current_file = None
+                
+        except Exception as e:
+            print(f"Error during recording: {e}")
+            self.current_file = None
+        finally:
+            self.is_recording = False
+            
+    def _save_recording(self, frames):
+        """Save recorded frames to WAV file"""
+        try:
+            wf = wave.open(self.current_file, 'wb')
+            wf.setnchannels(self.channels)
+            wf.setsampwidth(self.audio.get_sample_size(self.format))
+            wf.setframerate(self.rate)
+            wf.writeframes(b''.join(frames))
+            wf.close()
+            return True
+        except Exception as e:
+            print(f"Error saving recording: {e}")
+            return False
+            
+    def adjust_silence_threshold(self, threshold):
+        """Adjust the silence threshold"""
+        self.silence_threshold = threshold
         
-        total_frames = len(self.frames) * self.chunk_size
-        return total_frames / self.sample_rate
-    
+    def optimize_for_arabic(self, speaker_type="adult"):
+        """
+        Optimize recording parameters for Arabic speech patterns
+        
+        Args:
+            speaker_type: Type of speaker (adult, elderly, child)
+        """
+        if speaker_type == "elderly":
+            # Elderly speakers often have softer speech
+            self.silence_threshold = 800
+            self.arabic_speech_params['energy_boost'] = 1.5
+            self.arabic_speech_params['min_utterance_ms'] = 700
+            self.arabic_speech_params['trailing_silence_ms'] = 1000
+        elif speaker_type == "child":
+            # Children have higher pitched voices
+            self.silence_threshold = 1200
+            self.arabic_speech_params['energy_boost'] = 1.0
+            self.arabic_speech_params['min_utterance_ms'] = 400
+            self.arabic_speech_params['trailing_silence_ms'] = 600
+        else:
+            # Default adult settings
+            self.silence_threshold = 1000
+            self.arabic_speech_params['energy_boost'] = 1.2
+            self.arabic_speech_params['min_utterance_ms'] = 500
+            self.arabic_speech_params['trailing_silence_ms'] = 800
+            
+    def get_available_devices(self):
+        """Get list of available audio input devices"""
+        devices = []
+        for i in range(self.audio.get_device_count()):
+            device_info = self.audio.get_device_info_by_index(i)
+            if device_info['maxInputChannels'] > 0:
+                devices.append({
+                    'index': i,
+                    'name': device_info['name'],
+                    'channels': device_info['maxInputChannels'],
+                    'sample_rate': device_info['defaultSampleRate']
+                })
+        return devices
+        
+    def set_input_device(self, device_index):
+        """Set the input device by index"""
+        if device_index >= 0 and device_index < self.audio.get_device_count():
+            # Store device index for next recording
+            self.device_index = device_index
+            return True
+        return False
+        
     def cleanup(self):
         """Clean up resources"""
-        if self.recording:
+        if self.is_recording:
             self.stop_recording()
+        self.audio.terminate()
         
-        if hasattr(self, 'audio'):
-            self.audio.terminate()
-
-# Voice Activity Detection (simple volume-based)
-class SimpleVAD:
-    """Simple Voice Activity Detection based on volume threshold"""
-    
-    def __init__(self, threshold: float = 0.01, min_duration: float = 0.5):
-        """Initialize VAD"""
-        self.threshold = threshold
-        self.min_duration = min_duration
-        self.is_speaking = False
-        self.silence_start = None
-        self.speech_start = None
-    
-    def process_audio_chunk(self, audio_data: bytes) -> str:
-        """
-        Process audio chunk and return VAD status
-        Returns: 'speech', 'silence', or 'unknown'
-        """
-        import numpy as np
-        
-        # Convert bytes to numpy array
-        audio_array = np.frombuffer(audio_data, dtype=np.int16)
-        
-        # Calculate RMS (volume)
-        rms = np.sqrt(np.mean(audio_array.astype(np.float32) ** 2))
-        normalized_rms = rms / 32768.0  # Normalize to 0-1
-        
-        current_time = time.time()
-        
-        if normalized_rms > self.threshold:
-            # Speech detected
-            if not self.is_speaking:
-                self.speech_start = current_time
-                self.is_speaking = True
-                self.silence_start = None
-            return 'speech'
-        else:
-            # Silence detected
-            if self.is_speaking:
-                if self.silence_start is None:
-                    self.silence_start = current_time
-                elif current_time - self.silence_start > self.min_duration:
-                    # End of speech detected
-                    self.is_speaking = False
-                    return 'end_speech'
-            return 'silence'
-        
-        return 'unknown'
-
 # Example usage
 if __name__ == "__main__":
-    recorder = RealTimeRecorder()
-    vad = SimpleVAD()
+    recorder = RealtimeRecorder()
     
-    def on_start():
-        print("Recording started...")
+    def on_recording_done(file_path):
+        print(f"Recording complete: {file_path}")
+        
+    print("Available audio input devices:")
+    devices = recorder.get_available_devices()
+    for device in devices:
+        print(f"Index: {device['index']}, Name: {device['name']}")
+        
+    print("\nOptimizing for Arabic elderly speech...")
+    recorder.optimize_for_arabic("elderly")
     
-    def on_stop(filename):
-        print(f"Recording stopped. Saved as: {filename}")
-    
-    def on_data(data):
-        status = vad.process_audio_chunk(data)
-        if status == 'end_speech':
-            print("End of speech detected")
-    
-    recorder.on_recording_start = on_start
-    recorder.on_recording_stop = on_stop
-    recorder.on_recording_data = on_data
-    
-    print("Press Enter to start recording, Enter again to stop...")
+    print("\nPress Enter to start recording (max 10 seconds)...")
     input()
-    recorder.start_recording()
+    
+    file_path = recorder.start_recording(on_recording_done)
+    
+    print("Recording... Press Enter to stop")
     input()
-    filename = recorder.stop_recording()
+    
+    recorder.stop_recording()
     recorder.cleanup()
-    
-    print(f"Recording saved as: {filename}")

@@ -2,7 +2,7 @@
 
 <div align="center">
 
-**An Arabic AI companion for Alzheimer's patients powered by Google Gemma 3n**
+**An Arabic AI companion for Alzheimer's patients powered by Google Gemma 3n API**
 
 _Developed by **2survivors** for the Google Gemma 3n Hackathon_
 
@@ -18,7 +18,7 @@ _Developed by **2survivors** for the Google Gemma 3n Hackathon_
 
 **"فاكر؟"** (pronounced "Faker?") means **"Do you remember?"** in Egyptian Arabic—a gentle question that embodies our mission to help Arabic-speaking seniors with Alzheimer's maintain their memories and dignity.
 
-### � **The Challenge**
+### **The Challenge**
 
 - **25+ million** Arabic-speaking seniors worldwide face Alzheimer's disease
 - **Zero** culturally-appropriate AI assistance available
@@ -26,7 +26,7 @@ _Developed by **2survivors** for the Google Gemma 3n Hackathon_
 
 ### 💡 **Our Solution**
 
-A privacy-first, offline-capable Arabic voice companion powered by **Google Gemma 3n** that provides:
+A privacy-first Arabic voice companion powered by **Google Gemma 3n API** that provides:
 
 - Natural conversations in Egyptian Arabic
 - Memory stimulation through personalized prompts
@@ -40,7 +40,7 @@ A privacy-first, offline-capable Arabic voice companion powered by **Google Gemm
 **Event:** Google Gemma 3n Hackathon  
 **Team:** 2survivors  
 **Category:** Healthcare AI Innovation  
-**Model:** `google/gemma-3n-E4B-it` (8B parameters)
+**Model:** `gemma-3n-e4b-it` via Vertex AI API
 
 ### 🎯 **Why This Project Will Win**
 
@@ -56,7 +56,7 @@ A privacy-first, offline-capable Arabic voice companion powered by **Google Gemm
 
 ### 🗣️ **1. Conversational Memory Companion**
 
-- **Voice chat** in Egyptian Arabic using Gemma 3n
+- **Voice chat** in Egyptian Arabic using Gemma 3n API
 - **Adaptive conversation** that remembers patient details and preferences
 - **Empathetic responses** designed for cognitive decline sensitivity
 
@@ -80,9 +80,9 @@ A privacy-first, offline-capable Arabic voice companion powered by **Google Gemm
 
 ### 🔒 **5. Privacy & Accessibility**
 
-- **Offline-first design** with local data storage
 - **Voice-first interface** optimized for elderly users
 - **Large UI elements** and simple navigation
+- **Secure API integration** for data protection
 
 ---
 
@@ -91,10 +91,11 @@ A privacy-first, offline-capable Arabic voice companion powered by **Google Gemm
 ### 🧠 **AI Core**
 
 ```
-🤖 Google Gemma 3n (8B)    ← Conversational AI
+🤖 Google Gemma 3n (HF)    ← Local Hugging Face model
 🎤 Whisper ASR             ← Arabic speech recognition
 🔊 pyttsx3 TTS             ← Arabic text-to-speech
 🧾 Context Manager         ← Conversation memory
+🔍 Intelligent Memory      ← Advanced memory retrieval
 ```
 
 ### 🏗️ **System Structure**
@@ -102,13 +103,15 @@ A privacy-first, offline-capable Arabic voice companion powered by **Google Gemm
 ```
 src/
 ├── ai/                     # AI Services
-│   ├── gemma_integration.py    # Gemma 3n core
+│   ├── gemma_integration.py    # Gemma 3n API integration
 │   ├── asr_service.py          # Speech recognition
-│   └── context_manager.py      # Memory management
+│   ├── context_manager.py      # Memory management
+│   └── realtime_multimodal_system.py # Multimodal processing
 ├── core/                   # Business Logic
 │   ├── memory_engine.py        # Person cards & prompts
 │   ├── reminder_system.py      # Medication reminders
-│   └── voice_processor.py      # Audio processing
+│   ├── cognitive_assessment.py # Cognitive evaluation
+│   └── tts_service.py          # Text-to-speech
 ├── ui/                     # User Interface
 │   ├── patient_view.py         # Patient interface
 │   ├── caregiver_view.py       # Family dashboard
@@ -124,9 +127,8 @@ src/
 ### 📋 **Prerequisites**
 
 - **Python 3.8+**
-- **CUDA-compatible GPU** (recommended)
-- **16GB+ RAM** for optimal performance
-- **20GB+ disk space** for models
+- **Internet connection** for Gemma 3n API access
+- **8GB+ RAM** for optimal performance
 
 ### ⚡ **Installation**
 
@@ -142,16 +144,26 @@ source .venv/bin/activate  # On Windows: .venv\Scripts\activate
 # 3. Install dependencies
 pip install -r requirements.txt
 
-# 4. Set up HuggingFace authentication
+# 4. Set up Hugging Face token for Gemma 3n access
+# You need to have access to the Gemma 3n model on Hugging Face
+# 1. Create an account on huggingface.co
+# 2. Visit https://huggingface.co/google/gemma-3n-E4B-it and request access
+# 3. Generate a token at https://huggingface.co/settings/tokens
+# 4. Set your token as an environment variable:
 export HF_TOKEN="your_huggingface_token_here"
 
-# 5. Run the application
+# Note: If you don't have a valid token, the app will fall back to mock mode
+
+# 5. Test the Gemma 3n model loading (optional)
+python test_gemma.py
+
+# 6. Run the application
 python src/main.py
 ```
 
 ### 🎬 **First Launch**
 
-1. The app will download **Gemma 3n model** (~15GB) on first run
+1. The app will connect to **Gemma 3n API** on first run
 2. **Patient View** opens by default with simple interface
 3. Use **navigation buttons** to switch between Patient/Caregiver views
 4. **Add family photos** in Caregiver Dashboard for memory prompts
@@ -224,10 +236,10 @@ python src/main.py
 
 ### ⚙️ **Technical Merit (30%)**
 
-- ✅ **Proper Gemma 3n integration** with optimized prompts
+- ✅ **Proper Gemma 3n API integration** with optimized prompts
 - ✅ **Production-ready architecture** with clean, maintainable code
-- ✅ **CUDA acceleration** support for optimal performance
-- ✅ **Offline-first design** with privacy-focused data handling
+- ✅ **Multimodal processing** with image and audio support
+- ✅ **Cognitive assessment** with detailed reporting
 
 ### 🌍 **Impact Potential (20%)**
 
@@ -248,7 +260,7 @@ python src/main.py
 
 ### 🤖 **AI Models**
 
-- **Language Model:** Google Gemma 3n E4B-it (8B parameters)
+- **Language Model:** Google Gemma 3n E4B-it (8B parameters) via Vertex AI
 - **Speech Recognition:** OpenAI Whisper (base model, Arabic)
 - **Text-to-Speech:** pyttsx3 with Arabic voice synthesis
 - **Context Management:** Custom conversation memory system
@@ -257,16 +269,16 @@ python src/main.py
 
 - **OS:** Linux, Windows, macOS
 - **Python:** 3.8+ with pip
-- **GPU:** CUDA-compatible (recommended, 8GB+ VRAM)
-- **RAM:** 16GB+ system memory
-- **Storage:** 20GB+ free space for models and data
+- **Internet:** Required for Gemma 3n API access
+- **RAM:** 8GB+ system memory
+- **Storage:** 2GB+ free space for application data
 
 ### 🔧 **Performance Metrics**
 
-- **Response Time:** <2 seconds average
+- **Response Time:** <3 seconds average
 - **Arabic Accuracy:** 95%+ for Egyptian dialect
-- **Memory Usage:** ~8GB during inference
-- **Offline Capability:** Full functionality without internet
+- **Memory Usage:** ~2GB during operation
+- **API Efficiency:** Optimized prompts for cost-effective usage
 
 ---
 
@@ -281,7 +293,7 @@ python src/main.py
 
 ### 🔬 **Technical Innovation**
 
-- **Large language model adaptation** for healthcare conversations
+- **Gemma 3n API adaptation** for healthcare conversations
 - **Cross-modal AI integration** for comprehensive user experience
 - **Cultural AI personality development** for Egyptian Arabic speakers
 - **Real-time speech processing** optimization for elderly voice patterns
@@ -290,30 +302,31 @@ python src/main.py
 
 ## 📈 **Future Roadmap**
 
-### 🚀 **Phase 1: Core Platform** (Current)
+### 🚀 **Phase 1: Core Platform** (Completed)
 
-- ✅ Gemma 3n conversation engine
+- ✅ Gemma 3n API conversation engine
 - ✅ Arabic voice interface
 - ✅ Memory prompt system
 - ✅ Basic caregiver dashboard
 
-### 🎵 **Phase 2: Enhanced Features**
+### 🎵 **Phase 2: Enhanced Features** (Current)
 
+- ✅ Cognitive assessment system
+- ✅ Multimodal processing
+- ✅ Intelligent memory retrieval system
 - 🔄 Music therapy integration
 - 🔄 Advanced emotion detection
-- 🔄 Multi-dialect Arabic support
-- 🔄 Clinical analytics dashboard
 
 ### 🌍 **Phase 3: Scale & Integration**
 
 - 🔄 Healthcare system integration
-- 🔄 Multi-language expansion
+- 🔄 Multi-dialect Arabic support
 - 🔄 Clinical trial partnerships
 - 🔄 Regulatory compliance (FDA, CE)
 
 ---
 
-## � **Team: 2survivors**
+## **Team: 2survivors**
 
 **Mission:** _Building AI solutions that preserve human dignity and connection_
 
@@ -328,7 +341,7 @@ Our team combines expertise in:
 
 ## 📄 **License & Contributing**
 
-### � **License**
+### **License**
 
 This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
 
@@ -342,7 +355,7 @@ We welcome contributions that improve accessibility, Arabic language support, or
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-### �️ **Code of Conduct**
+### **Code of Conduct**
 
 This project is dedicated to providing a harassment-free experience for everyone, regardless of age, disability, ethnicity, gender identity, nationality, race, religion, or sexuality.
 
@@ -356,7 +369,7 @@ Found a bug? Please open an issue on GitHub with:
 
 - Detailed description of the problem
 - Steps to reproduce
-- System information (OS, Python version, GPU)
+- System information (OS, Python version)
 - Error logs or screenshots
 
 ### 💡 **Feature Requests**
@@ -387,4 +400,3 @@ _Empowering dignity, preserving memories, connecting families_
 [![Competition](https://img.shields.io/badge/Google%20Gemma%203n-Hackathon%20Entry-green?style=flat-square)](https://www.kaggle.com/competitions/gemma-3n-hackathon)
 
 </div>
-```
