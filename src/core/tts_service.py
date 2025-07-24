@@ -21,7 +21,7 @@ class TTSService:
             volume: Volume level (0.0 to 1.0)
         """
         # Initialize pyttsx3 engine
-        self.engine = pyttsx3.init()
+            self.engine = pyttsx3.init()
         
         # Configure voice
         self.voice_name = voice_name
@@ -80,14 +80,14 @@ class TTSService:
         Returns:
             bool: True if voice was found and set, False otherwise
         """
-        voices = self.engine.getProperty('voices')
+            voices = self.engine.getProperty('voices')
         for voice in voices:
             if voice_name.lower() in voice.name.lower():
                 self.engine.setProperty('voice', voice.id)
                 self.voice_name = voice.name
                 print(f"{voice_name} voice found: {voice.name}")
                 return True
-                
+            
         # If specific voice not found, try to find any Arabic voice
         if voice_name.lower() == "arabic":
             for voice in voices:
@@ -167,7 +167,7 @@ class TTSService:
             text = text.replace('؟', ' <emphasis level="strong"> ؟ </emphasis>')
             
         return text
-        
+    
     def speak(self, text: str, tone: Optional[str] = None) -> bool:
         """
         Speak text synchronously.
@@ -193,7 +193,7 @@ class TTSService:
         except Exception as e:
             print(f"Error in TTS: {e}")
             return False
-            
+    
     def speak_async(self, text: str, tone: Optional[str] = None) -> bool:
         """
         Speak text asynchronously in a separate thread.
@@ -207,7 +207,7 @@ class TTSService:
         """
         if self.is_speaking:
             return False
-            
+        
         if tone:
             self.set_emotional_tone(tone)
             
@@ -249,7 +249,7 @@ class TTSService:
         """
         if not self.is_speaking:
             return False
-            
+    
         self.stop_speaking = True
         
         # Wait for thread to finish
@@ -287,7 +287,7 @@ class TTSService:
         except Exception as e:
             print(f"Error saving TTS to file: {e}")
             return False
-            
+
     def cleanup(self):
         """Clean up resources"""
         if self.is_speaking:

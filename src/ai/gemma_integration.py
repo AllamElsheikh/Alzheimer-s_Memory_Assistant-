@@ -265,7 +265,7 @@ class GemmaIntegration:
         Process audio with contextual understanding (currently uses text description)
         """
         prompt = f"""
-        المريض يتكلم بالعربية المصرية. {context}
+            المريض يتكلم بالعربية المصرية. {context}
             
             قم بتحليل الصوت وانتبه إلى:
             1. المشاعر والحالة النفسية
@@ -289,7 +289,7 @@ class GemmaIntegration:
         Analyze photos using Gemma 3n vision capabilities
         """
         prompt = f"""
-        هذه صورة لمريض الزهايمر. {user_context}
+                            هذه صورة لمريض الزهايمر. {user_context}
                             
                             حلل الصورة بعناية وقم بما يلي:
                             1. وصف ما تراه في الصورة باللغة العربية المصرية

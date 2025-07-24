@@ -103,7 +103,7 @@ class RealtimeRecorder:
         """Stop the current recording"""
         if not self.is_recording:
             return False
-            
+        
         self.stop_recording = True
         if self.recording_thread:
             self.recording_thread.join()
@@ -159,7 +159,7 @@ class RealtimeRecorder:
                     # Add frames if recording has started
                     if recording_started:
                         frames.append(data)
-                        
+        
                     # Check if we should stop recording due to silence
                     elapsed_time = time.time() - start_time
                     if (recording_started and 
@@ -198,7 +198,7 @@ class RealtimeRecorder:
                 print("No audio recorded")
                 self.current_file = None
                 
-        except Exception as e:
+            except Exception as e:
             print(f"Error during recording: {e}")
             self.current_file = None
         finally:
@@ -215,7 +215,7 @@ class RealtimeRecorder:
             wf.close()
             return True
         except Exception as e:
-            print(f"Error saving recording: {e}")
+                print(f"Error saving recording: {e}")
             return False
             
     def adjust_silence_threshold(self, threshold):
@@ -269,13 +269,13 @@ class RealtimeRecorder:
             self.device_index = device_index
             return True
         return False
-        
+    
     def cleanup(self):
         """Clean up resources"""
         if self.is_recording:
             self.stop_recording()
-        self.audio.terminate()
-        
+            self.audio.terminate()
+
 # Example usage
 if __name__ == "__main__":
     recorder = RealtimeRecorder()
