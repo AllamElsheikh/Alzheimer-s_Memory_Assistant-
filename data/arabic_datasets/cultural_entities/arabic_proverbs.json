@@ -90,5 +90,339 @@
       "memory_prompt_ar": "هل تعرف المثل: رب صدفة خير من ألف ميعاد؟ هل حدثت لك صدفة جميلة في حياتك؟",
       "memory_prompt_en": "Do you know the proverb: Sometimes a chance meeting is better than a thousand appointments? Has a beautiful coincidence happened in your life?"
     }
+    ,
+    {
+  "arabic_proverbs": [
+    {
+      "id": "prov_011",
+      "proverb_ar": "الصبر مفتاح الفرج",
+      "proverb_en": "Patience is the key to relief",
+      "explanation_ar": "بالصبر والمثابرة يأتي الحل للمشاكل",
+      "explanation_en": "With patience and perseverance comes the solution to problems",
+      "memory_prompt_ar": "هل تعرف المثل: الصبر مفتاح الفرج؟ هل تذكر وقتاً صبرت فيه وحصلت على ما تريد؟",
+      "memory_prompt_en": "Do you know the proverb: Patience is the key to relief? Do you remember a time when you were patient and got what you wanted?"
+    },
+    {
+      "id": "prov_012",
+      "proverb_ar": "في التأني السلامة وفي العجلة الندامة",
+      "proverb_en": "In deliberation there is safety, in haste there is regret",
+      "explanation_ar": "التفكير الجيد قبل العمل يجنبنا الأخطاء",
+      "explanation_en": "Good thinking before acting saves us from mistakes",
+      "memory_prompt_ar": "هل سمعت بالمثل: في التأني السلامة وفي العجلة الندامة؟ هل ندمت على قرار اتخذته بسرعة؟",
+      "memory_prompt_en": "Have you heard the saying: In deliberation there is safety, in haste there is regret? Have you regretted a decision you made quickly?"
+    },
+    {
+      "id": "prov_013",
+      "proverb_ar": "العتاب قبل العقاب",
+      "proverb_en": "Reproach before punishment",
+      "explanation_ar": "من الأفضل نصح الشخص قبل معاقبته",
+      "explanation_en": "It's better to advise a person before punishing them",
+      "memory_prompt_ar": "هل تعرف المثل: العتاب قبل العقاب؟ هل تفضل أن ينصحك أحد قبل أن ينتقدك؟",
+      "memory_prompt_en": "Do you know the proverb: Reproach before punishment? Do you prefer someone to advise you before criticizing you?"
+    },
+    {
+      "id": "prov_014",
+      "proverb_ar": "ما كل أبيض شحم وما كل أسود فحم",
+      "proverb_en": "Not all white is fat and not all black is coal",
+      "explanation_ar": "لا يجب الحكم على الأشياء من ظاهرها فقط",
+      "explanation_en": "One should not judge things by their appearance alone",
+      "memory_prompt_ar": "هل تعرف المثل: ما كل أبيض شحم وما كل أسود فحم؟ هل اكتشفت أن شخصاً مختلف عما بدا عليه؟",
+      "memory_prompt_en": "Do you know the proverb: Not all white is fat and not all black is coal? Have you discovered that someone was different from what they seemed?"
+    },
+    {
+      "id": "prov_015",
+      "proverb_ar": "من طلب العلا سهر الليالي",
+      "proverb_en": "Who seeks excellence stays awake at night",
+      "explanation_ar": "تحقيق الأهداف العظيمة يتطلب جهداً وتضحيات",
+      "explanation_en": "Achieving great goals requires effort and sacrifices",
+      "memory_prompt_ar": "هل سمعت بالمثل: من طلب العلا سهر الليالي؟ هل سهرت من أجل تحقيق هدف مهم؟",
+      "memory_prompt_en": "Have you heard the saying: Who seeks excellence stays awake at night? Have you stayed up late to achieve an important goal?"
+    },
+    {
+      "id": "prov_016",
+      "proverb_ar": "الطيور على أشكالها تقع",
+      "proverb_en": "Birds of a feather flock together",
+      "explanation_ar": "الأشخاص المتشابهون يميلون للاجتماع معاً",
+      "explanation_en": "Similar people tend to gather together",
+      "memory_prompt_ar": "هل تعرف المثل: الطيور على أشكالها تقع؟ هل لاحظت أن أصدقاءك يشبهونك في أشياء كثيرة؟",
+      "memory_prompt_en": "Do you know the proverb: Birds of a feather flock together? Have you noticed that your friends are similar to you in many ways?"
+    },
+    {
+      "id": "prov_017",
+      "proverb_ar": "إذا كنت في روما فافعل كما يفعل الرومان",
+      "proverb_en": "When in Rome, do as the Romans do",
+      "explanation_ar": "يجب التكيف مع عادات المكان الذي تكون فيه",
+      "explanation_en": "One should adapt to the customs of the place where they are",
+      "memory_prompt_ar": "هل تعرف المثل: إذا كنت في روما فافعل كما يفعل الرومان؟ هل تكيفت مع عادات مكان جديد زرته؟",
+      "memory_prompt_en": "Do you know the proverb: When in Rome, do as the Romans do? Have you adapted to the customs of a new place you visited?"
+    },
+    {
+      "id": "prov_018",
+      "proverb_ar": "الوقاية خير من العلاج",
+      "proverb_en": "Prevention is better than cure",
+      "explanation_ar": "من الأفضل تجنب المشاكل قبل حدوثها",
+      "explanation_en": "It's better to avoid problems before they occur",
+      "memory_prompt_ar": "هل سمعت بالمثل: الوقاية خير من العلاج؟ هل تتخذ إجراءات وقائية في حياتك؟",
+      "memory_prompt_en": "Have you heard the saying: Prevention is better than cure? Do you take preventive measures in your life?"
+    },
+    {
+      "id": "prov_019",
+      "proverb_ar": "من حفر حفرة لأخيه وقع فيها",
+      "proverb_en": "He who digs a pit for his brother will fall into it",
+      "explanation_ar": "من يخطط للشر للآخرين سيعود عليه بالضرر",
+      "explanation_en": "Those who plan evil for others will be harmed by it",
+      "memory_prompt_ar": "هل تعرف المثل: من حفر حفرة لأخيه وقع فيها؟ هل رأيت شخصاً عاد عليه مكروهه؟",
+      "memory_prompt_en": "Do you know the proverb: He who digs a pit for his brother will fall into it? Have you seen someone's evil plans backfire on them?"
+    },
+    {
+      "id": "prov_020",
+      "proverb_ar": "اللي ما له ماضي ما له مستقبل",
+      "proverb_en": "He who has no past has no future",
+      "explanation_ar": "التاريخ والتجارب السابقة مهمة لبناء المستقبل",
+      "explanation_en": "History and past experiences are important for building the future",
+      "memory_prompt_ar": "هل سمعت بالمثل: اللي ما له ماضي ما له مستقبل؟ كيف ساعدتك تجاربك السابقة في حياتك؟",
+      "memory_prompt_en": "Have you heard the saying: He who has no past has no future? How have your past experiences helped you in life?"
+    },
+    {
+      "id": "prov_021",
+      "proverb_ar": "البيت بيت الوالدين والجنة تحت أقدام الأمهات",
+      "proverb_en": "Home is with parents and paradise is under mothers' feet",
+      "explanation_ar": "تعظيم مكانة الوالدين وخاصة الأم",
+      "explanation_en": "Honoring the status of parents, especially mothers",
+      "memory_prompt_ar": "هل تعرف المثل: البيت بيت الوالدين والجنة تحت أقدام الأمهات؟ كيف تكرم والديك؟",
+      "memory_prompt_en": "Do you know the proverb: Home is with parents and paradise is under mothers' feet? How do you honor your parents?"
+    },
+    {
+      "id": "prov_022",
+      "proverb_ar": "خذ الحكمة من أفواه المجانين",
+      "proverb_en": "Take wisdom from the mouths of the mad",
+      "explanation_ar": "أحياناً نجد الحكمة في أماكن غير متوقعة",
+      "explanation_en": "Sometimes we find wisdom in unexpected places",
+      "memory_prompt_ar": "هل سمعت بالمثل: خذ الحكمة من أفواه المجانين؟ هل تعلمت شيئاً مفيداً من مصدر غير متوقع؟",
+      "memory_prompt_en": "Have you heard the saying: Take wisdom from the mouths of the mad? Have you learned something useful from an unexpected source?"
+    },
+    {
+      "id": "prov_023",
+      "proverb_ar": "الحياة مدرسة والناس أساتذة",
+      "proverb_en": "Life is a school and people are teachers",
+      "explanation_ar": "نتعلم من كل شخص نقابله في الحياة",
+      "explanation_en": "We learn from every person we meet in life",
+      "memory_prompt_ar": "هل تعرف المثل: الحياة مدرسة والناس أساتذة؟ من علمك أهم درس في حياتك؟",
+      "memory_prompt_en": "Do you know the proverb: Life is a school and people are teachers? Who taught you the most important lesson in your life?"
+    },
+    {
+      "id": "prov_024",
+      "proverb_ar": "المال يذهب ويجيء والصحة إذا راحت لا تجيء",
+      "proverb_en": "Money comes and goes, but health once lost may not return",
+      "explanation_ar": "الصحة أهم من المال لأنها لا تُعوَّض",
+      "explanation_en": "Health is more important than money because it cannot be replaced",
+      "memory_prompt_ar": "هل سمعت بالمثل: المال يذهب ويجيء والصحة إذا راحت لا تجيء؟ كيف تحافظ على صحتك؟",
+      "memory_prompt_en": "Have you heard the saying: Money comes and goes, but health once lost may not return? How do you maintain your health?"
+    },
+    {
+      "id": "prov_025",
+      "proverb_ar": "إن غدا لناظره قريب",
+      "proverb_en": "Tomorrow is near for those who wait",
+      "explanation_ar": "المستقبل قريب وسيأتي بما هو أفضل",
+      "explanation_en": "The future is near and will bring better things",
+      "memory_prompt_ar": "هل تعرف المثل: إن غدا لناظره قريب؟ هل تتطلع للمستقبل بتفاؤل؟",
+      "memory_prompt_en": "Do you know the proverb: Tomorrow is near for those who wait? Do you look forward to the future with optimism?"
+    },
+    {
+      "id": "prov_026",
+      "proverb_ar": "من أراد صيد السمك فليبلل قدميه",
+      "proverb_en": "He who wants to catch fish must wet his feet",
+      "explanation_ar": "لتحقيق الأهداف يجب بذل الجهد والتضحية",
+      "explanation_en": "To achieve goals, one must make effort and sacrifices",
+      "memory_prompt_ar": "هل سمعت بالمثل: من أراد صيد السمك فليبلل قدميه؟ ما الذي ضحيت به لتحقيق هدف مهم؟",
+      "memory_prompt_en": "Have you heard the saying: He who wants to catch fish must wet his feet? What did you sacrifice to achieve an important goal?"
+    },
+    {
+      "id": "prov_027",
+      "proverb_ar": "الضربة التي لا تكسرك تقويك",
+      "proverb_en": "The blow that doesn't break you makes you stronger",
+      "explanation_ar": "المحن والصعوبات تجعلنا أقوى إذا لم تهزمنا",
+      "explanation_en": "Trials and difficulties make us stronger if they don't defeat us",
+      "memory_prompt_ar": "هل تعرف المثل: الضربة التي لا تكسرك تقويك؟ هل مررت بتجربة صعبة جعلتك أقوى؟",
+      "memory_prompt_en": "Do you know the proverb: The blow that doesn't break you makes you stronger? Have you gone through a difficult experience that made you stronger?"
+    },
+    {
+      "id": "prov_028",
+      "proverb_ar": "من سار على الدرب وصل",
+      "proverb_en": "He who walks the path will arrive",
+      "explanation_ar": "المثابرة والاستمرار يؤديان إلى النجاح",
+      "explanation_en": "Perseverance and continuity lead to success",
+      "memory_prompt_ar": "هل سمعت بالمثل: من سار على الدرب وصل؟ هل حققت هدفاً بفضل المثابرة؟",
+      "memory_prompt_en": "Have you heard the saying: He who walks the path will arrive? Have you achieved a goal through perseverance?"
+    },
+    {
+      "id": "prov_029",
+      "proverb_ar": "العادة طبيعة ثانية",
+      "proverb_en": "Habit is a second nature",
+      "explanation_ar": "العادات المتكررة تصبح جزءاً من شخصيتنا",
+      "explanation_en": "Repeated habits become part of our personality",
+      "memory_prompt_ar": "هل تعرف المثل: العادة طبيعة ثانية؟ ما العادة الجيدة التي تفتخر بها؟",
+      "memory_prompt_en": "Do you know the proverb: Habit is a second nature? What good habit are you proud of?"
+    },
+    {
+      "id": "prov_030",
+      "proverb_ar": "من لم يشتغل بيده أكل بكرامته",
+      "proverb_en": "He who doesn't work with his hands eats his dignity",
+      "explanation_ar": "العمل الشريف يحفظ كرامة الإنسان",
+      "explanation_en": "Honest work preserves human dignity",
+      "memory_prompt_ar": "هل سمعت بالمثل: من لم يشتغل بيده أكل بكرامته؟ كيف تقدر قيمة العمل الشريف؟",
+      "memory_prompt_en": "Have you heard the saying: He who doesn't work with his hands eats his dignity? How do you appreciate the value of honest work?"
+    },
+    {
+      "id": "prov_031",
+      "proverb_ar": "الحسود لا يسود",
+      "proverb_en": "The envious never prospers",
+      "explanation_ar": "الحسد يمنع الشخص من التقدم والنجاح",
+      "explanation_en": "Envy prevents a person from progress and success",
+      "memory_prompt_ar": "هل تعرف المثل: الحسود لا يسود؟ كيف تتجنب مشاعر الحسد؟",
+      "memory_prompt_en": "Do you know the proverb: The envious never prospers? How do you avoid feelings of envy?"
+    },
+    {
+      "id": "prov_032",
+      "proverb_ar": "من صبر ظفر",
+      "proverb_en": "He who is patient succeeds",
+      "explanation_ar": "الصبر والمثابرة طريق للنجاح",
+      "explanation_en": "Patience and perseverance are the path to success",
+      "memory_prompt_ar": "هل سمعت بالمثل: من صبر ظفر؟ هل صبرك على شيء أوصلك للنجاح؟",
+      "memory_prompt_en": "Have you heard the saying: He who is patient succeeds? Has your patience with something led you to success?"
+    },
+    {
+      "id": "prov_033",
+      "proverb_ar": "خير الأمور أوسطها",
+      "proverb_en": "The best of matters is the middle course",
+      "explanation_ar": "الاعتدال في كل شيء هو الأفضل",
+      "explanation_en": "Moderation in everything is best",
+      "memory_prompt_ar": "هل تعرف المثل: خير الأمور أوسطها؟ كيف تطبق الاعتدال في حياتك؟",
+      "memory_prompt_en": "Do you know the proverb: The best of matters is the middle course? How do you apply moderation in your life?"
+    },
+    {
+      "id": "prov_034",
+      "proverb_ar": "من كان بيته من زجاج فلا يرمي الناس بالحجارة",
+      "proverb_en": "Those who live in glass houses shouldn't throw stones",
+      "explanation_ar": "لا تنتقد الآخرين إذا كان لديك نفس العيوب",
+      "explanation_en": "Don't criticize others if you have the same flaws",
+      "memory_prompt_ar": "هل سمعت بالمثل: من كان بيته من زجاج فلا يرمي الناس بالحجارة؟ هل تحاسب نفسك قبل انتقاد الآخرين؟",
+      "memory_prompt_en": "Have you heard the saying: Those who live in glass houses shouldn't throw stones? Do you hold yourself accountable before criticizing others?"
+    },
+    {
+      "id": "prov_035",
+      "proverb_ar": "العبرة بالنهايات لا بالبدايات",
+      "proverb_en": "What matters is the ending, not the beginning",
+      "explanation_ar": "النتيجة النهائية أهم من كيفية البداية",
+      "explanation_en": "The final result is more important than how it began",
+      "memory_prompt_ar": "هل تعرف المثل: العبرة بالنهايات لا بالبدايات؟ هل بدأت شيئاً صعباً وانتهى بنجاح؟",
+      "memory_prompt_en": "Do you know the proverb: What matters is the ending, not the beginning? Have you started something difficult that ended successfully?"
+    },
+    {
+      "id": "prov_036",
+      "proverb_ar": "الأسود في وطنه أسد",
+      "proverb_en": "The black man in his homeland is a lion",
+      "explanation_ar": "الإنسان يكون أقوى وأكثر ثقة في بيئته الطبيعية",
+      "explanation_en": "A person is stronger and more confident in their natural environment",
+      "memory_prompt_ar": "هل سمعت بالمثل: الأسود في وطنه أسد؟ هل تشعر بالقوة أكثر في مكانك المألوف؟",
+      "memory_prompt_en": "Have you heard the saying: The black man in his homeland is a lion? Do you feel stronger in your familiar place?"
+    },
+    {
+      "id": "prov_037",
+      "proverb_ar": "من أحب شيئاً أكثر من ذكره",
+      "proverb_en": "He who loves something mentions it often",
+      "explanation_ar": "نتحدث كثيراً عما نحبه ونهتم به",
+      "explanation_en": "We talk often about what we love and care about",
+      "memory_prompt_ar": "هل تعرف المثل: من أحب شيئاً أكثر من ذكره؟ ما الشيء الذي تحب التحدث عنه دائماً؟",
+      "memory_prompt_en": "Do you know the proverb: He who loves something mentions it often? What do you always love to talk about?"
+    },
+    {
+      "id": "prov_038",
+      "proverb_ar": "الغيرة دليل المحبة",
+      "proverb_en": "Jealousy is a sign of love",
+      "explanation_ar": "الغيرة المعتدلة تدل على المحبة والاهتمام",
+      "explanation_en": "Moderate jealousy indicates love and care",
+      "memory_prompt_ar": "هل سمعت بالمثل: الغيرة دليل المحبة؟ هل تغار على من تحب؟",
+      "memory_prompt_en": "Have you heard the saying: Jealousy is a sign of love? Do you get jealous over those you love?"
+    },
+    {
+      "id": "prov_039",
+      "proverb_ar": "إذا أردت أن تطاع فاطلب المستطاع",
+      "proverb_en": "If you want to be obeyed, ask for what is possible",
+      "explanation_ar": "اطلب أشياء معقولة إذا كنت تريد من الناس تنفيذها",
+      "explanation_en": "Ask for reasonable things if you want people to do them",
+      "memory_prompt_ar": "هل تعرف المثل: إذا أردت أن تطاع فاطلب المستطاع؟ هل تطلب أشياء معقولة من الآخرين؟",
+      "memory_prompt_en": "Do you know the proverb: If you want to be obeyed, ask for what is possible? Do you ask reasonable things from others?"
+    },
+    {
+      "id": "prov_040",
+      "proverb_ar": "الوقت كالسيف إن لم تقطعه قطعك",
+      "proverb_en": "Time is like a sword; if you don't cut it, it will cut you",
+      "explanation_ar": "يجب استغلال الوقت وإلا سيمر دون فائدة",
+      "explanation_en": "Time must be utilized, otherwise it will pass without benefit",
+      "memory_prompt_ar": "هل سمعت بالمثل: الوقت كالسيف إن لم تقطعه قطعك؟ كيف تدير وقتك بفعالية؟",
+      "memory_prompt_en": "Have you heard the saying: Time is like a sword; if you don't cut it, it will cut you? How do you manage your time effectively?"
+    },
+    {
+      "id": "prov_041",
+      "proverb_ar": "المرء على دين خليله",
+      "proverb_en": "A person follows the religion of his close friend",
+      "explanation_ar": "الأصدقاء يؤثرون على سلوكنا وأخلاقنا",
+      "explanation_en": "Friends influence our behavior and morals",
+      "memory_prompt_ar": "هل تعرف المثل: المرء على دين خليله؟ كيف أثر أصدقاؤك على شخصيتك؟",
+      "memory_prompt_en": "Do you know the proverb: A person follows the religion of his close friend? How have your friends influenced your personality?"
+    },
+    {
+      "id": "prov_042",
+      "proverb_ar": "من علمني حرفاً صرت له عبداً",
+      "proverb_en": "He who teaches me a letter, I become his servant",
+      "explanation_ar": "نحن مدينون لمن يعلمنا ويفيدنا",
+      "explanation_en": "We are indebted to those who teach and benefit us",
+      "memory_prompt_ar": "هل سمعت بالمثل: من علمني حرفاً صرت له عبداً؟ من المعلم الذي أثر في حياتك أكثر؟",
+      "memory_prompt_en": "Have you heard the saying: He who teaches me a letter, I become his servant? Which teacher influenced your life the most?"
+    },
+    {
+      "id": "prov_043",
+      "proverb_ar": "النظافة من الإيمان",
+      "proverb_en": "Cleanliness is part of faith",
+      "explanation_ar": "النظافة صفة مهمة مرتبطة بالإيمان والأخلاق",
+      "explanation_en": "Cleanliness is an important quality connected to faith and morals",
+      "memory_prompt_ar": "هل تعرف المثل: النظافة من الإيمان؟ كيف تحافظ على النظافة في حياتك؟",
+      "memory_prompt_en": "Do you know the proverb: Cleanliness is part of faith? How do you maintain cleanliness in your life?"
+    },
+    {
+      "id": "prov_044",
+      "proverb_ar": "الوحدة خير من جليس السوء",
+      "proverb_en": "Solitude is better than bad company",
+      "explanation_ar": "من الأفضل أن تكون وحيداً من أن تصاحب أشخاصاً سيئين",
+      "explanation_en": "It's better to be alone than to keep bad company",
+      "memory_prompt_ar": "هل سمعت بالمثل: الوحدة خير من جليس السوء؟ هل فضلت الوحدة على صحبة سيئة؟",
+      "memory_prompt_en": "Have you heard the saying: Solitude is better than bad company? Have you preferred solitude over bad company?"
+    },
+    {
+      "id": "prov_045",
+      "proverb_ar": "إن لم تكن ذئباً أكلتك الذئاب",
+      "proverb_en": "If you are not a wolf, the wolves will eat you",
+      "explanation_ar": "أحياناً تحتاج للقوة لتحمي نفسك في الحياة",
+      "explanation_en": "Sometimes you need strength to protect yourself in life",
+      "memory_prompt_ar": "هل تعرف المثل: إن لم تكن ذئباً أكلتك الذئاب؟ هل اضطررت لتكون قوياً لتحمي نفسك؟",
+      "memory_prompt_en": "Do you know the proverb: If you are not a wolf, the wolves will eat you? Have you had to be strong to protect yourself?"
+    },
+    {
+      "id": "prov_046",
+      "proverb_ar": "ما أجمل الدين والدنيا إذا اجتمعا",
+      "proverb_en": "How beautiful are religion and worldly life when they come together",
+      "explanation_ar": "التوازن بين الدين والحياة الدنيوية شيء جميل",
+      "explanation_en": "Balance between religion and worldly life is beautiful",
+      "memory_prompt_ar": "هل سمعت بالمثل: ما أجمل الدين والدنيا إذا اجتمعا؟ كيف توازن بين دينك وحياتك؟",
+      "memory_prompt_en": "Have you heard the saying: How beautiful are religion and worldly life when they come together? How do you balance your religion and life?"
+    },
+    {
+      "id": "prov_047",
+      "proverb_ar": "اطلبوا الرزق في خبايا الأرض",
+      "proverb_en": "Seek sustenance in the hidden places of the earth",
+      "explanation_ar": "الرزق قد يأتي من مصادر غير متوقعة",
+      "explanation_en": "Sustenance may come from unexpected sources",
+      "memory_prompt_ar": "هل تعرف المث
   ]
 } 
