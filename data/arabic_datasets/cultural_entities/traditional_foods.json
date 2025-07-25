@@ -149,6 +149,411 @@
       "description_en": "A dish of toasted bread, yogurt, and chickpeas or meat",
       "memory_prompt_ar": "هل كنت تحب الفتة؟ كيف كانت تُحضر في منزلكم؟",
       "memory_prompt_en": "Did you like Fatteh? How was it prepared in your home?"
+    },
+    {
+  "traditional_foods": [
+    {
+      "id": "food_016",
+      "name_ar": "ورق عنب",
+      "name_en": "Dolma",
+      "region": ["levant", "turkey", "middle_east"],
+      "description_ar": "أوراق العنب محشوة بالأرز واللحم أو الخضروات",
+      "description_en": "Grape leaves stuffed with rice and meat or vegetables",
+      "memory_prompt_ar": "هل تتذكر ورق العنب؟ من كان يلفه في عائلتك؟",
+      "memory_prompt_en": "Do you remember Dolma? Who used to roll it in your family?"
+    },
+    {
+      "id": "food_017",
+      "name_ar": "محشي",
+      "name_en": "Mahshi",
+      "region": ["egypt", "levant", "middle_east"],
+      "description_ar": "خضروات مختلفة محشوة بالأرز واللحم مثل الكوسا والباذنجان",
+      "description_en": "Various vegetables stuffed with rice and meat like zucchini and eggplant",
+      "memory_prompt_ar": "هل كنت تحب المحشي؟ أي نوع كان المفضل لديك؟",
+      "memory_prompt_en": "Did you like Mahshi? Which type was your favorite?"
+    },
+    {
+      "id": "food_018",
+      "name_ar": "فتوش",
+      "name_en": "Fattoush",
+      "region": ["levant", "middle_east"],
+      "description_ar": "سلطة من الخضروات الطازجة مع قطع الخبز المحمص والسماق",
+      "description_en": "Fresh vegetable salad with toasted bread pieces and sumac",
+      "memory_prompt_ar": "هل كنت تأكل الفتوش؟ هل كنت تحب السماق عليه؟",
+      "memory_prompt_en": "Did you eat Fattoush? Did you like sumac on it?"
+    },
+    {
+      "id": "food_019",
+      "name_ar": "مناقيش",
+      "name_en": "Manakish",
+      "region": ["levant", "middle_east"],
+      "description_ar": "خبز مسطح مع الزعتر وزيت الزيتون أو الجبن أو اللحمة",
+      "description_en": "Flatbread with thyme and olive oil, cheese, or meat",
+      "memory_prompt_ar": "هل كنت تأكل المناقيش في الإفطار؟ أي نوع كان المفضل لديك؟",
+      "memory_prompt_en": "Did you eat Manakish for breakfast? Which type was your favorite?"
+    },
+    {
+      "id": "food_020",
+      "name_ar": "لحم بعجين",
+      "name_en": "Lahmacun",
+      "region": ["levant", "turkey", "armenia"],
+      "description_ar": "عجينة رقيقة مغطاة بخليط من اللحم المفروم والطماطم والبهارات",
+      "description_en": "Thin dough topped with minced meat, tomatoes, and spices",
+      "memory_prompt_ar": "هل تتذكر لحم بعجين؟ من أين كنت تشتريه؟",
+      "memory_prompt_en": "Do you remember Lahmacun? Where did you buy it from?"
+    },
+    {
+      "id": "food_021",
+      "name_ar": "قطايف",
+      "name_en": "Qatayef",
+      "region": ["levant", "egypt", "middle_east"],
+      "description_ar": "فطائر صغيرة محشوة بالجبن أو المكسرات وتُقلى أو تُطبخ في الفرن",
+      "description_en": "Small pancakes stuffed with cheese or nuts, fried or baked",
+      "memory_prompt_ar": "هل كنت تأكل القطايف في رمضان؟ بأي حشوة كنت تفضلها؟",
+      "memory_prompt_en": "Did you eat Qatayef during Ramadan? What filling did you prefer?"
+    },
+    {
+      "id": "food_022",
+      "name_ar": "معمول",
+      "name_en": "Ma'moul",
+      "region": ["levant", "middle_east"],
+      "description_ar": "كعك محشو بالتمر أو الجوز أو الفستق",
+      "description_en": "Cookies stuffed with dates, walnuts, or pistachios",
+      "memory_prompt_ar": "هل تتذكر المعمول؟ في أي المناسبات كان يُصنع؟",
+      "memory_prompt_en": "Do you remember Ma'moul? On what occasions was it made?"
+    },
+    {
+      "id": "food_023",
+      "name_ar": "عراق",
+      "name_en": "Araq",
+      "region": ["levant", "middle_east"],
+      "description_ar": "مشروب كحولي تقليدي بطعم اليانسون",
+      "description_en": "Traditional alcoholic drink with anise flavor",
+      "memory_prompt_ar": "هل سمعت بالعراق؟ هل كان يُشرب في المناسبات؟",
+      "memory_prompt_en": "Have you heard of Araq? Was it drunk on occasions?"
+    },
+    {
+      "id": "food_024",
+      "name_ar": "عصيدة",
+      "name_en": "Asida",
+      "region": ["gulf", "yemen", "sudan"],
+      "description_ar": "طبق حلو من الدقيق والسمن والعسل أو التمر",
+      "description_en": "Sweet dish made of flour, ghee, and honey or dates",
+      "memory_prompt_ar": "هل أكلت العصيدة؟ متى كانت تُقدم؟",
+      "memory_prompt_en": "Did you eat Asida? When was it served?"
+    },
+    {
+      "id": "food_025",
+      "name_ar": "هريس",
+      "name_en": "Harees",
+      "region": ["gulf", "levant", "armenia"],
+      "description_ar": "طبق من القمح المسلوق واللحم المهروس معاً",
+      "description_en": "Dish of boiled wheat and meat mashed together",
+      "memory_prompt_ar": "هل تتذكر الهريس؟ في أي شهر كان يُطبخ؟",
+      "memory_prompt_en": "Do you remember Harees? In which month was it cooked?"
+    },
+    {
+      "id": "food_026",
+      "name_ar": "لقيمات",
+      "name_en": "Luqaimat",
+      "region": ["gulf", "levant"],
+      "description_ar": "كرات من العجين المقلية وتُقدم مع العسل أو القطر",
+      "description_en": "Fried dough balls served with honey or syrup",
+      "memory_prompt_ar": "هل كنت تحب اللقيمات؟ متى كانت تُصنع؟",
+      "memory_prompt_en": "Did you like Luqaimat? When were they made?"
+    },
+    {
+      "id": "food_027",
+      "name_ar": "خبز عربي",
+      "name_en": "Pita Bread",
+      "region": ["levant", "middle_east", "north_africa"],
+      "description_ar": "خبز مسطح دائري مع جيب داخلي",
+      "description_en": "Round flatbread with an inner pocket",
+      "memory_prompt_ar": "هل كنت تأكل الخبز العربي يومياً؟ هل كان يُخبز في المنزل؟",
+      "memory_prompt_en": "Did you eat Arabic bread daily? Was it baked at home?"
+    },
+    {
+      "id": "food_028",
+      "name_ar": "مهلبية",
+      "name_en": "Muhallabia",
+      "region": ["levant", "egypt", "middle_east"],
+      "description_ar": "حلوى باردة من الحليب والسكر والنشا مع ماء الورد",
+      "description_en": "Cold dessert made of milk, sugar, and starch with rose water",
+      "memory_prompt_ar": "هل كنت تحب المهلبية؟ بماذا كانت تُزين؟",
+      "memory_prompt_en": "Did you like Muhallabia? What was it decorated with?"
+    },
+    {
+      "id": "food_029",
+      "name_ar": "بامية",
+      "name_en": "Bamia",
+      "region": ["levant", "egypt", "middle_east"],
+      "description_ar": "طبق من البامية مطبوخة مع اللحم في صلصة الطماطم",
+      "description_en": "Okra cooked with meat in tomato sauce",
+      "memory_prompt_ar": "هل كنت تحب البامية؟ كيف كانت تُطبخ في منزلكم؟",
+      "memory_prompt_en": "Did you like Bamia? How was it cooked in your home?"
+    },
+    {
+      "id": "food_030",
+      "name_ar": "فاصولياء",
+      "name_en": "Fasolia",
+      "region": ["levant", "egypt", "middle_east"],
+      "description_ar": "طبق من الفاصولياء البيضاء مطبوخة مع اللحم والطماطم",
+      "description_en": "White beans cooked with meat and tomatoes",
+      "memory_prompt_ar": "هل كنت تأكل الفاصولياء؟ مع أي نوع خبز كانت تُقدم؟",
+      "memory_prompt_en": "Did you eat Fasolia? What type of bread was it served with?"
+    },
+    {
+      "id": "food_031",
+      "name_ar": "مسخن",
+      "name_en": "Musakhan",
+      "region": ["palestine", "jordan"],
+      "description_ar": "خبز طابون مع الدجاج والبصل والسماق وزيت الزيتون",
+      "description_en": "Taboon bread with chicken, onions, sumac, and olive oil",
+      "memory_prompt_ar": "هل تتذكر المسخن؟ هل كان يُأكل بالأيدي؟",
+      "memory_prompt_en": "Do you remember Musakhan? Was it eaten with hands?"
+    },
+    {
+      "id": "food_032",
+      "name_ar": "أرز بخاري",
+      "name_en": "Bukhari Rice",
+      "region": ["gulf", "saudi_arabia"],
+      "description_ar": "أرز بالزبيب والجزر واللحم مع البهارات الخاصة",
+      "description_en": "Rice with raisins, carrots, and meat with special spices",
+      "memory_prompt_ar": "هل أكلت الأرز البخاري؟ ما الذي يميز طعمه؟",
+      "memory_prompt_en": "Did you eat Bukhari Rice? What makes its taste special?"
+    },
+    {
+      "id": "food_033",
+      "name_ar": "شاي أحمر",
+      "name_en": "Black Tea",
+      "region": ["middle_east", "north_africa", "south_asia"],
+      "description_ar": "شاي أسود محلى بالسكر يُقدم في كؤوس صغيرة",
+      "description_en": "Sweetened black tea served in small glasses",
+      "memory_prompt_ar": "هل كنت تشرب الشاي الأحمر؟ كم مرة في اليوم؟",
+      "memory_prompt_en": "Did you drink black tea? How many times a day?"
+    },
+    {
+      "id": "food_034",
+      "name_ar": "قهوة عربية",
+      "name_en": "Arabic Coffee",
+      "region": ["gulf", "levant", "middle_east"],
+      "description_ar": "قهوة مُحمصة قليلاً مع الهيل تُقدم في فناجين صغيرة",
+      "description_en": "Lightly roasted coffee with cardamom served in small cups",
+      "memory_prompt_ar": "هل كنت تشرب القهوة العربية؟ في أي أوقات؟",
+      "memory_prompt_en": "Did you drink Arabic coffee? At what times?"
+    },
+    {
+      "id": "food_035",
+      "name_ar": "رز بحليب",
+      "name_en": "Rice Pudding",
+      "region": ["middle_east", "north_africa", "levant"],
+      "description_ar": "حلوى من الأرز المطبوخ في الحليب مع السكر والقرفة",
+      "description_en": "Dessert of rice cooked in milk with sugar and cinnamon",
+      "memory_prompt_ar": "هل كنت تحب رز بحليب؟ متى كان يُقدم؟",
+      "memory_prompt_en": "Did you like rice pudding? When was it served?"
+    },
+    {
+      "id": "food_036",
+      "name_ar": "زلابية",
+      "name_en": "Zalabya",
+      "region": ["egypt", "levant", "middle_east"],
+      "description_ar": "حلقات من العجين المقلية وتُقدم مع العسل أو القطر",
+      "description_en": "Fried dough rings served with honey or syrup",
+      "memory_prompt_ar": "هل تتذكر الزلابية؟ في أي فصل كانت تُباع؟",
+      "memory_prompt_en": "Do you remember Zalabya? In which season was it sold?"
+    },
+    {
+      "id": "food_037",
+      "name_ar": "حلاوة طحينية",
+      "name_en": "Tahini Halva",
+      "region": ["levant", "middle_east", "balkans"],
+      "description_ar": "حلوى مصنوعة من الطحينة والسكر أو العسل",
+      "description_en": "Sweet made from tahini and sugar or honey",
+      "memory_prompt_ar": "هل كنت تأكل الحلاوة الطحينية؟ هل كانت تُصنع في المنزل؟",
+      "memory_prompt_en": "Did you eat tahini halva? Was it made at home?"
+    },
+    {
+      "id": "food_038",
+      "name_ar": "جريش",
+      "name_en": "Jareesh",
+      "region": ["gulf", "saudi_arabia"],
+      "description_ar": "طبق من القمح المجروش مطبوخ مع اللحم أو الدجاج",
+      "description_en": "Crushed wheat dish cooked with meat or chicken",
+      "memory_prompt_ar": "هل أكلت الجريش؟ في أي فصل كان يُطبخ أكثر؟",
+      "memory_prompt_en": "Did you eat Jareesh? In which season was it cooked more?"
+    },
+    {
+      "id": "food_039",
+      "name_ar": "عسل أسود",
+      "name_en": "Molasses",
+      "region": ["egypt", "levant", "middle_east"],
+      "description_ar": "شراب كثيف حلو مصنوع من قصب السكر أو التمر",
+      "description_en": "Thick sweet syrup made from sugar cane or dates",
+      "memory_prompt_ar": "هل كنت تأكل العسل الأسود؟ مع ماذا كان يُقدم؟",
+      "memory_prompt_en": "Did you eat molasses? What was it served with?"
+    },
+    {
+      "id": "food_040",
+      "name_ar": "خروف محشي",
+      "name_en": "Stuffed Lamb",
+      "region": ["gulf", "levant", "middle_east"],
+      "description_ar": "خروف كامل محشو بالأرز واللحم والمكسرات للمناسبات الخاصة",
+      "description_en": "Whole lamb stuffed with rice, meat, and nuts for special occasions",
+      "memory_prompt_ar": "هل رأيت خروف محشي؟ في أي مناسبة؟",
+      "memory_prompt_en": "Did you see stuffed lamb? On what occasion?"
+    },
+    {
+      "id": "food_041",
+      "name_ar": "أم علي",
+      "name_en": "Om Ali",
+      "region": ["egypt", "middle_east"],
+      "description_ar": "حلوى ساخنة من الخبز والحليب والمكسرات والزبيب",
+      "description_en": "Hot dessert made of bread, milk, nuts, and raisins",
+      "memory_prompt_ar": "هل تتذكر أم علي؟ متى كانت تُقدم؟",
+      "memory_prompt_en": "Do you remember Om Ali? When was it served?"
+    },
+    {
+      "id": "food_042",
+      "name_ar": "تمر",
+      "name_en": "Dates",
+      "region": ["gulf", "middle_east", "north_africa"],
+      "description_ar": "ثمار نخيل التمر الحلوة التي تُأكل طازجة أو مجففة",
+      "description_en": "Sweet fruit of date palm eaten fresh or dried",
+      "memory_prompt_ar": "هل كنت تأكل التمر؟ أي نوع كان المفضل لديك؟",
+      "memory_prompt_en": "Did you eat dates? Which type was your favorite?"
+    },
+    {
+      "id": "food_043",
+      "name_ar": "لبن رائب",
+      "name_en": "Buttermilk",
+      "region": ["levant", "middle_east", "gulf"],
+      "description_ar": "مشروب من اللبن المتخمر المملح أو المحلى",
+      "description_en": "Drink made from fermented milk, salted or sweetened",
+      "memory_prompt_ar": "هل كنت تشرب اللبن الرائب؟ في أي وقت من السنة؟",
+      "memory_prompt_en": "Did you drink buttermilk? At what time of year?"
+    },
+    {
+      "id": "food_044",
+      "name_ar": "سجق",
+      "name_en": "Sujuk",
+      "region": ["levant", "turkey", "armenia"],
+      "description_ar": "نقانق حارة مجففة تُأكل مطبوخة أو نيئة",
+      "description_en": "Spicy dried sausages eaten cooked or raw",
+      "memory_prompt_ar": "هل أكلت السجق؟ كيف كان يُحضر؟",
+      "memory_prompt_en": "Did you eat Sujuk? How was it prepared?"
+    },
+    {
+      "id": "food_045",
+      "name_ar": "بسطرمة",
+      "name_en": "Pastrami",
+      "region": ["levant", "turkey", "armenia"],
+      "description_ar": "لحم بقري مقدد ومتبل يُقدم مقطع شرائح",
+      "description_en": "Cured and seasoned beef served sliced",
+      "memory_prompt_ar": "هل تتذكر البسطرمة؟ مع ماذا كانت تُأكل؟",
+      "memory_prompt_en": "Do you remember Pastrami? What was it eaten with?"
+    },
+    {
+      "id": "food_046",
+      "name_ar": "قشطة",
+      "name_en": "Qishta",
+      "region": ["levant", "middle_east"],
+      "description_ar": "كريمة سميكة مصنوعة من الحليب تُقدم مع الحلويات",
+      "description_en": "Thick cream made from milk served with desserts",
+      "memory_prompt_ar": "هل كنت تحب القشطة؟ مع أي حلوى كانت تُقدم؟",
+      "memory_prompt_en": "Did you like Qishta? With which dessert was it served?"
+    },
+    {
+      "id": "food_047",
+      "name_ar": "عرق السوس",
+      "name_en": "Licorice Drink",
+      "region": ["egypt", "levant", "middle_east"],
+      "description_ar": "مشروب من جذور عرق السوس الحلو",
+      "description_en": "Drink made from sweet licorice roots",
+      "memory_prompt_ar": "هل شربت عرق السوس؟ في أي فصل كان يُباع؟",
+      "memory_prompt_en": "Did you drink licorice? In which season was it sold?"
+    },
+    {
+      "id": "food_048",
+      "name_ar": "كعك",
+      "name_en": "Ka'ak",
+      "region": ["levant", "egypt", "middle_east"],
+      "description_ar": "خبز دائري مغطى بالسمسم يُأكل مع الجبن أو الزعتر",
+      "description_en": "Round bread covered with sesame seeds eaten with cheese or thyme",
+      "memory_prompt_ar": "هل كنت تأكل الكعك؟ مع ماذا كان يُقدم؟",
+      "memory_prompt_en": "Did you eat Ka'ak? What was it served with?"
+    },
+    {
+      "id": "food_049",
+      "name_ar": "طحينة",
+      "name_en": "Tahini",
+      "region": ["levant", "middle_east"],
+      "description_ar": "معجون من السمسم المطحون يُستخدم في أطباق مختلفة",
+      "description_en": "Paste made from ground sesame seeds used in various dishes",
+      "memory_prompt_ar": "هل كنت تأكل الطحينة؟ مع أي طعام كانت تُقدم؟",
+      "memory_prompt_en": "Did you eat Tahini? With what food was it served?"
+    },
+    {
+      "id": "food_050",
+      "name_ar": "رب البندورة",
+      "name_en": "Tomato Paste",
+      "region": ["levant", "middle_east", "north_africa"],
+      "description_ar": "معجون طماطم مركز يُستخدم في الطبخ",
+      "description_en": "Concentrated tomato paste used in cooking",
+      "memory_prompt_ar": "هل كان رب البندورة يُصنع في المنزل؟ في أي فصل؟",
+      "memory_prompt_en": "Was tomato paste made at home? In which season?"
+    },
+    {
+      "id": "food_051",
+      "name_ar": "ليمون مخلل",
+      "name_en": "Pickled Lemon",
+      "region": ["morocco", "north_africa", "middle_east"],
+      "description_ar": "ليمون محفوظ في الملح يُستخدم كمخلل أو في الطبخ",
+      "description_en": "Lemons preserved in salt used as pickle or in cooking",
+      "memory_prompt_ar": "هل أكلت الليمون المخلل؟ مع أي طعام؟",
+      "memory_prompt_en": "Did you eat pickled lemon? With what food?"
+    },
+    {
+      "id": "food_052",
+      "name_ar": "جبنة عكاوي",
+      "name_en": "Akkawi Cheese",
+      "region": ["levant", "middle_east"],
+      "description_ar": "جبنة بيضاء طرية مملحة من منطقة عكا",
+      "description_en": "Soft white salty cheese from Akka region",
+      "memory_prompt_ar": "هل تتذكر الجبنة العكاوي؟ كيف كانت تُأكل؟",
+      "memory_prompt_en": "Do you remember Akkawi cheese? How was it eaten?"
+    },
+    {
+      "id": "food_053",
+      "name_ar": "لحمة بعجين صغيرة",
+      "name_en": "Mini Meat Pies",
+      "region": ["levant", "middle_east"],
+      "description_ar": "فطائر صغيرة محشوة باللحم المفروم والبصل",
+      "description_en": "Small pies stuffed with minced meat and onions",
+      "memory_prompt_ar": "هل كنت تأكل اللحمة بعجين الصغيرة؟ من أين كانت تُشترى؟",
+      "memory_prompt_en": "Did you eat mini meat pies? Where were they bought from?"
+    },
+    {
+      "id": "food_054",
+      "name_ar": "فطائر سبانخ",
+      "name_en": "Spinach Pies",
+      "region": ["levant", "middle_east"],
+      "description_ar": "فطائر محشوة بالسبانخ والبصل والسماق",
+      "description_en": "Pies stuffed with spinach, onions, and sumac",
+      "memory_prompt_ar": "هل كنت تحب فطائر السبانخ؟ هل كانت تُصنع في المنزل؟",
+      "memory_prompt_en": "Did you like spinach pies? Were they made at home?"
+    },
+    {
+      "id": "food_055",
+      "name_ar": "عصير قصب",
+      "name_en": "Sugar Cane Juice",
+      "region": ["egypt", "levant", "middle_east"],
+      "description_ar": "عصير طازج مستخرج من قصب السكر",
+      "description_en": "Fresh juice extracted from sugar cane",
+      "memory_prompt_ar": "هل شربت عصير القصب؟ في أي فصل كان متوفراً؟",
+      "memory_prompt_en": "Did you drink sugar cane juice? In which season was it available?"
     }
+  ]
+}
+    
   ]
 } 
