@@ -69,6 +69,286 @@
       "prompt_en": "What traditional dishes were prepared for family occasions?",
       "category": "family_tradition",
       "difficulty": "hard"
+    },
+    {
+      "id": "family_011",
+      "prompt_ar": "ما هو اسم والدك؟",
+      "prompt_en": "What is your father's name?",
+      "category": "family_specific",
+      "difficulty": "easy"
+    },
+    {
+      "id": "family_012",
+      "prompt_ar": "هل تزوجت؟ وما اسم زوجتك/زوجك؟",
+      "prompt_en": "Are you married? What is your wife's/husband's name?",
+      "category": "family_specific",
+      "difficulty": "easy"
+    },
+    {
+      "id": "family_013",
+      "prompt_ar": "كم عدد أطفالك؟",
+      "prompt_en": "How many children do you have?",
+      "category": "family_specific",
+      "difficulty": "easy"
+    },
+    {
+      "id": "family_014",
+      "prompt_ar": "هل لديك أحفاد؟ كم عددهم؟",
+      "prompt_en": "Do you have grandchildren? How many?",
+      "category": "family_specific",
+      "difficulty": "medium"
+    },
+    {
+      "id": "family_015",
+      "prompt_ar": "ما هي مهنة والدك؟",
+      "prompt_en": "What was your father's profession?",
+      "category": "family_background",
+      "difficulty": "medium"
+    },
+    {
+      "id": "family_016",
+      "prompt_ar": "هل كانت والدتك تعمل؟ وما هي مهنتها؟",
+      "prompt_en": "Did your mother work? What was her profession?",
+      "category": "family_background",
+      "difficulty": "medium"
+    },
+    {
+      "id": "family_017",
+      "prompt_ar": "من هو أكبر إخوتك؟ وما اسمه؟",
+      "prompt_en": "Who is your oldest sibling? What is their name?",
+      "category": "family_specific",
+      "difficulty": "medium"
+    },
+    {
+      "id": "family_018",
+      "prompt_ar": "من هو أصغر إخوتك؟ وما اسمه؟",
+      "prompt_en": "Who is your youngest sibling? What is their name?",
+      "category": "family_specific",
+      "difficulty": "medium"
+    },
+    {
+      "id": "family_019",
+      "prompt_ar": "هل تتذكر جدك أو جدتك؟ أخبرني عنهم",
+      "prompt_en": "Do you remember your grandfather or grandmother? Tell me about them",
+      "category": "family_memory",
+      "difficulty": "medium"
+    },
+    {
+      "id": "family_020",
+      "prompt_ar": "ما هي أسماء أعمامك وعماتك؟",
+      "prompt_en": "What are the names of your uncles and aunts?",
+      "category": "family_specific",
+      "difficulty": "hard"
+    },
+    {
+      "id": "family_021",
+      "prompt_ar": "هل كان لديك حيوان أليف في العائلة؟",
+      "prompt_en": "Did you have a pet in the family?",
+      "category": "family_memory",
+      "difficulty": "easy"
+    },
+    {
+      "id": "family_022",
+      "prompt_ar": "أين تقع قريتك أو مدينتك الأصلية؟",
+      "prompt_en": "Where is your original village or city located?",
+      "category": "family_location",
+      "difficulty": "medium"
+    },
+    {
+      "id": "family_023",
+      "prompt_ar": "هل انتقلت عائلتك من مكان إلى آخر؟ لماذا؟",
+      "prompt_en": "Did your family move from one place to another? Why?",
+      "category": "family_location",
+      "difficulty": "hard"
+    },
+    {
+      "id": "family_024",
+      "prompt_ar": "ما هو اللقب العائلي (الكنية)؟",
+      "prompt_en": "What is the family surname?",
+      "category": "family_specific",
+      "difficulty": "easy"
+    },
+    {
+      "id": "family_025",
+      "prompt_ar": "هل تتذكر أول بيت سكنت فيه مع العائلة؟",
+      "prompt_en": "Do you remember the first house you lived in with your family?",
+      "category": "family_memory",
+      "difficulty": "hard"
+    },
+    {
+      "id": "family_026",
+      "prompt_ar": "كيف كان يحتفل والداك بعيد ميلادك؟",
+      "prompt_en": "How did your parents celebrate your birthday?",
+      "category": "family_tradition",
+      "difficulty": "medium"
+    },
+    {
+      "id": "family_027",
+      "prompt_ar": "ما هي الحرفة أو المهنة التي اشتهرت بها عائلتك؟",
+      "prompt_en": "What craft or profession was your family known for?",
+      "category": "family_background",
+      "difficulty": "hard"
+    },
+    {
+      "id": "family_028",
+      "prompt_ar": "هل كان لديك ابن عم أو ابنة عم قريب منك؟",
+      "prompt_en": "Did you have a cousin who was close to you?",
+      "category": "family_specific",
+      "difficulty": "medium"
+    },
+    {
+      "id": "family_029",
+      "prompt_ar": "كيف كانت عائلتك تقضي أيام الجمعة؟",
+      "prompt_en": "How did your family spend Fridays?",
+      "category": "family_tradition",
+      "difficulty": "medium"
+    },
+    {
+      "id": "family_030",
+      "prompt_ar": "هل تتذكر أول يوم في المدرسة؟ من رافقك؟",
+      "prompt_en": "Do you remember your first day at school? Who accompanied you?",
+      "category": "family_memory",
+      "difficulty": "hard"
+    },
+    {
+      "id": "family_031",
+      "prompt_ar": "ما هي الألعاب التي كنت تلعبها مع إخوتك؟",
+      "prompt_en": "What games did you play with your siblings?",
+      "category": "family_memory",
+      "difficulty": "medium"
+    },
+    {
+      "id": "family_032",
+      "prompt_ar": "هل كان والدك يحب الموسيقى؟ ما نوعها؟",
+      "prompt_en": "Did your father love music? What type?",
+      "category": "family_background",
+      "difficulty": "medium"
+    },
+    {
+      "id": "family_033",
+      "prompt_ar": "كيف تزوج والداك؟ هل تعرف قصتهما؟",
+      "prompt_en": "How did your parents get married? Do you know their story?",
+      "category": "family_memory",
+      "difficulty": "hard"
+    },
+    {
+      "id": "family_034",
+      "prompt_ar": "ما هو الطعام المفضل لوالدتك؟",
+      "prompt_en": "What was your mother's favorite food?",
+      "category": "family_background",
+      "difficulty": "easy"
+    },
+    {
+      "id": "family_035",
+      "prompt_ar": "هل كانت عائلتك تربي دجاج أو ماعز؟",
+      "prompt_en": "Did your family raise chickens or goats?",
+      "category": "family_background",
+      "difficulty": "medium"
+    },
+    {
+      "id": "family_036",
+      "prompt_ar": "من كان الطباخ الماهر في العائلة؟",
+      "prompt_en": "Who was the skilled cook in the family?",
+      "category": "family_background",
+      "difficulty": "easy"
+    },
+    {
+      "id": "family_037",
+      "prompt_ar": "هل تتذكر عرس أحد أفراد العائلة؟ كيف كان؟",
+      "prompt_en": "Do you remember a family member's wedding? How was it?",
+      "category": "family_memory",
+      "difficulty": "hard"
+    },
+    {
+      "id": "family_038",
+      "prompt_ar": "ما هي الحكم والأمثال التي كان يرددها والدك؟",
+      "prompt_en": "What sayings and proverbs did your father repeat?",
+      "category": "family_tradition",
+      "difficulty": "hard"
+    },
+    {
+      "id": "family_039",
+      "prompt_ar": "هل كانت والدتك تحكي لك قصصاً قبل النوم؟",
+      "prompt_en": "Did your mother tell you bedtime stories?",
+      "category": "family_memory",
+      "difficulty": "medium"
+    },
+    {
+      "id": "family_040",
+      "prompt_ar": "من كان أكثر شخص محبوب في العائلة؟ ولماذا؟",
+      "prompt_en": "Who was the most beloved person in the family? And why?",
+      "category": "family_memory",
+      "difficulty": "hard"
+    },
+    {
+      "id": "family_041",
+      "prompt_ar": "كيف كانت عائلتك تحتفل بعيد الفطر؟",
+      "prompt_en": "How did your family celebrate Eid al-Fitr?",
+      "category": "family_tradition",
+      "difficulty": "medium"
+    },
+    {
+      "id": "family_042",
+      "prompt_ar": "هل كان لديك غرفة خاصة بك أم كنت تتشارك مع إخوتك؟",
+      "prompt_en": "Did you have your own room or did you share with your siblings?",
+      "category": "family_location",
+      "difficulty": "easy"
+    },
+    {
+      "id": "family_043",
+      "prompt_ar": "ما هي المواهب التي كانت موجودة في عائلتك؟",
+      "prompt_en": "What talents existed in your family?",
+      "category": "family_background",
+      "difficulty": "medium"
+    },
+    {
+      "id": "family_044",
+      "prompt_ar": "هل تتذكر مرض أحد أفراد العائلة؟ كيف تعاملتم معه؟",
+      "prompt_en": "Do you remember a family member's illness? How did you deal with it?",
+      "category": "family_memory",
+      "difficulty": "hard"
+    },
+    {
+      "id": "family_045",
+      "prompt_ar": "من كان يساعدك في الواجبات المدرسية؟",
+      "prompt_en": "Who helped you with your homework?",
+      "category": "family_memory",
+      "difficulty": "easy"
+    },
+    {
+      "id": "family_046",
+      "prompt_ar": "هل كان لعائلتك تقاليد خاصة في شهر رمضان؟",
+      "prompt_en": "Did your family have special traditions during Ramadan?",
+      "category": "family_tradition",
+      "difficulty": "medium"
+    },
+    {
+      "id": "family_047",
+      "prompt_ar": "ما هو أجمل هدية تلقيتها من والديك؟",
+      "prompt_en": "What was the most beautiful gift you received from your parents?",
+      "category": "family_memory",
+      "difficulty": "medium"
+    },
+    {
+      "id": "family_048",
+      "prompt_ar": "هل كانت عائلتك تزور الأقارب بانتظام؟",
+      "prompt_en": "Did your family visit relatives regularly?",
+      "category": "family_tradition",
+      "difficulty": "easy"
+    },
+    {
+      "id": "family_049",
+      "prompt_ar": "من أين جاءت عائلة والدتك؟",
+      "prompt_en": "Where did your mother's family come from?",
+      "category": "family_background",
+      "difficulty": "medium"
+    },
+    {
+      "id": "family_050",
+      "prompt_ar": "هل تتذكر آخر مرة جمعت العائلة كلها في مكان واحد؟",
+      "prompt_en": "Do you remember the last time the whole family gathered in one place?",
+      "category": "family_memory",
+      "difficulty": "hard"
     }
   ]
-} 
+}
