@@ -69,6 +69,286 @@
       "prompt_en": "What place did you go to relax or enjoy your time?",
       "category": "leisure_location",
       "difficulty": "hard"
+    },
+    {
+      "id": "places_011",
+      "prompt_ar": "في أي حي سكنت أطول فترة من حياتك؟",
+      "prompt_en": "In which neighborhood did you live the longest period of your life?",
+      "category": "personal_location",
+      "difficulty": "easy"
+    },
+    {
+      "id": "places_012",
+      "prompt_ar": "هل انتقلت من مدينة إلى أخرى؟ لماذا؟",
+      "prompt_en": "Did you move from one city to another? Why?",
+      "category": "personal_location",
+      "difficulty": "medium"
+    },
+    {
+      "id": "places_013",
+      "prompt_ar": "كيف كان يبدو شارعك القديم؟",
+      "prompt_en": "How did your old street look?",
+      "category": "home",
+      "difficulty": "medium"
+    },
+    {
+      "id": "places_014",
+      "prompt_ar": "هل كان في منزلك حديقة؟ ماذا كان فيها؟",
+      "prompt_en": "Did your house have a garden? What was in it?",
+      "category": "home",
+      "difficulty": "medium"
+    },
+    {
+      "id": "places_015",
+      "prompt_ar": "أين كانت غرفتك في البيت؟ كيف كانت مرتبة؟",
+      "prompt_en": "Where was your room in the house? How was it arranged?",
+      "category": "home",
+      "difficulty": "hard"
+    },
+    {
+      "id": "places_016",
+      "prompt_ar": "هل تتذكر منزل جدك أو جدتك؟ صفه لي",
+      "prompt_en": "Do you remember your grandfather's or grandmother's house? Describe it to me",
+      "category": "home",
+      "difficulty": "hard"
+    },
+    {
+      "id": "places_017",
+      "prompt_ar": "أين كان يقع أقرب مستشفى من منزلك؟",
+      "prompt_en": "Where was the nearest hospital from your house?",
+      "category": "daily_location",
+      "difficulty": "medium"
+    },
+    {
+      "id": "places_018",
+      "prompt_ar": "هل تتذكر الصيدلية التي كنت تذهب إليها؟",
+      "prompt_en": "Do you remember the pharmacy you used to go to?",
+      "category": "daily_location",
+      "difficulty": "medium"
+    },
+    {
+      "id": "places_019",
+      "prompt_ar": "أين كان أقرب بنك من منطقتك؟",
+      "prompt_en": "Where was the nearest bank from your area?",
+      "category": "daily_location",
+      "difficulty": "medium"
+    },
+    {
+      "id": "places_020",
+      "prompt_ar": "هل كان هناك مقهى شعبي تجتمع فيه مع الأصدقاء؟",
+      "prompt_en": "Was there a popular café where you gathered with friends?",
+      "category": "daily_location",
+      "difficulty": "hard"
+    },
+    {
+      "id": "places_021",
+      "prompt_ar": "أين كنت تشتري الخبز يومياً؟",
+      "prompt_en": "Where did you buy bread daily?",
+      "category": "daily_location",
+      "difficulty": "easy"
+    },
+    {
+      "id": "places_022",
+      "prompt_ar": "هل تتذكر السوق الشعبي في منطقتك؟",
+      "prompt_en": "Do you remember the popular market in your area?",
+      "category": "daily_location",
+      "difficulty": "medium"
+    },
+    {
+      "id": "places_023",
+      "prompt_ar": "أين كانت مدرستك الثانوية؟ كم كانت تبعد عن بيتك؟",
+      "prompt_en": "Where was your high school? How far was it from your house?",
+      "category": "education_location",
+      "difficulty": "medium"
+    },
+    {
+      "id": "places_024",
+      "prompt_ar": "هل تتذكر الجامعة التي درست فيها؟ صف لي الحرم الجامعي",
+      "prompt_en": "Do you remember the university you studied at? Describe the campus to me",
+      "category": "education_location",
+      "difficulty": "hard"
+    },
+    {
+      "id": "places_025",
+      "prompt_ar": "أين كانت مكتبتك المفضلة؟",
+      "prompt_en": "Where was your favorite library?",
+      "category": "education_location",
+      "difficulty": "hard"
+    },
+    {
+      "id": "places_026",
+      "prompt_ar": "هل كان هناك معهد أو مركز تعليمي تذهب إليه؟",
+      "prompt_en": "Was there an institute or educational center you went to?",
+      "category": "education_location",
+      "difficulty": "medium"
+    },
+    {
+      "id": "places_027",
+      "prompt_ar": "أين كنت تذهب لتعلم القرآن؟",
+      "prompt_en": "Where did you go to learn the Quran?",
+      "category": "education_location",
+      "difficulty": "medium"
+    },
+    {
+      "id": "places_028",
+      "prompt_ar": "ما هو أول مكان عملت فيه؟",
+      "prompt_en": "What was the first place you worked at?",
+      "category": "work_location",
+      "difficulty": "medium"
+    },
+    {
+      "id": "places_029",
+      "prompt_ar": "هل تتذكر مكتبك أو ورشتك؟ كيف كان مرتباً؟",
+      "prompt_en": "Do you remember your office or workshop? How was it arranged?",
+      "category": "work_location",
+      "difficulty": "hard"
+    },
+    {
+      "id": "places_030",
+      "prompt_ar": "أين كنت تتناول الغداء أثناء العمل؟",
+      "prompt_en": "Where did you have lunch during work?",
+      "category": "work_location",
+      "difficulty": "medium"
+    },
+    {
+      "id": "places_031",
+      "prompt_ar": "هل عملت في أكثر من مدينة؟ أيها أعجبك أكثر؟",
+      "prompt_en": "Did you work in more than one city? Which one did you like more?",
+      "category": "work_location",
+      "difficulty": "hard"
+    },
+    {
+      "id": "places_032",
+      "prompt_ar": "ما هو المسجد الذي كنت تصلي فيه الجمعة؟",
+      "prompt_en": "What mosque did you pray Friday prayers in?",
+      "category": "religious_location",
+      "difficulty": "medium"
+    },
+    {
+      "id": "places_033",
+      "prompt_ar": "هل زرت مكة المكرمة؟ كيف كانت تجربتك؟",
+      "prompt_en": "Did you visit Mecca? How was your experience?",
+      "category": "religious_location",
+      "difficulty": "hard"
+    },
+    {
+      "id": "places_034",
+      "prompt_ar": "أين كنت تذهب في شهر رمضان للإفطار الجماعي؟",
+      "prompt_en": "Where did you go for communal iftar during Ramadan?",
+      "category": "religious_location",
+      "difficulty": "medium"
+    },
+    {
+      "id": "places_035",
+      "prompt_ar": "هل تتذكر أي ضريح أو مقام زرته؟",
+      "prompt_en": "Do you remember any shrine or maqam you visited?",
+      "category": "religious_location",
+      "difficulty": "hard"
+    },
+    {
+      "id": "places_036",
+      "prompt_ar": "أين كان أقرب مسجد من بيتك؟",
+      "prompt_en": "Where was the nearest mosque from your house?",
+      "category": "religious_location",
+      "difficulty": "easy"
+    },
+    {
+      "id": "places_037",
+      "prompt_ar": "ما هو الشاطئ أو النهر الذي كنت تذهب إليه؟",
+      "prompt_en": "What beach or river did you go to?",
+      "category": "leisure_location",
+      "difficulty": "medium"
+    },
+    {
+      "id": "places_038",
+      "prompt_ar": "أين كنت تذهب للنزهة مع العائلة؟",
+      "prompt_en": "Where did you go for outings with the family?",
+      "category": "leisure_location",
+      "difficulty": "medium"
+    },
+    {
+      "id": "places_039",
+      "prompt_ar": "هل كان هناك حديقة عامة تحب زيارتها؟",
+      "prompt_en": "Was there a public park you liked to visit?",
+      "category": "leisure_location",
+      "difficulty": "medium"
+    },
+    {
+      "id": "places_040",
+      "prompt_ar": "أين كنت تذهب لمشاهدة الأفلام؟",
+      "prompt_en": "Where did you go to watch movies?",
+      "category": "leisure_location",
+      "difficulty": "medium"
+    },
+    {
+      "id": "places_041",
+      "prompt_ar": "ما هو النادي الرياضي الذي كنت تذهب إليه؟",
+      "prompt_en": "What sports club did you go to?",
+      "category": "leisure_location",
+      "difficulty": "hard"
+    },
+    {
+      "id": "places_042",
+      "prompt_ar": "أين كنت تلعب عندما كنت طفلاً؟",
+      "prompt_en": "Where did you play when you were a child?",
+      "category": "leisure_location",
+      "difficulty": "easy"
+    },
+    {
+      "id": "places_043",
+      "prompt_ar": "هل تتذكر أي مطعم كان مفضلاً لديك؟",
+      "prompt_en": "Do you remember any restaurant that was your favorite?",
+      "category": "leisure_location",
+      "difficulty": "medium"
+    },
+    {
+      "id": "places_044",
+      "prompt_ar": "أين كانت أول رحلة سفر قمت بها؟",
+      "prompt_en": "Where was your first travel trip?",
+      "category": "travel",
+      "difficulty": "medium"
+    },
+    {
+      "id": "places_045",
+      "prompt_ar": "هل سافرت خارج بلدك للعلاج؟ إلى أين؟",
+      "prompt_en": "Did you travel outside your country for treatment? Where to?",
+      "category": "travel",
+      "difficulty": "hard"
+    },
+    {
+      "id": "places_046",
+      "prompt_ar": "ما هي أبعد مدينة زرتها؟",
+      "prompt_en": "What is the farthest city you visited?",
+      "category": "travel",
+      "difficulty": "medium"
+    },
+    {
+      "id": "places_047",
+      "prompt_ar": "أين قضيت شهر العسل؟",
+      "prompt_en": "Where did you spend your honeymoon?",
+      "category": "travel",
+      "difficulty": "hard"
+    },
+    {
+      "id": "places_048",
+      "prompt_ar": "هل زرت أي عاصمة عربية؟ أيها أعجبتك؟",
+      "prompt_en": "Did you visit any Arab capital? Which one did you like?",
+      "category": "travel",
+      "difficulty": "hard"
+    },
+    {
+      "id": "places_049",
+      "prompt_ar": "أين كان منزل طفولتك المفضل؟",
+      "prompt_en": "Where was your favorite childhood home?",
+      "category": "favorite_location",
+      "difficulty": "medium"
+    },
+    {
+      "id": "places_050",
+      "prompt_ar": "ما هو المكان الذي تحن إليه أكثر من غيره؟",
+      "prompt_en": "What is the place you long for most?",
+      "category": "favorite_location",
+      "difficulty": "hard"
     }
   ]
-} 
+}
