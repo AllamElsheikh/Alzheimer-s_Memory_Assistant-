@@ -120,5 +120,353 @@
       "description_ar": "رقصة شعبية عربية تقليدية",
       "description_en": "Traditional Arab folk dance"
     }
+    {
+  "cultural_entities": [
+    {
+      "id": "food_004",
+      "name_ar": "حمص",
+      "name_en": "Hummus",
+      "category": "food",
+      "description_ar": "طبق عربي تقليدي من الحمص المهروس مع الطحينة والثوم",
+      "description_en": "Traditional Arab dish of mashed chickpeas with tahini and garlic"
+    },
+    {
+      "id": "food_005",
+      "name_ar": "تبولة",
+      "name_en": "Tabbouleh",
+      "category": "food",
+      "description_ar": "سلطة عربية من البقدونس والطماطم والبرغل",
+      "description_en": "Arab salad made with parsley, tomatoes and bulgur"
+    },
+    {
+      "id": "food_006",
+      "name_ar": "ملوخية",
+      "name_en": "Molokhia",
+      "category": "food",
+      "description_ar": "حساء أخضر تقليدي مصنوع من أوراق الملوخية",
+      "description_en": "Traditional green soup made from jute leaves"
+    },
+    {
+      "id": "food_007",
+      "name_ar": "كبة",
+      "name_en": "Kibbeh",
+      "category": "food",
+      "description_ar": "كرات من اللحم والبرغل المقلية أو المسلوقة",
+      "description_en": "Fried or boiled balls of meat and bulgur"
+    },
+    {
+      "id": "food_008",
+      "name_ar": "مناقيش",
+      "name_en": "Manakish",
+      "category": "food",
+      "description_ar": "خبز مسطح مع الزعتر وزيت الزيتون",
+      "description_en": "Flatbread topped with thyme and olive oil"
+    },
+    {
+      "id": "food_009",
+      "name_ar": "معمول",
+      "name_en": "Maamoul",
+      "category": "food",
+      "description_ar": "حلوى عربية محشوة بالتمر أو المكسرات",
+      "description_en": "Arab pastry filled with dates or nuts"
+    },
+    {
+      "id": "food_010",
+      "name_ar": "شاورما",
+      "name_en": "Shawarma",
+      "category": "food",
+      "description_ar": "لحم مشوي على السيخ يقدم في الخبز",
+      "description_en": "Grilled meat on a spit served in bread"
+    },
+    {
+      "id": "food_011",
+      "name_ar": "محشي",
+      "name_en": "Mahshi",
+      "category": "food",
+      "description_ar": "خضروات محشوة بالأرز واللحم",
+      "description_en": "Vegetables stuffed with rice and meat"
+    },
+    {
+      "id": "food_012",
+      "name_ar": "قطايف",
+      "name_en": "Qatayef",
+      "category": "food",
+      "description_ar": "فطائر رمضانية محشوة بالجبن أو المكسرات",
+      "description_en": "Ramadan pancakes filled with cheese or nuts"
+    },
+    {
+      "id": "food_013",
+      "name_ar": "بقلاوة",
+      "name_en": "Baklava",
+      "category": "food",
+      "description_ar": "حلوى من طبقات العجين الرقيق والمكسرات",
+      "description_en": "Pastry made of layers of filo dough with nuts"
+    },
+    {
+      "id": "celebration_004",
+      "name_ar": "ليلة القدر",
+      "name_en": "Laylat al-Qadr",
+      "category": "celebration",
+      "description_ar": "الليلة المباركة في شهر رمضان",
+      "description_en": "The blessed night in Ramadan"
+    },
+    {
+      "id": "celebration_005",
+      "name_ar": "الإسراء والمعراج",
+      "name_en": "Isra and Mi'raj",
+      "category": "celebration",
+      "description_ar": "ذكرى رحلة الرسول الليلية إلى القدس والسماء",
+      "description_en": "Commemoration of Prophet's night journey to Jerusalem and heaven"
+    },
+    {
+      "id": "celebration_006",
+      "name_ar": "عاشوراء",
+      "name_en": "Ashura",
+      "category": "celebration",
+      "description_ar": "يوم مقدس في التقويم الإسلامي",
+      "description_en": "Sacred day in the Islamic calendar"
+    },
+    {
+      "id": "celebration_007",
+      "name_ar": "الحج",
+      "name_en": "Hajj",
+      "category": "celebration",
+      "description_ar": "الحج إلى مكة المكرمة، ركن من أركان الإسلام",
+      "description_en": "Pilgrimage to Mecca, one of the pillars of Islam"
+    },
+    {
+      "id": "celebration_008",
+      "name_ar": "رأس السنة الهجرية",
+      "name_en": "Islamic New Year",
+      "category": "celebration",
+      "description_ar": "بداية السنة الهجرية الجديدة",
+      "description_en": "Beginning of the new Islamic year"
+    },
+    {
+      "id": "tradition_004",
+      "name_ar": "الكرم العربي",
+      "name_en": "Arab Hospitality",
+      "category": "tradition",
+      "description_ar": "تقليد عربي أصيل في إكرام الضيف",
+      "description_en": "Authentic Arab tradition of honoring guests"
+    },
+    {
+      "id": "tradition_005",
+      "name_ar": "الخط العربي",
+      "name_en": "Arabic Calligraphy",
+      "category": "tradition",
+      "description_ar": "فن كتابة الحروف العربية بشكل جميل",
+      "description_en": "Art of beautiful Arabic letter writing"
+    },
+    {
+      "id": "tradition_006",
+      "name_ar": "السدو",
+      "name_en": "Sadu",
+      "category": "tradition",
+      "description_ar": "فن النسيج البدوي التقليدي",
+      "description_en": "Traditional Bedouin weaving art"
+    },
+    {
+      "id": "tradition_007",
+      "name_ar": "الصقارة",
+      "name_en": "Falconry",
+      "category": "tradition",
+      "description_ar": "فن تدريب الصقور للصيد",
+      "description_en": "Art of training falcons for hunting"
+    },
+    {
+      "id": "tradition_008",
+      "name_ar": "العرضة",
+      "name_en": "Ardah",
+      "category": "tradition",
+      "description_ar": "رقصة تقليدية بالسيوف في الخليج العربي",
+      "description_en": "Traditional sword dance in the Arabian Gulf"
+    },
+    {
+      "id": "landmark_004",
+      "name_ar": "قصر الحمراء",
+      "name_en": "Alhambra",
+      "category": "landmark",
+      "description_ar": "قصر إسلامي تاريخي في غرناطة، إسبانيا",
+      "description_en": "Historic Islamic palace in Granada, Spain"
+    },
+    {
+      "id": "landmark_005",
+      "name_ar": "مدينة البتراء",
+      "name_en": "Petra",
+      "category": "landmark",
+      "description_ar": "مدينة أثرية منحوتة في الصخر في الأردن",
+      "description_en": "Archaeological city carved in rock in Jordan"
+    },
+    {
+      "id": "landmark_006",
+      "name_ar": "قبة الصخرة",
+      "name_en": "Dome of the Rock",
+      "category": "landmark",
+      "description_ar": "مسجد إسلامي في القدس مع القبة الذهبية",
+      "description_en": "Islamic mosque in Jerusalem with golden dome"
+    },
+    {
+      "id": "landmark_007",
+      "name_ar": "مسجد الحسن الثاني",
+      "name_en": "Hassan II Mosque",
+      "category": "landmark",
+      "description_ar": "مسجد كبير في الدار البيضاء، المغرب",
+      "description_en": "Large mosque in Casablanca, Morocco"
+    },
+    {
+      "id": "landmark_008",
+      "name_ar": "تدمر",
+      "name_en": "Palmyra",
+      "category": "landmark",
+      "description_ar": "مدينة أثرية تاريخية في سوريا",
+      "description_en": "Historic archaeological city in Syria"
+    },
+    {
+      "id": "music_004",
+      "name_ar": "القانون",
+      "name_en": "Qanun",
+      "category": "music",
+      "description_ar": "آلة موسيقية عربية وترية تشبه القيثارة",
+      "description_en": "Arab stringed instrument similar to a zither"
+    },
+    {
+      "id": "music_005",
+      "name_ar": "الناي",
+      "name_en": "Ney",
+      "category": "music",
+      "description_ar": "آلة نفخ عربية تقليدية مصنوعة من القصب",
+      "description_en": "Traditional Arab wind instrument made of reed"
+    },
+    {
+      "id": "music_006",
+      "name_ar": "الرق",
+      "name_en": "Riq",
+      "category": "music",
+      "description_ar": "دف صغير مع صنوج معدنية",
+      "description_en": "Small tambourine with metal cymbals"
+    },
+    {
+      "id": "music_007",
+      "name_ar": "السماح",
+      "name_en": "Sama",
+      "category": "music",
+      "description_ar": "طقوس موسيقية روحانية صوفية",
+      "description_en": "Spiritual Sufi musical ritual"
+    },
+    {
+      "id": "music_008",
+      "name_ar": "المقام",
+      "name_en": "Maqam",
+      "category": "music",
+      "description_ar": "نظام الألحان في الموسيقى العربية",
+      "description_en": "System of melody modes in Arabic music"
+    },
+    {
+      "id": "clothing_001",
+      "name_ar": "الثوب",
+      "name_en": "Thobe",
+      "category": "clothing",
+      "description_ar": "لباس تقليدي طويل يرتديه الرجال في الخليج",
+      "description_en": "Traditional long garment worn by men in the Gulf"
+    },
+    {
+      "id": "clothing_002",
+      "name_ar": "العباءة",
+      "name_en": "Abaya",
+      "category": "clothing",
+      "description_ar": "رداء أسود فضفاض تلبسه النساء",
+      "description_en": "Loose black robe worn by women"
+    },
+    {
+      "id": "clothing_003",
+      "name_ar": "الكوفية",
+      "name_en": "Keffiyeh",
+      "category": "clothing",
+      "description_ar": "غطاء رأس تقليدي عربي للرجال",
+      "description_en": "Traditional Arab head covering for men"
+    },
+    {
+      "id": "clothing_004",
+      "name_ar": "الجلابية",
+      "name_en": "Galabiya",
+      "category": "clothing",
+      "description_ar": "ثوب فضفاض تقليدي في مصر والشام",
+      "description_en": "Traditional loose garment in Egypt and Levant"
+    },
+    {
+      "id": "clothing_005",
+      "name_ar": "الطربوش",
+      "name_en": "Tarboush",
+      "category": "clothing",
+      "description_ar": "قبعة تقليدية حمراء بشرابة",
+      "description_en": "Traditional red hat with tassel"
+    },
+    {
+      "id": "literature_001",
+      "name_ar": "ألف ليلة وليلة",
+      "name_en": "One Thousand and One Nights",
+      "category": "literature",
+      "description_ar": "مجموعة حكايات عربية تقليدية",
+      "description_en": "Collection of traditional Arab tales"
+    },
+    {
+      "id": "literature_002",
+      "name_ar": "المعلقات",
+      "name_en": "Mu'allaqat",
+      "category": "literature",
+      "description_ar": "قصائد الشعر العربي القديم المشهورة",
+      "description_en": "Famous ancient Arabic poetry"
+    },
+    {
+      "id": "literature_003",
+      "name_ar": "كليلة ودمنة",
+      "name_en": "Kalila wa Dimna",
+      "category": "literature",
+      "description_ar": "كتاب الحكايات والأمثال العربي",
+      "description_en": "Arab book of tales and parables"
+    },
+    {
+      "id": "games_001",
+      "name_ar": "المنقلة",
+      "name_en": "Mancala",
+      "category": "games",
+      "description_ar": "لعبة تقليدية بالحبوب والحفر",
+      "description_en": "Traditional game with seeds and holes"
+    },
+    {
+      "id": "games_002",
+      "name_ar": "الطاولة",
+      "name_en": "Backgammon",
+      "category": "games",
+      "description_ar": "لعبة لوحية تقليدية بالنرد",
+      "description_en": "Traditional board game with dice"
+    },
+    {
+      "id": "architecture_001",
+      "name_ar": "المشربية",
+      "name_en": "Mashrabiya",
+      "category": "architecture",
+      "description_ar": "نافذة خشبية منحوتة في العمارة العربية",
+      "description_en": "Carved wooden window in Arab architecture"
+    },
+    {
+      "id": "architecture_002",
+      "name_ar": "الفناء",
+      "name_en": "Courtyard",
+      "category": "architecture",
+      "description_ar": "ساحة داخلية في البيوت العربية التقليدية",
+      "description_en": "Inner courtyard in traditional Arab houses"
+    },
+    {
+      "id": "architecture_003",
+      "name_ar": "المئذنة",
+      "name_en": "Minaret",
+      "category": "architecture",
+      "description_ar": "برج المسجد الذي يؤذن منه",
+      "description_en": "Mosque tower from which the call to prayer is made"
+    }
+  ]
+}
   ]
 } 
