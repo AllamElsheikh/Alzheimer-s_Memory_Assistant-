@@ -3,7 +3,7 @@
         "id": 1,
         "name": "أحمد محمد",
         "relationship": "ابن",
-        "photo_path": "test_photos/ahmed.jpg",
+        "photo_path": "test_photos/son1.jpg",
         "notes": "ابني الأكبر، يعمل مهندس",
         "created_at": "2025-07-16T05:07:32.925538",
         "last_accessed": null,
@@ -11,12 +11,82 @@
     },
     {
         "id": 2,
-        "name": "أحمد محمد",
+        "name": " علي محمد ",
         "relationship": "ابن",
-        "photo_path": "test_photos/ahmed.jpg",
-        "notes": "ابني الأكبر، يعمل مهندس",
+        "photo_path": "test_photos/son2.jpg",
+        "notes": "ابني الأصغر، طالب في الجامعة",
         "created_at": "2025-07-16T05:09:55.663042",
         "last_accessed": null,
         "access_count": 0
+    },
+    {
+        "id": 3,
+        "name": "فاطمة محمد",
+        "relationship": "ابنة",
+        "photo_path": "test_photos/d1.jpg",
+        "notes": "ابنتي الوحيدة تدرس بالمدرسة الثانةية ,
+        "created_at": "2025-07-16T05:12:18.445321",
+        "last_accessed": null,
+        "access_count": 0
+    },
+    {
+        "id": 4,
+        "name": "خديجة أحمد",
+        "relationship": "زوجة",
+        "photo_path": "test_photos/wi.jpg",
+        "notes": "زوجتي الحبيبة، متزوجان منذ 35 سنة",
+        "created_at": "2025-07-16T05:15:42.772198",
+        "last_accessed": "2025-07-24T10:30:15.123456",
+        "access_count": 12
+    },
+    {
+        "id": 5,
+        "name": "عبد الله حسن",
+        "relationship": "صديق",
+        "photo_path": "test_photos/f1.jpg",
+        "notes": "صديق الطفولة، نعرف بعضنا منذ 50 سنة",
+        "created_at": "2025-07-16T05:18:29.891234",
+        "last_accessed": "2025-07-22T14:20:33.567890",
+        "access_count": 8
+    },
+    {
+        "id": 6,
+        "name": "محمود سالم",
+        "relationship": "صديق",
+        "photo_path": "test_photos/f2.jpg",
+        "notes": "زميل العمل السابق، كنا نعمل معاً في الشركة",
+        "created_at": "2025-07-16T05:21:07.334567",
+        "last_accessed": "2025-07-20T16:45:22.789012",
+        "access_count": 5
+    },
+    {
+        "id": 7,
+        "name": "يوسف إبراهيم",
+        "relationship": "صديق",
+        "photo_path": "test_photos/f3.jpg",
+        "notes": "جار قديم وصديق مقرب، كان يسكن في نفس الحي",
+        "created_at": "2025-07-16T05:23:44.612398",
+        "last_accessed": "2025-07-21T09:15:18.345678",
+        "access_count": 6
+    },
+    {
+        "id": 8,
+        "name": "علي محمد",
+        "relationship": "ابن عم",
+        "photo_path": "test_photos/co1.jpg",
+        "notes": "ابن عمي، نشأنا معاً في نفس البيت",
+        "created_at": "2025-07-16T05:26:12.776543",
+        "last_accessed": "2025-07-19T12:30:45.234567",
+        "access_count": 4
+    },
+    {
+        "id": 9,
+        "name": "حسام أحمد",
+        "relationship": "ابن عم",
+        "photo_path": "test_photos/co2.jpg",
+        "notes": "ابن عم آخر، يسكن في المدينة المجاورة",
+        "created_at": "2025-07-16T05:28:58.443221",
+        "last_accessed": "2025-07-23T17:22:11.456789",
+        "access_count": 3
     }
 ]
