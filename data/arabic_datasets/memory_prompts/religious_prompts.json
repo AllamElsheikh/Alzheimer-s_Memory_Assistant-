@@ -119,6 +119,286 @@
       "category": "bible",
       "difficulty": "medium",
       "religion": "christianity"
+    },
+    {
+      "id": "rel_016",
+      "prompt_ar": "هل تتذكر وقت السحور في رمضان؟ ماذا كنتم تأكلون؟",
+      "prompt_en": "Do you remember Suhoor time in Ramadan? What did you eat?",
+      "category": "ramadan",
+      "difficulty": "easy",
+      "religion": "islam"
+    },
+    {
+      "id": "rel_017",
+      "prompt_ar": "هل قمت بالعمرة؟ كيف كانت تجربتك؟",
+      "prompt_en": "Did you perform Umrah? How was your experience?",
+      "category": "hajj",
+      "difficulty": "medium",
+      "religion": "islam"
+    },
+    {
+      "id": "rel_018",
+      "prompt_ar": "هل تحفظ أي آيات من القرآن؟ أيها تعني لك الكثير؟",
+      "prompt_en": "Do you memorize any verses from the Quran? Which ones mean a lot to you?",
+      "category": "quran",
+      "difficulty": "medium",
+      "religion": "islam"
+    },
+    {
+      "id": "rel_019",
+      "prompt_ar": "كيف كنت تستعد لصلاة الجمعة؟",
+      "prompt_en": "How did you prepare for Friday prayers?",
+      "category": "prayer",
+      "difficulty": "easy",
+      "religion": "islam"
+    },
+    {
+      "id": "rel_020",
+      "prompt_ar": "هل تتذكر إمام المسجد الذي كنت تصلي خلفه؟",
+      "prompt_en": "Do you remember the imam of the mosque you prayed behind?",
+      "category": "mosque",
+      "difficulty": "medium",
+      "religion": "islam"
+    },
+    {
+      "id": "rel_021",
+      "prompt_ar": "ماذا كنت تفعل في العشر الأواخر من رمضان؟",
+      "prompt_en": "What did you do during the last ten nights of Ramadan?",
+      "category": "ramadan",
+      "difficulty": "hard",
+      "religion": "islam"
+    },
+    {
+      "id": "rel_022",
+      "prompt_ar": "هل تتذكر أول مرة دخلت فيها الحرم المكي؟",
+      "prompt_en": "Do you remember the first time you entered the Sacred Mosque in Mecca?",
+      "category": "hajj",
+      "difficulty": "hard",
+      "religion": "islam"
+    },
+    {
+      "id": "rel_023",
+      "prompt_ar": "هل كنت تقرأ القرآن يومياً؟ في أي وقت؟",
+      "prompt_en": "Did you read the Quran daily? At what time?",
+      "category": "quran",
+      "difficulty": "easy",
+      "religion": "islam"
+    },
+    {
+      "id": "rel_024",
+      "prompt_ar": "كيف كنت تعلم أطفالك الصلاة؟",
+      "prompt_en": "How did you teach your children to pray?",
+      "category": "prayer",
+      "difficulty": "medium",
+      "religion": "islam"
+    },
+    {
+      "id": "rel_025",
+      "prompt_ar": "هل تتذكر زيارة أي مقام أو ضريح ديني؟",
+      "prompt_en": "Do you remember visiting any religious shrine or maqam?",
+      "category": "mosque",
+      "difficulty": "medium",
+      "religion": "islam"
+    },
+    {
+      "id": "rel_026",
+      "prompt_ar": "ما هو أجمل إفطار رمضاني تتذكره؟",
+      "prompt_en": "What is the most beautiful Ramadan iftar you remember?",
+      "category": "ramadan",
+      "difficulty": "medium",
+      "religion": "islam"
+    },
+    {
+      "id": "rel_027",
+      "prompt_ar": "هل تتذكر كيف كنت تحتفل بالمولد النبوي؟",
+      "prompt_en": "Do you remember how you celebrated the Prophet's Birthday?",
+      "category": "celebration",
+      "difficulty": "medium",
+      "religion": "islam"
+    },
+    {
+      "id": "rel_028",
+      "prompt_ar": "هل كان لديك معلم قرآن؟ ماذا تتذكر عنه؟",
+      "prompt_en": "Did you have a Quran teacher? What do you remember about him?",
+      "category": "education",
+      "difficulty": "medium",
+      "religion": "islam"
+    },
+    {
+      "id": "rel_029",
+      "prompt_ar": "كيف كنت تقضي ليلة الإسراء والمعراج؟",
+      "prompt_en": "How did you spend the night of Isra and Mi'raj?",
+      "category": "celebration",
+      "difficulty": "hard",
+      "religion": "islam"
+    },
+    {
+      "id": "rel_030",
+      "prompt_ar": "هل تتذكر أي خطبة جمعة أثرت فيك بشكل خاص؟",
+      "prompt_en": "Do you remember any Friday sermon that particularly affected you?",
+      "category": "mosque",
+      "difficulty": "hard",
+      "religion": "islam"
+    },
+    {
+      "id": "rel_031",
+      "prompt_ar": "هل تتذكر معمودیتك أو معمودیة أطفالك؟",
+      "prompt_en": "Do you remember your baptism or your children's baptism?",
+      "category": "baptism",
+      "difficulty": "medium",
+      "religion": "christianity"
+    },
+    {
+      "id": "rel_032",
+      "prompt_ar": "كيف كنت تحتفل بعيد الغطاس؟",
+      "prompt_en": "How did you celebrate Epiphany?",
+      "category": "celebration",
+      "difficulty": "medium",
+      "religion": "christianity"
+    },
+    {
+      "id": "rel_033",
+      "prompt_ar": "هل تتذكر أي قداس خاص حضرته في الكنيسة؟",
+      "prompt_en": "Do you remember any special mass you attended in church?",
+      "category": "church",
+      "difficulty": "medium",
+      "religion": "christianity"
+    },
+    {
+      "id": "rel_034",
+      "prompt_ar": "ما هي الآية المفضلة لديك من الكتاب المقدس؟",
+      "prompt_en": "What is your favorite verse from the Bible?",
+      "category": "bible",
+      "difficulty": "easy",
+      "religion": "christianity"
+    },
+    {
+      "id": "rel_035",
+      "prompt_ar": "هل كنت تشارك في جوقة الكنيسة؟",
+      "prompt_en": "Did you participate in the church choir?",
+      "category": "hymns",
+      "difficulty": "medium",
+      "religion": "christianity"
+    },
+    {
+      "id": "rel_036",
+      "prompt_ar": "كيف كنت تحتفل بأحد الشعانين؟",
+      "prompt_en": "How did you celebrate Palm Sunday?",
+      "category": "easter",
+      "difficulty": "medium",
+      "religion": "christianity"
+    },
+    {
+      "id": "rel_037",
+      "prompt_ar": "هل تتذكر كيف كانت كنيستك تبدو من الداخل؟",
+      "prompt_en": "Do you remember how your church looked from the inside?",
+      "category": "church",
+      "difficulty": "medium",
+      "religion": "christianity"
+    },
+    {
+      "id": "rel_038",
+      "prompt_ar": "ما هو أجمل عيد ميلاد احتفلت به؟",
+      "prompt_en": "What is the most beautiful Christmas you celebrated?",
+      "category": "christmas",
+      "difficulty": "medium",
+      "religion": "christianity"
+    },
+    {
+      "id": "rel_039",
+      "prompt_ar": "هل كنت تصوم الصوم الكبير؟ كيف كان شعورك؟",
+      "prompt_en": "Did you fast during Lent? How did you feel?",
+      "category": "lent",
+      "difficulty": "medium",
+      "religion": "christianity"
+    },
+    {
+      "id": "rel_040",
+      "prompt_ar": "هل تتذكر أي معجزة أو قصة من حياة المسيح تأثرت بها؟",
+      "prompt_en": "Do you remember any miracle or story from Christ's life that affected you?",
+      "category": "bible",
+      "difficulty": "hard",
+      "religion": "christianity"
+    },
+    {
+      "id": "rel_041",
+      "prompt_ar": "كيف كنت تحضر لعيد الفصح في بیتك؟",
+      "prompt_en": "How did you prepare for Easter at home?",
+      "category": "easter",
+      "difficulty": "medium",
+      "religion": "christianity"
+    },
+    {
+      "id": "rel_042",
+      "prompt_ar": "هل تتذكر أي كاهن أو قس كان له تأثير في حياتك؟",
+      "prompt_en": "Do you remember any priest or pastor who had an influence on your life?",
+      "category": "church",
+      "difficulty": "medium",
+      "religion": "christianity"
+    },
+    {
+      "id": "rel_043",
+      "prompt_ar": "ما هو الترنيم المفضل لديك؟ هل تتذكر كلماته؟",
+      "prompt_en": "What is your favorite hymn? Do you remember its words?",
+      "category": "hymns",
+      "difficulty": "hard",
+      "religion": "christianity"
+    },
+    {
+      "id": "rel_044",
+      "prompt_ar": "كيف كنت تحتفل بعيد القديسين؟",
+      "prompt_en": "How did you celebrate All Saints' Day?",
+      "category": "celebration",
+      "difficulty": "medium",
+      "religion": "christianity"
+    },
+    {
+      "id": "rel_045",
+      "prompt_ar": "هل قمت بأي حج مسيحي أو زيارة أماكن مقدسة؟",
+      "prompt_en": "Did you go on any Christian pilgrimage or visit holy places?",
+      "category": "pilgrimage",
+      "difficulty": "hard",
+      "religion": "christianity"
+    },
+    {
+      "id": "rel_046",
+      "prompt_ar": "هل كنت تقرأ الكتاب المقدس يومياً؟ أي جزء كنت تفضل؟",
+      "prompt_en": "Did you read the Bible daily? Which part did you prefer?",
+      "category": "bible",
+      "difficulty": "medium",
+      "religion": "christianity"
+    },
+    {
+      "id": "rel_047",
+      "prompt_ar": "كيف كانت عائلتك تحتفل بعيد الصعود؟",
+      "prompt_en": "How did your family celebrate the Ascension?",
+      "category": "celebration",
+      "difficulty": "medium",
+      "religion": "christianity"
+    },
+    {
+      "id": "rel_048",
+      "prompt_ar": "هل تتذكر أي صلاة خاصة كنت تحبها؟",
+      "prompt_en": "Do you remember any special prayer you loved?",
+      "category": "prayer",
+      "difficulty": "easy",
+      "religion": "christianity"
+    },
+    {
+      "id": "rel_049",
+      "prompt_ar": "هل شاركت في أي أنشطة خيرية من خلال الكنيسة؟",
+      "prompt_en": "Did you participate in any charitable activities through the church?",
+      "category": "church",
+      "difficulty": "medium",
+      "religion": "christianity"
+    },
+    {
+      "id": "rel_050",
+      "prompt_ar": "ما هي أقوى ذكرياتك الدينية؟",
+      "prompt_en": "What are your strongest religious memories?",
+      "category": "general",
+      "difficulty": "hard",
+      "religion": "general"
     }
   ]
-} 
+}
