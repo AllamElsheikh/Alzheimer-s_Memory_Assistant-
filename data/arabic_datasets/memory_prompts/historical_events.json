@@ -89,6 +89,366 @@
       "prompt_ar": "هل عشت خلال الحرب الأهلية اللبنانية؟ ماذا تتذكر عنها؟",
       "prompt_en": "Did you live during the Lebanese Civil War? What do you remember about it?",
       "region": ["lebanon", "middle_east"]
+    },
+    {
+      "id": "hist_011",
+      "event_ar": "حرب النكسة 1967",
+      "event_en": "Six-Day War 1967",
+      "year": 1967,
+      "prompt_ar": "هل تتذكر حرب الأيام الستة عام 1967؟",
+      "prompt_en": "Do you remember the Six-Day War of 1967?",
+      "region": ["egypt", "syria", "jordan", "middle_east"]
+    },
+    {
+      "id": "hist_012",
+      "event_ar": "ثورة 14 يوليو العراقية",
+      "event_en": "14 July Revolution Iraq",
+      "year": 1958,
+      "prompt_ar": "ماذا تتذكر عن ثورة 14 يوليو في العراق؟",
+      "prompt_en": "What do you remember about the July 14 Revolution in Iraq?",
+      "region": ["iraq", "middle_east"]
+    },
+    {
+      "id": "hist_013",
+      "event_ar": "استقلال تونس",
+      "event_en": "Tunisian Independence",
+      "year": 1956,
+      "prompt_ar": "هل تتذكر استقلال تونس عن فرنسا؟",
+      "prompt_en": "Do you remember Tunisia's independence from France?",
+      "region": ["tunisia", "north_africa"]
+    },
+    {
+      "id": "hist_014",
+      "event_ar": "انقلاب حافظ الأسد",
+      "event_en": "Hafez al-Assad Coup",
+      "year": 1970,
+      "prompt_ar": "هل تتذكر وصول حافظ الأسد للحكم في سوريا؟",
+      "prompt_en": "Do you remember Hafez al-Assad coming to power in Syria?",
+      "region": ["syria", "middle_east"]
+    },
+    {
+      "id": "hist_015",
+      "event_ar": "الغزو العراقي للكويت",
+      "event_en": "Iraqi Invasion of Kuwait",
+      "year": 1990,
+      "prompt_ar": "ماذا تتذكر عن غزو العراق للكويت؟",
+      "prompt_en": "What do you remember about Iraq's invasion of Kuwait?",
+      "region": ["iraq", "kuwait", "middle_east"]
+    },
+    {
+      "id": "hist_016",
+      "event_ar": "اتفاقية كامب ديفيد",
+      "event_en": "Camp David Accords",
+      "year": 1978,
+      "prompt_ar": "هل تتذكر توقيع اتفاقية كامب ديفيد؟",
+      "prompt_en": "Do you remember the signing of the Camp David Accords?",
+      "region": ["egypt", "middle_east"]
+    },
+    {
+      "id": "hist_017",
+      "event_ar": "الثورة الإيرانية",
+      "event_en": "Iranian Revolution",
+      "year": 1979,
+      "prompt_ar": "ماذا تتذكر عن الثورة الإيرانية؟",
+      "prompt_en": "What do you remember about the Iranian Revolution?",
+      "region": ["iran", "middle_east"]
+    },
+    {
+      "id": "hist_018",
+      "event_ar": "الحرب العراقية الإيرانية",
+      "event_en": "Iran-Iraq War",
+      "year": 1980,
+      "prompt_ar": "هل عشت خلال الحرب بين العراق وإيران؟",
+      "prompt_en": "Did you live during the Iran-Iraq War?",
+      "region": ["iraq", "iran", "middle_east"]
+    },
+    {
+      "id": "hist_019",
+      "event_ar": "الانتفاضة الفلسطينية الأولى",
+      "event_en": "First Palestinian Intifada",
+      "year": 1987,
+      "prompt_ar": "هل تتذكر الانتفاضة الأولى عام 1987؟",
+      "prompt_en": "Do you remember the First Intifada in 1987?",
+      "region": ["palestine", "middle_east"]
+    },
+    {
+      "id": "hist_020",
+      "event_ar": "اغتيال أنور السادات",
+      "event_en": "Assassination of Anwar Sadat",
+      "year": 1981,
+      "prompt_ar": "أين كنت عندما اغتيل الرئيس السادات؟",
+      "prompt_en": "Where were you when President Sadat was assassinated?",
+      "region": ["egypt", "middle_east"]
+    },
+    {
+      "id": "hist_021",
+      "event_ar": "استقلال السودان",
+      "event_en": "Sudanese Independence",
+      "year": 1956,
+      "prompt_ar": "هل تتذكر استقلال السودان؟",
+      "prompt_en": "Do you remember Sudan's independence?",
+      "region": ["sudan", "africa"]
+    },
+    {
+      "id": "hist_022",
+      "event_ar": "حرب تشرين التحريرية",
+      "event_en": "October Liberation War",
+      "year": 1973,
+      "prompt_ar": "كيف عشت أيام حرب تشرين التحريرية؟",
+      "prompt_en": "How did you experience the days of the October Liberation War?",
+      "region": ["syria", "middle_east"]
+    },
+    {
+      "id": "hist_023",
+      "event_ar": "تأسيس جامعة الدول العربية",
+      "event_en": "Formation of Arab League",
+      "year": 1945,
+      "prompt_ar": "هل تتذكر تأسيس جامعة الدول العربية؟",
+      "prompt_en": "Do you remember the formation of the Arab League?",
+      "region": ["middle_east", "north_africa", "arab_world"]
+    },
+    {
+      "id": "hist_024",
+      "event_ar": "حرب الاستنزاف",
+      "event_en": "War of Attrition",
+      "year": 1969,
+      "prompt_ar": "ماذا تتذكر عن حرب الاستنزاف؟",
+      "prompt_en": "What do you remember about the War of Attrition?",
+      "region": ["egypt", "middle_east"]
+    },
+    {
+      "id": "hist_025",
+      "event_ar": "استقلال الأردن",
+      "event_en": "Jordanian Independence",
+      "year": 1946,
+      "prompt_ar": "هل لديك ذكريات عن استقلال الأردن؟",
+      "prompt_en": "Do you have memories about Jordan's independence?",
+      "region": ["jordan", "middle_east"]
+    },
+    {
+      "id": "hist_026",
+      "event_ar": "أيلول الأسود",
+      "event_en": "Black September",
+      "year": 1970,
+      "prompt_ar": "هل تتذكر أحداث أيلول الأسود في الأردن؟",
+      "prompt_en": "Do you remember the Black September events in Jordan?",
+      "region": ["jordan", "palestine", "middle_east"]
+    },
+    {
+      "id": "hist_027",
+      "event_ar": "حرب لبنان 1982",
+      "event_en": "1982 Lebanon War",
+      "year": 1982,
+      "prompt_ar": "ماذا تتذكر عن حرب لبنان عام 1982؟",
+      "prompt_en": "What do you remember about the 1982 Lebanon War?",
+      "region": ["lebanon", "middle_east"]
+    },
+    {
+      "id": "hist_028",
+      "event_ar": "مذبحة صبرا وشاتيلا",
+      "event_en": "Sabra and Shatila Massacre",
+      "year": 1982,
+      "prompt_ar": "هل تتذكر مذبحة صبرا وشاتيلا؟",
+      "prompt_en": "Do you remember the Sabra and Shatila massacre?",
+      "region": ["lebanon", "palestine", "middle_east"]
+    },
+    {
+      "id": "hist_029",
+      "event_ar": "حرب 2006 اللبنانية",
+      "event_en": "2006 Lebanon War",
+      "year": 2006,
+      "prompt_ar": "كيف عشت حرب تموز 2006 في لبنان؟",
+      "prompt_en": "How did you experience the July 2006 war in Lebanon?",
+      "region": ["lebanon", "middle_east"]
+    },
+    {
+      "id": "hist_030",
+      "event_ar": "الانتفاضة الثانية",
+      "event_en": "Second Intifada",
+      "year": 2000,
+      "prompt_ar": "ماذا تتذكر عن انتفاضة الأقصى؟",
+      "prompt_en": "What do you remember about the Al-Aqsa Intifada?",
+      "region": ["palestine", "middle_east"]
+    },
+    {
+      "id": "hist_031",
+      "event_ar": "أزمة البترول 1973",
+      "event_en": "1973 Oil Crisis",
+      "year": 1973,
+      "prompt_ar": "هل تتذكر أزمة البترول عام 1973؟",
+      "prompt_en": "Do you remember the 1973 oil crisis?",
+      "region": ["saudi_arabia", "gulf", "middle_east"]
+    },
+    {
+      "id": "hist_032",
+      "event_ar": "استقلال الكويت",
+      "event_en": "Kuwaiti Independence",
+      "year": 1961,
+      "prompt_ar": "هل تتذكر استقلال الكويت؟",
+      "prompt_en": "Do you remember Kuwait's independence?",
+      "region": ["kuwait", "gulf"]
+    },
+    {
+      "id": "hist_033",
+      "event_ar": "تأسيس دولة الإمارات",
+      "event_en": "Formation of UAE",
+      "year": 1971,
+      "prompt_ar": "هل تتذكر تأسيس دولة الإمارات العربية المتحدة؟",
+      "prompt_en": "Do you remember the formation of the United Arab Emirates?",
+      "region": ["uae", "gulf"]
+    },
+    {
+      "id": "hist_034",
+      "event_ar": "استقلال البحرين",
+      "event_en": "Bahraini Independence",
+      "year": 1971,
+      "prompt_ar": "ماذا تتذكر عن استقلال البحرين؟",
+      "prompt_en": "What do you remember about Bahrain's independence?",
+      "region": ["bahrain", "gulf"]
+    },
+    {
+      "id": "hist_035",
+      "event_ar": "استقلال قطر",
+      "event_en": "Qatari Independence",
+      "year": 1971,
+      "prompt_ar": "هل لديك ذكريات عن استقلال قطر؟",
+      "prompt_en": "Do you have memories about Qatar's independence?",
+      "region": ["qatar", "gulf"]
+    },
+    {
+      "id": "hist_036",
+      "event_ar": "ثورة عمان",
+      "event_en": "Omani Revolution",
+      "year": 1970,
+      "prompt_ar": "هل تتذكر وصول السلطان قابوس للحكم؟",
+      "prompt_en": "Do you remember Sultan Qaboos coming to power?",
+      "region": ["oman", "gulf"]
+    },
+    {
+      "id": "hist_037",
+      "event_ar": "الربيع العربي",
+      "event_en": "Arab Spring",
+      "year": 2010,
+      "prompt_ar": "كيف عشت أحداث الربيع العربي؟",
+      "prompt_en": "How did you experience the Arab Spring events?",
+      "region": ["tunisia", "egypt", "libya", "syria", "yemen", "middle_east", "north_africa"]
+    },
+    {
+      "id": "hist_038",
+      "event_ar": "ثورة الياسمين التونسية",
+      "event_en": "Jasmine Revolution Tunisia",
+      "year": 2010,
+      "prompt_ar": "هل تتذكر بداية الثورة التونسية؟",
+      "prompt_en": "Do you remember the beginning of the Tunisian revolution?",
+      "region": ["tunisia", "north_africa"]
+    },
+    {
+      "id": "hist_039",
+      "event_ar": "الحرب الأهلية السورية",
+      "event_en": "Syrian Civil War",
+      "year": 2011,
+      "prompt_ar": "كيف أثرت الحرب السورية على حياتك؟",
+      "prompt_en": "How did the Syrian war affect your life?",
+      "region": ["syria", "middle_east"]
+    },
+    {
+      "id": "hist_040",
+      "event_ar": "الحرب اليمنية",
+      "event_en": "Yemeni War",
+      "year": 2014,
+      "prompt_ar": "ماذا تعرف عن الحرب في اليمن؟",
+      "prompt_en": "What do you know about the war in Yemen?",
+      "region": ["yemen", "saudi_arabia", "middle_east"]
+    },
+    {
+      "id": "hist_041",
+      "event_ar": "سقوط القذافي",
+      "event_en": "Fall of Gaddafi",
+      "year": 2011,
+      "prompt_ar": "هل تتذكر سقوط نظام القذافي في ليبيا؟",
+      "prompt_en": "Do you remember the fall of Gaddafi's regime in Libya?",
+      "region": ["libya", "north_africa"]
+    },
+    {
+      "id": "hist_042",
+      "event_ar": "حكم صدام حسين",
+      "event_en": "Saddam Hussein's Rule",
+      "year": 1979,
+      "prompt_ar": "ماذا تتذكر عن فترة حكم صدام حسين؟",
+      "prompt_en": "What do you remember about Saddam Hussein's rule?",
+      "region": ["iraq", "middle_east"]
+    },
+    {
+      "id": "hist_043",
+      "event_ar": "غزو العراق 2003",
+      "event_en": "2003 Iraq Invasion",
+      "year": 2003,
+      "prompt_ar": "كيف عشت أحداث غزو العراق عام 2003؟",
+      "prompt_en": "How did you experience the 2003 invasion of Iraq?",
+      "region": ["iraq", "middle_east"]
+    },
+    {
+      "id": "hist_044",
+      "event_ar": "تأسيس إسرائيل",
+      "event_en": "Establishment of Israel",
+      "year": 1948,
+      "prompt_ar": "ماذا تتذكر عن إعلان دولة إسرائيل؟",
+      "prompt_en": "What do you remember about the declaration of the state of Israel?",
+      "region": ["palestine", "middle_east"]
+    },
+    {
+      "id": "hist_045",
+      "event_ar": "حرب الاستقلال الجزائرية",
+      "event_en": "Algerian War of Independence",
+      "year": 1954,
+      "prompt_ar": "هل عشت خلال حرب الاستقلال الجزائرية؟",
+      "prompt_en": "Did you live during the Algerian War of Independence?",
+      "region": ["algeria", "north_africa"]
+    },
+    {
+      "id": "hist_046",
+      "event_ar": "أزمة السويس",
+      "event_en": "Suez Crisis",
+      "year": 1956,
+      "prompt_ar": "هل تتذكر أزمة السويس عام 1956؟",
+      "prompt_en": "Do you remember the Suez Crisis of 1956?",
+      "region": ["egypt", "middle_east"]
+    },
+    {
+      "id": "hist_047",
+      "event_ar": "معركة الكرامة",
+      "event_en": "Battle of Karameh",
+      "year": 1968,
+      "prompt_ar": "ماذا تتذكر عن معركة الكرامة؟",
+      "prompt_en": "What do you remember about the Battle of Karameh?",
+      "region": ["jordan", "palestine", "middle_east"]
+    },
+    {
+      "id": "hist_048",
+      "event_ar": "إعلان منظمة التحرير الفلسطينية",
+      "event_en": "PLO Declaration",
+      "year": 1964,
+      "prompt_ar": "هل تتذكر تأسيس منظمة التحرير الفلسطينية؟",
+      "prompt_en": "Do you remember the establishment of the PLO?",
+      "region": ["palestine", "middle_east"]
+    },
+    {
+      "id": "hist_049",
+      "event_ar": "حرب الصحراء الغربية",
+      "event_en": "Western Sahara War",
+      "year": 1975,
+      "prompt_ar": "ماذا تعرف عن حرب الصحراء الغربية؟",
+      "prompt_en": "What do you know about the Western Sahara War?",
+      "region": ["morocco", "western_sahara", "north_africa"]
+    },
+    {
+      "id": "hist_050",
+      "event_ar": "المسيرة الخضراء",
+      "event_en": "Green March",
+      "year": 1975,
+      "prompt_ar": "هل تتذكر المسيرة الخضراء المغربية؟",
+      "prompt_en": "Do you remember the Moroccan Green March?",
+      "region": ["morocco", "western_sahara", "north_africa"]
     }
   ]
-} 
+}
