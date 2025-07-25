@@ -1,5 +1,15 @@
 {
   "arabic_names": [
+{
+      "id": "male_026",
+      "name_ar": "علام",
+      "name_en": "Allam",
+      "gender": "male",
+      "popularity": "medium",
+      "origin": "arabic",
+      "meaning_ar": "العليم، كثير العلم",
+      "meaning_en": "Very knowledgeable, learned"
+    },
     {
       "id": "male_001",
       "name_ar": "محمد",
@@ -199,6 +209,309 @@
       "origin": "arabic",
       "meaning_ar": "الليل، السمراء",
       "meaning_en": "Night, dark-haired"
-    }
+    }  , 
+    {
+      "id": "male_011",
+      "name_ar": "حسين",
+      "name_en": "Hussein",
+      "gender": "male",
+      "popularity": "high",
+      "origin": "arabic",
+      "meaning_ar": "الحسن الصغير",
+      "meaning_en": "Little handsome one"
+    },
+    {
+      "id": "male_012",
+      "name_ar": "عبد الرحمن",
+      "name_en": "Abdulrahman",
+      "gender": "male",
+      "popularity": "very_high",
+      "origin": "arabic",
+      "meaning_ar": "عبد الرحمن",
+      "meaning_en": "Servant of the Merciful"
+    },
+    {
+      "id": "male_013",
+      "name_ar": "كريم",
+      "name_en": "Kareem",
+      "gender": "male",
+      "popularity": "high",
+      "origin": "arabic",
+      "meaning_ar": "الكريم، الجود",
+      "meaning_en": "Generous, noble"
+    },
+    {
+      "id": "male_014",
+      "name_ar": "طارق",
+      "name_en": "Tariq",
+      "gender": "male",
+      "popularity": "medium",
+      "origin": "arabic",
+      "meaning_ar": "النجم الثاقب، الطارق ليلاً",
+      "meaning_en": "Morning star, night visitor"
+    },
+    {
+      "id": "male_015",
+      "name_ar": "سامي",
+      "name_en": "Sami",
+      "gender": "male",
+      "popularity": "medium",
+      "origin": "arabic",
+      "meaning_ar": "العالي، الرفيع",
+      "meaning_en": "High, elevated"
+    },
+    {
+      "id": "male_016",
+      "name_ar": "ماجد",
+      "name_en": "Majed",
+      "gender": "male",
+      "popularity": "medium",
+      "origin": "arabic",
+      "meaning_ar": "المجد، الشرف",
+      "meaning_en": "Glorious, honorable"
+    },
+    {
+      "id": "male_017",
+      "name_ar": "ياسر",
+      "name_en": "Yasser",
+      "gender": "male",
+      "popularity": "medium",
+      "origin": "arabic",
+      "meaning_ar": "السهل، اليسير",
+      "meaning_en": "Easy, wealthy"
+    },
+    {
+      "id": "male_018",
+      "name_ar": "نادر",
+      "name_en": "Nader",
+      "gender": "male",
+      "popularity": "medium",
+      "origin": "arabic",
+      "meaning_ar": "النادر، القليل",
+      "meaning_en": "Rare, precious"
+    },
+    {
+      "id": "male_019",
+      "name_ar": "وائل",
+      "name_en": "Wael",
+      "gender": "male",
+      "popularity": "medium",
+      "origin": "arabic",
+      "meaning_ar": "الملجأ، المأوى",
+      "meaning_en": "Refuge, shelter"
+    },
+    {
+      "id": "male_020",
+      "name_ar": "زياد",
+      "name_en": "Ziad",
+      "gender": "male",
+      "popularity": "medium",
+      "origin": "arabic",
+      "meaning_ar": "الزيادة، النمو",
+      "meaning_en": "Growth, abundance"
+    },
+    {
+      "id": "male_021",
+      "name_ar": "فهد",
+      "name_en": "Fahd",
+      "gender": "male",
+      "popularity": "medium",
+      "origin": "arabic",
+      "meaning_ar": "الفهد",
+      "meaning_en": "Leopard, panther"
+    },
+    {
+      "id": "male_022",
+      "name_ar": "سلطان",
+      "name_en": "Sultan",
+      "gender": "male",
+      "popularity": "medium",
+      "origin": "arabic",
+      "meaning_ar": "السلطان، الحاكم",
+      "meaning_en": "Ruler, sovereign"
+    },
+    {
+      "id": "male_023",
+      "name_ar": "راشد",
+      "name_en": "Rashid",
+      "gender": "male",
+      "popularity": "medium",
+      "origin": "arabic",
+      "meaning_ar": "الراشد، المهتدي",
+      "meaning_en": "Rightly guided"
+    },
+    {
+      "id": "male_024",
+      "name_ar": "عامر",
+      "name_en": "Amer",
+      "gender": "male",
+      "popularity": "medium",
+      "origin": "arabic",
+      "meaning_ar": "العامر، المزدهر",
+      "meaning_en": "Prosperous, full of life"
+    },
+    {
+      "id": "male_025",
+      "name_ar": "بشار",
+      "name_en": "Bashar",
+      "gender": "male",
+      "popularity": "medium",
+      "origin": "arabic",
+      "meaning_ar": "المبشر، حسن البشرة",
+      "meaning_en": "Bearer of good news"
+    },
+    {
+      "id": "female_011",
+      "name_ar": "خديجة",
+      "name_en": "Khadija",
+      "gender": "female",
+      "popularity": "high",
+      "origin": "arabic",
+      "meaning_ar": "المولودة قبل تمام الحمل",
+      "meaning_en": "Premature child"
+    },
+    {
+      "id": "female_012",
+      "name_ar": "رقية",
+      "name_en": "Ruqayya",
+      "gender": "female",
+      "popularity": "high",
+      "origin": "arabic",
+      "meaning_ar": "الرقة، الصعود",
+      "meaning_en": "Gentle, ascending"
+    },
+    {
+      "id": "female_013",
+      "name_ar": "أسماء",
+      "name_en": "Asma",
+      "gender": "female",
+      "popularity": "high",
+      "origin": "arabic",
+      "meaning_ar": "العلو، الرفعة",
+      "meaning_en": "High, sublime"
+    },
+    {
+      "id": "female_014",
+      "name_ar": "رانيا",
+      "name_en": "Rania",
+      "gender": "female",
+      "popularity": "high",
+      "origin": "arabic",
+      "meaning_ar": "التي تحدق، الناظرة",
+      "meaning_en": "Gazing, looking"
+    },
+    {
+      "id": "female_015",
+      "name_ar": "دينا",
+      "name_en": "Dina",
+      "gender": "female",
+      "popularity": "medium",
+      "origin": "arabic",
+      "meaning_ar": "الدين، الحكم",
+      "meaning_en": "Religion, judgment"
+    },
+    {
+      "id": "female_016",
+      "name_ar": "هند",
+      "name_en": "Hind",
+      "gender": "female",
+      "popularity": "medium",
+      "origin": "arabic",
+      "meaning_ar": "مئة من الإبل",
+      "meaning_en": "Group of camels"
+    },
+    {
+      "id": "female_017",
+      "name_ar": "ريم",
+      "name_en": "Reem",
+      "gender": "female",
+      "popularity": "high",
+      "origin": "arabic",
+      "meaning_ar": "الظبي الأبيض",
+      "meaning_en": "White gazelle"
+    },
+    {
+      "id": "female_018",
+      "name_ar": "ندى",
+      "name_en": "Nada",
+      "gender": "female",
+      "popularity": "medium",
+      "origin": "arabic",
+      "meaning_ar": "الندى، البلل",
+      "meaning_en": "Dew, moisture"
+    },
+    {
+      "id": "female_019",
+      "name_ar": "منى",
+      "name_en": "Mona",
+      "gender": "female",
+      "popularity": "medium",
+      "origin": "arabic",
+      "meaning_ar": "الأمنية، الرغبة",
+      "meaning_en": "Wish, desire"
+    },
+    {
+      "id": "female_020",
+      "name_ar": "سلمى",
+      "name_en": "Salma",
+      "gender": "female",
+      "popularity": "medium",
+      "origin": "arabic",
+      "meaning_ar": "السليمة، الناجية",
+      "meaning_en": "Safe, peaceful"
+    },
+    {
+      "id": "female_021",
+      "name_ar": "هالة",
+      "name_en": "Hala",
+      "gender": "female",
+      "popularity": "medium",
+      "origin": "arabic",
+      "meaning_ar": "الهالة حول القمر",
+      "meaning_en": "Halo around the moon"
+    },
+    {
+      "id": "female_022",
+      "name_ar": "ياسمين",
+      "name_en": "Yasmin",
+      "gender": "female",
+      "popularity": "high",
+      "origin": "arabic",
+      "meaning_ar": "زهرة الياسمين",
+      "meaning_en": "Jasmine flower"
+    },
+    {
+      "id": "female_023",
+      "name_ar": "شيماء",
+      "name_en": "Shaima",
+      "gender": "female",
+      "popularity": "medium",
+      "origin": "arabic",
+      "meaning_ar": "التي فيها شامات",
+      "meaning_en": "One with beauty marks"
+    },
+    {
+      "id": "female_024",
+      "name_ar": "إيمان",
+      "name_en": "Iman",
+      "gender": "female",
+      "popularity": "high",
+      "origin": "arabic",
+      "meaning_ar": "الإيمان، التصديق",
+      "meaning_en": "Faith, belief"
+    },
+    {
+      "id": "female_025",
+      "name_ar": "جميلة",
+      "name_en": "Jamila",
+      "gender": "female",
+      "popularity": "medium",
+      "origin": "arabic",
+      "meaning_ar": "الجميلة، الحسناء",
+      "meaning_en": "Beautiful"
+    }  
+    
+  
+
   ]
 } 
